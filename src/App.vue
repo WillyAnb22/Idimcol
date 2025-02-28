@@ -5,7 +5,7 @@
         <q-toolbar class="toolbar">
           <div class="logo">
             <router-link to="/">
-              <img src="/logo.png" to="/" style="height: 70px;" width="auto;" />
+              <img src="/logo.png" to="/" style="height: 50px;" width="auto;" />
             </router-link>
           </div>
 
@@ -17,7 +17,7 @@
               <router-link to="/Servicios">Servicios</router-link>
               <router-link to="/Sectores">Sectores</router-link>
             </nav>
-          </div>
+          </div> 
         </q-toolbar>
       </q-header>
       <q-page-container>
@@ -54,15 +54,18 @@ onMounted(() => {
 nav {
   display: flex;
   gap: 40px;
-  
+
 }
 nav a {
   font-size:20px;
+  font-weight: bold;
   color: white;
   text-decoration: none;
+  transition: color 0.3s ease-in-out; /* Transición suave */
 }
 nav a.router-link-exact-active{
-  font-weight: bold;
-  color: #325b9c;
+  color: #737375;
+  border-bottom: 2px solid #325b9c; /* Línea debajo del enlace activo */
+  padding-bottom: 5px; /* Espaciado para la línea */
 }
 </style>

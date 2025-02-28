@@ -50,7 +50,7 @@ const services = ref([
     image: "/mecanizado.png",
     title: "MECANIZADO",
     description:"Procesos computarizados y convencionales se unen en la fabricación,\n reparación y repotenciación de todo tipo de piezas, partes y repuestos,\n que respaldan sus necesidades de producción y mantenimiento."
-  },
+  }, 
   {
     image: "/diseñoMecanico.png",
     title: "DISEÑO MECÁNICO",

@@ -34,24 +34,24 @@
         <br />gerencia@idimcol.com.co
       </div>
       <div class="redes-sociales">
-        <div class="red-social">
-          <q-avatar>
+        <a href="https://www.facebook.com/share/14ucNZh2Zi/" target="_blank" class="social-link">
+          <div class="red-social">
             <img src="/facebook.png" />
-          </q-avatar>
-          <span>idimcol SAS Colombia</span>
-        </div>
-        <div class="red-social">
-          <q-avatar>
+            <span>idimcol SAS Colombia</span>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/idimcol7?igsh=MWt6OWZmZTh2Mm56Yw==" target="_blank" class="social-link">
+          <div class="red-social">
             <img src="/instagram.png" />
-          </q-avatar>
-          <span>idimcol7</span>
-        </div>
-        <div class="red-social">
-          <q-avatar>
+            <span>idimcol7</span>
+          </div>
+        </a>
+        <a href="https://www.tiktok.com/@idimcol?_t=ZS-8uIpWWEOBPj&_r=1" target="_blank" class="social-link">
+          <div class="red-social">
             <img src="/tik-tok.png" />
-          </q-avatar>
-          <span>idimcol</span>
-        </div>
+            <span>idimcol</span>
+          </div>
+        </a>
       </div>
     </div>
   </div>
@@ -155,7 +155,7 @@ const sectores = reactive([
   grid-template-columns: 1fr 1fr;
   align-items: center;
   padding: 10px;
-  gap:50%;
+  gap: 50%;
   background-color: #1e1f2d;
 }
 .izquierda {
@@ -170,6 +170,14 @@ const sectores = reactive([
   display: flex;
   align-items: center;
   text-align: center;
-  gap:10px;
+  gap: 10px;
+}
+.red-social,
+img {
+  height: 20px;
+}
+.social-link{
+  text-decoration:none;
+  font-size: 18px;
 }
 </style>

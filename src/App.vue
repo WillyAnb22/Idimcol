@@ -11,12 +11,12 @@
 
           <!-- Contenedor de rutas centrado con flexbox -->
           <div class="rutas">
-            <q-tabs align="center" class="tabs-container">
-              <q-route-tab to="/" label="INICIO" />
-              <q-route-tab to="/Nosotros" label="NOSOTROS" />
-              <q-route-tab to="/Servicios" label="SERVICIOS" />
-              <q-route-tab to="/Sectores" label="SECTORES" />
-            </q-tabs>
+            <nav>
+              <router-link to="/">Inicio</router-link>
+              <router-link to="/Nosotros">Nosotros</router-link>
+              <router-link to="/Servicios">Servicios</router-link>
+              <router-link to="/Sectores">Sectores</router-link>
+            </nav>
           </div>
         </q-toolbar>
       </q-header>
@@ -45,11 +45,24 @@ onMounted(() => {
   margin-left: 50px;
   margin-top: 10px;
 }
-
-.rutas {
+.rutas{
+  flex:1;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 35%;
+}
+nav {
+  display: flex;
+  gap: 40px;
+  
+}
+nav a {
+  font-size:20px;
+  color: white;
+  text-decoration: none;
+}
+nav a.router-link-exact-active{
+  font-weight: bold;
+  color: #325b9c;
 }
 </style>

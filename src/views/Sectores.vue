@@ -33,20 +33,27 @@
         <br />+57
         <br />gerencia@idimcol.com.co
       </div>
-      <div class="derecha">
-        <div class="derecha-text">Siguenos</div>
-        <q-avatar>
-          <img src="/facebook.png" />
-        </q-avatar>idimcol SAS Colombia
-        <q-avatar>
-          <img src="/instagram.png" />
-        </q-avatar>idimcol7
-        <q-avatar>
-          <img src="/tik-tok.png" />
-        </q-avatar>idimcol
+      <div class="redes-sociales">
+        <div class="red-social">
+          <q-avatar>
+            <img src="/facebook.png" />
+          </q-avatar>
+          <span>idimcol SAS Colombia</span>
+        </div>
+        <div class="red-social">
+          <q-avatar>
+            <img src="/instagram.png" />
+          </q-avatar>
+          <span>idimcol7</span>
+        </div>
+        <div class="red-social">
+          <q-avatar>
+            <img src="/tik-tok.png" />
+          </q-avatar>
+          <span>idimcol</span>
+        </div>
       </div>
     </div>
-    <!-- <TheFooter /> -->
   </div>
 </template>
 
@@ -147,17 +154,22 @@ const sectores = reactive([
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
+  gap:50%;
   background-color: #1e1f2d;
 }
 .izquierda {
-  padding-left: 20px;
+  padding-left: 40px;
 }
-.derecha {
+.redes-sociales {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.red-social {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  position: relative;
-  /* flex-direction: column; */
+  text-align: center;
+  gap:10px;
 }
 </style>

@@ -36,13 +36,13 @@
       <div class="derecha">
         <div class="derecha-text">Siguenos</div>
         <q-avatar>
-          <img src="/src/assets/facebook.png" />
+          <img src="/facebook.png" />
         </q-avatar>idimcol SAS Colombia
         <q-avatar>
-          <img src="/src/assets/instagram.png" />
+          <img src="/instagram.png" />
         </q-avatar>idimcol7
         <q-avatar>
-          <img src="src/assets/tik-tok.png" />
+          <img src="/tik-tok.png" />
         </q-avatar>idimcol
       </div>
     </div>
@@ -61,11 +61,11 @@ const sectores = reactive([
     descripcion:
       "Proporcionamos materiales  de excelencia, diseñados para impulsar la productividad y eficiencia de la industria. Nuestra calidad asegura el éxito de cada proyecto, con soluciones a medida para cada necesidad.",
     imagenes: [
-      "/src/assets/1.png",
+      "/1.png",
       "https://cdn.quasar.dev/img/parallax1.jpg",
       "https://cdn.quasar.dev/img/parallax2.jpg",
       "https://cdn.quasar.dev/img/quasar.jpg",
-      "/src/assets/1.png"
+      "/1.png"
     ],
     slide: ref(1)
   },

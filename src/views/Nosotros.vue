@@ -2,7 +2,7 @@
   <div>
     <div class="container">
       <div class="imgFondo">
-        <q-img src="/src/assets/fondo.png"></q-img>
+        <q-img src="/fondo.png"></q-img>
       </div>
       <div class="title">NUESTRA HISTORIA</div>
       <div
@@ -35,7 +35,7 @@
           inversión con utilidades a su sociedad
         </div>
         <div class="imgVision">
-          <q-img src="/src/assets/1.png"></q-img>
+          <q-img src="/1.png"></q-img>
         </div>
       </div>
       <div class="mision">

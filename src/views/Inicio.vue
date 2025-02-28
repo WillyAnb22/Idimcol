@@ -24,10 +24,10 @@
     <div>
       <div class="container2">
         <div class="imgFondo">
-          <q-img src="/src/assets/frontal.png"></q-img>
+          <q-img src="/frontal.png"></q-img>
         </div>
         <div class="logo">
-          <q-img src="/src/assets/logo.png"></q-img>
+          <q-img src="/logo.png"></q-img>
         </div>
         <div class="text">CONOCE QUIENES SOMOS</div>
         <div class="btn">

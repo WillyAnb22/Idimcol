@@ -9,13 +9,13 @@
         class="frase"
       >"En IDIMCOL, transformamos el metal en soluciones innovadoras para la industria."</div>
       <div class="text">
-        IDIMCOL SAS fue fundada en Bucaramanga, Santander, Colombia, en 2016 para satisfacer las necesidades de
+        IDIMCOL SAS fue fundada en la ciudad de Bucaramanga, Santander, Colombia, en el año 2016 para satisfacer las necesidades de
         <br />reparaciones y fabricaciones mecánicas, metalmecánicas y metalúrgicas en diversas industrias del país.
-        <br />Su objetivo es ofrecer soluciones rápidas, ágiles y confiables para mantenimiento y optimización de maquinaria,
+        <br />Su objetivo es ofrecer soluciones rápidas, innovadoras y confiables para mantenimiento y optimización de maquinaria,
         <br />cumpliendo con altos estándares de calidad y con un enfoque en la ingeniería de desarrollo industrial.
-        <br />Con un equipo altamente calificado, la empresa se centra en cumplir las necesidades de sectores como minería,
-        <br />petróleo, transporte, automotriz, manufactura y alimentos, entre otros. Además, promueve el desarrollo local
-        <br />y la creación de empleo en la región, impulsando el crecimiento de Bucaramanga y sus alrededores.
+        <br />Con un equipo altamente calificado, la empresa se especializa en cumplir las necesidades de sectores como; minería,
+        <br />petróleo, transporte, automotriz, manufactura, alimentos, entre otros. Además, promueve el desarrollo local
+        <br />y fomenta la creación de empleo en la región, impulsando el crecimiento industrial de Bucaramanga y sus alrededores.
       </div>
     </div>
     <div class="container2">

@@ -27,11 +27,12 @@
     </div>
     <div class="footer">
       <div class="izquierda">
-        Información Contacto
+        Información de Contacto
         <br />Cra 13# 23-33 Girardot, Colombia
-        <br />+57
-        <br />+57
+        <br />+57 302 7903706
         <br />gerencia@idimcol.com.co
+        <hr style="margin-top: 10px;"/>
+        <p style="margin-top: 5px;">© 2025 IDIMCOL S.A.S. Todos los derechos reservados.</p>
       </div>
       <div class="redes-sociales">
         <a href="https://www.facebook.com/share/14ucNZh2Zi/" target="_blank" class="social-link">
@@ -154,8 +155,8 @@ const sectores = reactive([
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  padding: 10px;
-  gap: 50%;
+  padding: 35px;
+  gap: 55%;
   background-color: #1e1f2d;
 }
 .izquierda {
@@ -172,9 +173,8 @@ const sectores = reactive([
   text-align: center;
   gap: 10px;
 }
-.red-social,
-img {
-  height: 20px;
+.red-social, img {
+  height: 25px;
 }
 .social-link{
   text-decoration:none;

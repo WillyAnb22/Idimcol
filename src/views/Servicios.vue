@@ -17,16 +17,44 @@
 </template>
 -->
 <template>
-  <div class="container">
-    <div
-      class="service"
-      v-for="(service, index) in services"
-      :key="index"
-    >
-    <div class="background" :style="{ backgroundImage:`url(${service.image})`}"></div>
-      <div class="content">
-        <div class="title">{{ service.title }}</div>
-        <div class="text">{{ service.description }}</div>
+  <div>
+    <div class="container">
+      <div class="service" v-for="(service, index) in services" :key="index">
+        <div class="background" :style="{ backgroundImage:`url(${service.image})`}"></div>
+        <div class="content">
+          <div class="title">{{ service.title }}</div>
+          <div class="text">{{ service.description }}</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="izquierda">
+        Información de Contacto
+        <br />Cra 13# 23-33 Girardot, Colombia
+        <br />+57 302 7903706
+        <br />gerencia@idimcol.com.co
+        <hr style="margin-top: 10px;"/>
+        <p style="margin-top: 5px;">© 2025 IDIMCOL S.A.S. Todos los derechos reservados.</p>
+      </div>
+      <div class="redes-sociales">
+        <a href="https://www.facebook.com/share/14ucNZh2Zi/" target="_blank" class="social-link">
+          <div class="red-social">
+            <img src="/facebook.png" />
+            <span>idimcol SAS Colombia</span>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/idimcol7?igsh=MWt6OWZmZTh2Mm56Yw==" target="_blank" class="social-link">
+          <div class="red-social">
+            <img src="/instagram.png" />
+            <span>idimcol7</span>
+          </div>
+        </a>
+        <a href="https://www.tiktok.com/@idimcol?_t=ZS-8uIpWWEOBPj&_r=1" target="_blank" class="social-link">
+          <div class="red-social">
+            <img src="/tik-tok.png" />
+            <span>idimcol</span>
+          </div>
+        </a>
       </div>
     </div>
   </div>
@@ -39,22 +67,26 @@ const services = ref([
   {
     image: "/estructurasMetalicas.png",
     title: "ESTRUCTURAS MÉTALICAS",
-    description:"Ingeniería de detalle, simulación, cálculo estructural, análisis de\ncargas y personal altamente calificado, son los componentes que\nacompañan nuestros procesos de calibración, fabricación y montaje \nde sus proyectos industriales."
+    description:
+      "Ingeniería de detalle, simulación, cálculo estructural, análisis de cargas y personal altamente calificado, son los componentes que acompañan nuestros procesos de calibración, fabricación y montaje de sus proyectos industriales."
   },
   {
     image: "/proyectosIndustriales.png",
     title: "PROYECTOS INDUSTRIALES",
-    description:"La planificación estratégica, el análisis financiero, la gestión de proyectos\n y el control de costos son los pilares que respaldan nuestra ingeniería\n y desarrollo, garantizando la ejecución exitosa de cada proyecto.\n Nuestro enfoque integral permite entregar soluciones eficientes,\n optimizando recursos y maximizando los resultados."
+    description:
+      "La planificación estratégica, el análisis financiero, la gestión de proyectos y el control de costos son los pilares que respaldan nuestra ingeniería y desarrollo, garantizando la ejecución exitosa de cada proyecto. Nuestro enfoque integral permite entregar soluciones eficientes, optimizando recursos y maximizando los resultados."
   },
   {
     image: "/mecanizado.png",
     title: "MECANIZADO",
-    description:"Procesos computarizados y convencionales se unen en la fabricación,\n reparación y repotenciación de todo tipo de piezas, partes y repuestos,\n que respaldan sus necesidades de producción y mantenimiento."
-  }, 
+    description:
+      "Procesos computarizados y convencionales se unen en la fabricación, reparación y repotenciación de todo tipo de piezas, partes y repuestos, que respaldan sus necesidades de producción y mantenimiento."
+  },
   {
     image: "/diseñoMecanico.png",
     title: "DISEÑO MECÁNICO",
-    description:"Apoyados en el software de diseño asistido por computador (CAD) Solidwoks\n 2019, nuestro departamento de ingeniería y diseño evalúa las condiciones\n técnicas y conceptuales de sus equipos y máquinas industriales y accesorios\n para garantizar el óptimo desarrollo de sus operaciones."
+    description:
+      "Apoyados en el software de diseño asistido por computador (CAD) Solidwoks 2019, nuestro departamento de ingeniería y diseño evalúa las condiciones técnicas y conceptuales de sus equipos y máquinas industriales y accesorios para garantizar el óptimo desarrollo de sus operaciones."
   }
 ]);
 </script>
@@ -63,6 +95,7 @@ const services = ref([
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: white;
 }
 
 .container {
@@ -84,38 +117,71 @@ const services = ref([
   min-height: 70vh;
   overflow: hidden;
 }
-.background{
+.background {
   position: absolute;
   top: 0;
-  left:0;
+  left: 0;
   width: 100%;
   height: 100%;
   background-size: 120%;
   background-position: center;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   transition: transform 0.3s ease-in-out;
 }
 .content {
   position: relative;
   z-index: 2;
-  color:white;
-  gap:20px;
+  color: white;
+  gap: 20px;
 }
-.title, .text{
+.title,
+.text {
   padding-left: 90px;
-
 }
-.title{
+.title {
   font-size: 3rem;
   font-weight: bold;
-  margin-bottom:40px;
+  margin-bottom: 40px;
+  color: rgb(195, 195, 195) ;
 }
-.text{
+.text {
   font-size: 1.8rem;
-  line-height:1.6;
-  white-space: pre-line; /* Respeta los saltos de línea */
+  line-height: 1.6;
+  text-align: justify;
+  justify-content: center;
+  max-width: 90%;
+  /* white-space: pre-line;  respeta los saltos de línea  */
 }
 .service:hover .background {
   transform: scale(1.1);
+}
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 35px;
+  gap: 55%;
+  background-color: #1e1f2d;
+}
+.izquierda {
+  padding-left: 40px;
+}
+.redes-sociales {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.red-social {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+.red-social, img {
+  height: 25px;
+}
+.social-link{
+  text-decoration:none;
+  font-size: 18px;
 }
 </style>

@@ -5,17 +5,15 @@
         <q-img src="/fondo.png"></q-img>
       </div>
       <div class="title">NUESTRA HISTORIA</div>
-      <div
-        class="frase"
-      >"En IDIMCOL, transformamos el metal en soluciones innovadoras para la industria."</div>
+      <div class="frase">"En IDIMCOL, transformamos el metal en soluciones innovadoras para la industria."</div>
       <div class="text">
         IDIMCOL SAS fue fundada en la ciudad de Bucaramanga, Santander, Colombia, en el año 2016 para satisfacer las necesidades de
-        <br />reparaciones y fabricaciones mecánicas, metalmecánicas y metalúrgicas en diversas industrias del país.
-        <br />Su objetivo es ofrecer soluciones rápidas, innovadoras y confiables para mantenimiento y optimización de maquinaria,
-        <br />cumpliendo con altos estándares de calidad y con un enfoque en la ingeniería de desarrollo industrial.
-        <br />Con un equipo altamente calificado, la empresa se especializa en cumplir las necesidades de sectores como; minería,
-        <br />petróleo, transporte, automotriz, manufactura, alimentos, entre otros. Además, promueve el desarrollo local
-        <br />y fomenta la creación de empleo en la región, impulsando el crecimiento industrial de Bucaramanga y sus alrededores.
+        reparaciones y fabricaciones mecánicas, metalmecánicas y metalúrgicas en diversas industrias del país.
+        Su objetivo es ofrecer soluciones rápidas, innovadoras y confiables para mantenimiento y optimización de maquinaria,
+        cumpliendo con altos estándares de calidad y con un enfoque en la ingeniería de desarrollo industrial.
+        Con un equipo altamente calificado, la empresa se especializa en cumplir las necesidades de sectores como; minería,
+        petróleo, transporte, automotriz, manufactura, alimentos, entre otros. Además, promueve el desarrollo local
+        y fomenta la creación de empleo en la región, impulsando el crecimiento industrial de Bucaramanga y sus alrededores.
       </div>
     </div>
     <div class="container2">
@@ -80,6 +78,36 @@
         </div>
         <div id="map" style="height: 800px;"></div>
     </div>
+    <div class="footer">
+      <div class="izquierda">
+        Información de Contacto
+        <br />Cra 13# 23-33 Girardot, Colombia
+        <br />+57 302 7903706
+        <br />gerencia@idimcol.com.co
+        <hr style="margin-top: 10px;"/>
+        <p style="margin-top: 5px;">© 2025 IDIMCOL S.A.S. Todos los derechos reservados.</p>
+      </div>
+      <div class="redes-sociales">
+        <a href="https://www.facebook.com/share/14ucNZh2Zi/" target="_blank" class="social-link">
+          <div class="red-social">
+            <img src="/facebook.png" />
+            <span>idimcol SAS Colombia</span>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/idimcol7?igsh=MWt6OWZmZTh2Mm56Yw==" target="_blank" class="social-link">
+          <div class="red-social">
+            <img src="/instagram.png" />
+            <span>idimcol7</span>
+          </div>
+        </a>
+        <a href="https://www.tiktok.com/@idimcol?_t=ZS-8uIpWWEOBPj&_r=1" target="_blank" class="social-link">
+          <div class="red-social">
+            <img src="/tik-tok.png" />
+            <span>idimcol</span>
+          </div>
+        </a>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -110,13 +138,18 @@ onMounted(async () => {
 </script>
 
 <style scoped>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
 .container {
   position: relative;
   display: flex;
   width: 100%;
   height: 100vh;
   overflow: hidden;
-
 }
 .imgFondo {
   position: absolute;
@@ -148,8 +181,10 @@ onMounted(async () => {
   position: absolute;
   z-index: 2;
   color: white;
+  text-align: justify;
   font-size: 1.8rem;
   font-weight: bold;
+  max-width: 90%;
   top: 19rem;
   left: 4rem;
 }
@@ -207,4 +242,33 @@ onMounted(async () => {
   font-size: 2rem;
   padding:8rem;
   }
+  .footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 35px;
+  gap: 55%;
+  background-color: #1e1f2d;
+}
+.izquierda {
+  padding-left: 40px;
+}
+.redes-sociales {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.red-social {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+.red-social, img {
+  height: 25px;
+}
+.social-link{
+  text-decoration:none;
+  font-size: 18px;
+}
 </style> 

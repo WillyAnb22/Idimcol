@@ -115,37 +115,30 @@ const sectores = reactive([
   display: flex;
   flex-direction: column;
   background-color: #325e9b;
+  padding: 0 50px; /* Espacio en los lados */
 }
 .title {
   font-size: 50px;
   font-weight: bold;
   margin-bottom: 40px;
   margin-top: 80px;
-  margin-left: 100px;
-  padding: 0 50px; /* Espacio en los lados */
 }
 .text {
   font-size: 28px;
   margin-bottom: 20px;
-  margin-left: 100px;
-  padding: 0 50px; /* Espacio en los lados */
 }
-
 .carrusel {
   margin-top: 50px;
 }
-
 .q-carousel {
   height: 700px; /* Ajusta la altura según lo que necesites */
 }
-
 .q-carousel-slide {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
 }
-
 .q-carousel-slide img {
   max-height: 100%;
   width: auto;
@@ -179,5 +172,50 @@ const sectores = reactive([
 .social-link{
   text-decoration:none;
   font-size: 18px;
+}
+
+/* Responsividad */
+@media (max-width: 1000px) {
+.title{
+    font-size: 40px;
+  }
+.text{
+  font-size: 26px;
+}
+.footer {
+  padding: 20px;
+}
+.izquierda {
+  padding-left: 40px;
+  font-size: 11.5px;
+}
+.redes-sociales {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.red-social {
+  gap: 10px;
+}
+.red-social, img {
+  height: 20px;
+}
+.social-link{
+  font-size: 15px;
+}
+}
+@media (max-width: 850px) {
+  .redes-sociales {
+    gap: 10px;
+  }
+.red-social {
+    gap: 10px;
+  }
+.red-social, img {
+    height: 20px;
+  }
+.social-link {
+    font-size: 13px;
+  }
 }
 </style>

@@ -97,17 +97,14 @@ const services = ref([
   box-sizing: border-box;
   color: white;
 }
-
 .container {
   display: flex;
   flex-direction: column;
   /* justify-content: center;
   align-items: center; */
-  gap: 50px;
   background-color: #325e9b;
   /* padding:40px  20px; */
 }
-
 .service {
   position: relative;
   width: 100%;
@@ -132,10 +129,8 @@ const services = ref([
   position: relative;
   z-index: 2;
   color: white;
-  gap: 20px;
 }
-.title,
-.text {
+.title, .text {
   padding-left: 90px;
 }
 .title {
@@ -183,5 +178,90 @@ const services = ref([
 .social-link{
   text-decoration:none;
   font-size: 18px;
+}
+@media (max-width: 1500px) {
+.service {
+  min-height: 65vh;
+}
+.title {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  margin-top:5%;
+}
+.text {
+  font-size: 1.8rem;
+}
+}
+@media (min-width: 1200px) {
+.service {
+  min-height: 55vh;
+  }
+.title{
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  margin-top:8%;
+}
+.text{
+  font-size: 1.3rem;
+}
+}
+@media (max-width: 1000px){
+.service {
+  min-height: 30vh;
+  }
+.title{
+  font-size: 2rem;
+  margin-bottom: 2px;
+  margin-top:2%;
+}
+.text{
+  font-size: 1.1rem;
+}
+.footer {
+  padding: 20px;
+}
+.izquierda {
+  padding-left: 40px;
+  font-size: 11.5px;
+}
+.redes-sociales {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.red-social {
+  gap: 10px;
+}
+.red-social, img {
+  height: 20px;
+}
+.social-link{
+  font-size: 15px;
+}
+}
+@media (max-width:850px){
+.service {
+    min-height: 30vh;
+  }
+.title{
+  font-size: 30px;
+  margin-bottom: 2px;
+  margin-top:5%;
+}
+.text{
+  font-size: 17px;
+}
+.redes-sociales {
+    gap: 10px;
+  }
+.red-social {
+    gap: 10px;
+  }
+.red-social, img {
+    height: 20px;
+  }
+.social-link {
+    font-size: 13px;
+  }
 }
 </style>

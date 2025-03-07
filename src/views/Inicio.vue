@@ -6,19 +6,25 @@
       </audio>-->
       <!-- <audio autoplay>
         <source src="/_Bienvenidos a IDIMC.mp3" type="audio/mpeg" />
-      </audio> -->
+      </audio>-->
       <video ref="videoPlayer" autoplay loop playsinline>
-        <source src="/video-para web.mp4" type="video/mp4">
+        <source src="/video-para web.mp4" type="video/mp4" />
       </video>
-      <div class="title">IDIMCOL</div>
-      <div class="textoIzquierda">
-        Ingeniería y desarrollos integrales
-        <br />metalmecánicos de Colombia
+      <div>
+        <p class="title">IDIMCOL</p>
       </div>
-      <div class="textoDerecha">
-        "Hay muchas razones por las que empezar
-        <br />una empresa, pero solo una buena, una
-        <br />legítima: cambiar el mundo"
+      <div>
+        <p class="textoIzquierda">
+          Ingeniería y desarrollos integrales
+          <br />metalmecánicos de Colombia
+        </p>
+      </div>
+      <div>
+        <p class="textoDerecha">
+          "Hay muchas razones por las que empezar
+          <br />una empresa, pero solo una buena, una
+          <br />legítima: cambiar el mundo"
+        </p>
       </div>
     </div>
     <div>
@@ -41,7 +47,7 @@
         <br />Cra 13# 23-33 Girardot, Colombia
         <br />+57 302 7903706
         <br />gerencia@idimcol.com.co
-        <hr style="margin-top: 10px;"/>
+        <hr style="margin-top: 10px;" />
         <p style="margin-top: 5px;">© 2025 IDIMCOL S.A.S. Todos los derechos reservados.</p>
       </div>
       <div class="redes-sociales">
@@ -51,13 +57,21 @@
             <span>idimcol SAS Colombia</span>
           </div>
         </a>
-        <a href="https://www.instagram.com/idimcol7?igsh=MWt6OWZmZTh2Mm56Yw==" target="_blank" class="social-link">
+        <a
+          href="https://www.instagram.com/idimcol7?igsh=MWt6OWZmZTh2Mm56Yw=="
+          target="_blank"
+          class="social-link"
+        >
           <div class="red-social">
             <img src="/instagram.png" />
             <span>idimcol7</span>
           </div>
         </a>
-        <a href="https://www.tiktok.com/@idimcol?_t=ZS-8uIpWWEOBPj&_r=1" target="_blank" class="social-link">
+        <a
+          href="https://www.tiktok.com/@idimcol?_t=ZS-8uIpWWEOBPj&_r=1"
+          target="_blank"
+          class="social-link"
+        >
           <div class="red-social">
             <img src="/tik-tok.png" />
             <span>idimcol</span>
@@ -69,21 +83,24 @@
 </template>
 
 <script setup>
-import {ref, onMounted} from 'vue';
+import { ref, onMounted } from "vue";
 
 const videoPlayer = ref(null);
 onMounted(() => {
   const video = videoPlayer.value;
   video.muted = false; // desmutear video
-  
-//intentar reproducir despues de interaccion
-const playVideo = () => {
-  video.play().catch(error =>{
-    console.error('El navegador bloqueó la reproducción automática con audio:', error);
-  });
-  document.removeEventListener("click", playVideo);
-};
-document.addEventListener("click", playVideo);
+
+  //intentar reproducir despues de interaccion
+  const playVideo = () => {
+    video.play().catch(error => {
+      console.error(
+        "El navegador bloqueó la reproducción automática con audio:",
+        error
+      );
+    });
+    document.removeEventListener("click", playVideo);
+  };
+  document.addEventListener("click", playVideo);
 });
 // import { ref, onMounted } from "vue";
 
@@ -107,7 +124,6 @@ document.addEventListener("click", playVideo);
   height: 100vh;
   overflow: hidden;
 }
-
 video {
   position: absolute;
   width: 100%;
@@ -115,7 +131,6 @@ video {
   object-fit: cover;
   z-index: 1;
 }
-
 .title {
   position: relative;
   z-index: 2;
@@ -125,7 +140,6 @@ video {
   top: 8rem;
   left: 3rem;
 }
-
 .textoIzquierda {
   position: relative;
   z-index: 1;
@@ -136,23 +150,20 @@ video {
   top: 20rem;
   right: 28rem;
 }
-
 .textoDerecha {
   text-align: center;
   position: relative;
   z-index: 1;
   color: white;
-  font-size: 2rem;
+  font-size: 40px;
   font-weight: bold;
   top: 41rem;
-  left: 15rem;
 }
 .container2 {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
   height: 100vh;
   overflow: hidden;
 }
@@ -212,11 +223,141 @@ video {
   text-align: center;
   gap: 10px;
 }
-.red-social, img {
+.red-social,
+img {
   height: 25px;
 }
-.social-link{
-  text-decoration:none;
+.social-link {
+  text-decoration: none;
   font-size: 18px;
 }
+@media (max-width: 1500px) {
+  .title {
+    font-size: 7rem;
+  }
+  .textoIzquierda {
+    font-size: 1.8rem;
+    right: 24.5rem;
+  }
+  .textoDerecha {
+    font-size: 1.5rem;
+    left: 8rem;
+  }
+  .imgFondo {
+    object-fit: cover;
+    width: 110%;
+    height: 100vh;
+  }
+  .text {
+    font-size: 2.5rem;
+    top: 9rem;
+  }
+  .btn {
+    top: 74%;
+  }
+}
+@media (max-width: 1200px) {
+  .title {
+    font-size: 5.5rem;
+  }
+  .textoIzquierda {
+    font-size: 1.5rem;
+    right: 19rem;
+    top: 30%;
+  }
+  .textoDerecha {
+    font-size: 1.3rem;
+    left: 4rem;
+  }
+  .imgFondo {
+    position: absolute;
+    object-fit: cover;
+    width: 140%;
+    height: 100vh;
+  }
+  .text {
+    font-size: 2.5rem;
+    top: 9rem;
+  }
+  .btn {
+    top: 74%;
+  }
+}
+@media (max-width: 1000px) {
+  .title {
+    font-size: 5.5rem;
+  }
+  .textoIzquierda {
+    font-size: 1rem;
+  }
+  .textoDerecha {
+    font-size: 1rem;
+  }
+  .imgFondo {
+    width: 160%;
+  }
+  .footer {
+    padding: 20px;
+  }
+  .izquierda {
+    padding-left: 40px;
+    font-size: 11.5px;
+  }
+  .redes-sociales {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .red-social {
+    gap: 10px;
+  }
+  .red-social,
+  img {
+    height: 20px;
+  }
+  .social-link {
+    font-size: 15px;
+  }
+}
+@media (max-width: 850px) {
+.title {
+  font-size: 85px;
+}
+.textoIzquierda{
+  width: 15rem;
+  right: 18rem;
+}
+.textoDerecha {
+  font-size:1rem;
+  width: 11rem;
+  left: 20px;
+}
+.imgFondo {
+  width: 200%;
+}
+.logo {
+  width: 30%;
+  top: 35%;
+}
+.text {
+  font-size: 2.5rem;
+  top: 4rem;
+}
+.btn {
+  top: 70%;
+}
+.redes-sociales {
+    gap: 10px;
+  }
+.red-social {
+    gap: 10px;
+  }
+.red-social, img {
+    height: 20px;
+  }
+.social-link {
+    font-size: 13px;
+  }
+}
+
 </style>

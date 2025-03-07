@@ -62,21 +62,21 @@
     <div class="container3">
         <div class="title3">Encuentranos Aquí</div>
         <div class="ubicacion">
-         Ubicación:<br>
-         📌 Carrera 13 #23-33<br>
-         🏙 Barrio - Girardot
-         📍 Ciudad: Bucaramanga<br>
-         co País: Colombia<br><br>
-         Teléfonos:<br>
-         📲 +57 316 4468484<br> 
-         📲 +57 317 5768082<br>
-         📲 +57 315 2434517<br>
-         📲 +57 302 7903706<br><br>
-         Correo electrónico:<br>
-         ✉ gerencia@idimcol.com.co<br>
-         ✉ comercial@idimcol.com.co<br>
+         <p><b>Ubicación:</b></p>
+         📌Carrera 13 #23-33<br>
+         🏙 Barrio - Girardot<br>
+         Ciudad: Bucaramanga<br>
+         País: Colombia<br><br>
+         <p><b>Teléfonos:</b></p>
+         📲+57 316 4468484<br> 
+         📲+57 317 5768082<br>
+         📲+57 315 2434517<br>
+         📲+57 302 7903706<br><br>
+         <p><b>Correo electrónico:</b></p>
+         <p id="correo">gerencia@idimcol.com.co</p>
+         <p id="correo">comercial@idimcol.com.co</p>
         </div>
-        <div id="map" style="height: 800px;"></div>
+        <div id="map"></div>
     </div>
     <div class="footer">
       <div class="izquierda">
@@ -125,7 +125,7 @@ onMounted(async () => {
     return;
   }
 
-  const map = L.map('map').setView([7.124607928853439, -73.13054456123169], 15); // Bucaramanga
+  const map = L.map('map').setView([7.124607928853439, -73.13054456123169], 17); // Bucaramanga
 
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
@@ -153,8 +153,7 @@ onMounted(async () => {
 }
 .imgFondo {
   position: absolute;
-  object-fit: cover;
-  width: 100%;
+  width: 120%;
   height: 100vh;
   z-index: 1;
 }
@@ -176,7 +175,6 @@ onMounted(async () => {
   top: 14rem;
   left: 4rem;
 }
-
 .text {
   position: absolute;
   z-index: 2;
@@ -190,16 +188,21 @@ onMounted(async () => {
 }
 .container2 {
   background-color: #325e9b;
-  height: 100vh;
   color: white;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 10px;
   gap: 40px;
 }
+.titleVision,.titleMision {
+  font-size: 4rem;
+  font-weight: bold;
+}
+.textVision,.textMision {
+  font-size: 1.3rem;
+}
 .vision,.mision {
   padding: 20px;
-  border-radius: 20px;
   text-align: justify;
   flex-direction: column;
   justify-content: center;
@@ -215,16 +218,8 @@ onMounted(async () => {
 .imgMision{
     margin: 6rem auto;
 }
-.titleVision,.titleMision {
-  font-size: 4rem;
-  font-weight: bold;
-}
-.textVision,.textMision {
-  font-size: 1.3rem;
-}
 .container3 {
   background-color: #325e9b;
-  height: 100vh;
   color: white;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -241,8 +236,9 @@ onMounted(async () => {
   position: relative;
   font-size: 2rem;
   padding:8rem;
-  }
-  .footer {
+}
+/* footer o pie de pagina */
+.footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -270,5 +266,134 @@ onMounted(async () => {
 .social-link{
   text-decoration:none;
   font-size: 18px;
+}
+/* Responsividad a 1500px */
+@media (max-width:1500px) {
+.container3 {
+  padding: 10px;
+  gap: 40px;
+}
+.title3{
+  position: absolute;
+  font-size: 4rem;
+  font-weight: bold;
+  left:8rem;
+}
+.ubicacion{
+  position: relative;
+  font-size: 1.7rem;
+  padding:8rem;
+}
+#map{
+  width: 100%;
+  height: 70%;
+  top: 150px;
+  right: 50px;
+}
+}
+
+/* Responsividad a 1200px */
+@media (max-width:1200px){
+.imgFondo {
+  width: 140%;
+  height: 100vh;
+}
+.title {
+  font-size: 4rem;
+}
+.frase {
+  font-size: 1.2rem;
+  top: 12rem;
+}
+.text {
+  font-size: 1.4rem;
+  max-width: 80%;
+  top: 17rem;
+}
+.titleVision,.titleMision {
+  font-size: 3.5rem;
+}
+.textVision,.textMision {
+  font-size: 1.2rem;
+}
+.title3{
+  font-size: 3.6rem;
+  left:4rem;
+}
+.ubicacion{
+  font-size: 1.4rem;
+  right: 4rem;
+}
+#map{
+  width: 100%;
+  height: 70%;
+  top: 120px;
+  right: 50px;
+}
+}
+@media (max-width: 1000px) {
+.imgFondo {
+    width: 160%;
+}
+.ubicacion{
+  font-size: 21px;
+}
+#correo{
+  font-size: 15.8px;
+}
+.footer {
+  padding: 20px;
+}
+.izquierda {
+  padding-left: 40px;
+  font-size: 11.5px;
+}
+.redes-sociales {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.red-social {
+  gap: 10px;
+}
+.red-social, img {
+  height: 20px;
+}
+.social-link{
+  font-size: 15px;
+}
+}
+@media (max-width: 850px) {
+.imgFondo {
+    width: 200%;
+}
+.title{
+  font-size: 3rem;
+}
+.frase{
+  font-size: 15px;
+}
+.imgVision,.imgMision {
+  width: 90%;
+  margin: 4rem auto;
+}
+.imgMision{
+  margin: 8rem auto;
+}
+.ubicacion{
+  font-size: 20px;
+}
+.redes-sociales {
+    gap: 10px;
+  }
+.red-social {
+    gap: 10px;
+  }
+.red-social, img {
+    height: 20px;
+  }
+.social-link {
+    font-size: 13px;
+  }
 }
 </style> 

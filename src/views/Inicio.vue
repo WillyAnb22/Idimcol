@@ -54,7 +54,7 @@
         <a href="https://www.facebook.com/share/14ucNZh2Zi/" target="_blank" class="social-link">
           <div class="red-social">
             <img src="/facebook.png" />
-            <span>idimcol SAS Colombia</span>
+            <span>idimcolSAS Colombia</span>
           </div>
         </a>
         <a
@@ -132,32 +132,33 @@ video {
   z-index: 1;
 }
 .title {
-  position: relative;
+  position: absolute;
   z-index: 2;
   color: white;
-  font-size: 8rem;
+  font-size: 9rem;
   font-weight: bold;
   top: 8rem;
   left: 3rem;
 }
 .textoIzquierda {
-  position: relative;
+  position: absolute;
   z-index: 1;
   color: white;
   font-size: 2rem;
   font-weight: bold;
   font-style: italic;
   top: 20rem;
-  right: 28rem;
+  left: 3%;
 }
 .textoDerecha {
   text-align: center;
-  position: relative;
+  position: absolute;
   z-index: 1;
   color: white;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: bold;
   top: 41rem;
+  left: 64%;
 }
 .container2 {
   position: relative;
@@ -220,7 +221,6 @@ video {
 .red-social {
   display: flex;
   align-items: center;
-  text-align: center;
   gap: 10px;
 }
 .red-social,
@@ -311,8 +311,7 @@ img {
   .red-social {
     gap: 10px;
   }
-  .red-social,
-  img {
+  .red-social, img {
     height: 20px;
   }
   .social-link {
@@ -359,5 +358,33 @@ img {
     font-size: 13px;
   }
 }
-
+@media (max-width:600px){
+  .title{
+    font-size: 70px;
+  }
+  .textoDerecha{
+  font-size:1rem;
+  width: 11rem;
+  }
+  .imgFondo{
+    width: 260%;
+  }
+  .izquierda {
+    padding-left: 30px;
+    font-size: 10px;
+  }
+  .redes-sociales {
+    display: flex;
+    flex-direction: column;
+  }
+  .red-social {
+    gap: 8px;
+  }
+  .red-social, img {
+    height: 30px;
+  }
+  span{
+    display: none; /* Se oculta en pantallas menores a 600px */
+  }
+}
 </style>

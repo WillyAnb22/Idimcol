@@ -218,4 +218,23 @@ const sectores = reactive([
     font-size: 13px;
   }
 }
+@media (max-width: 600px){
+  .izquierda {
+    padding-left: 30px;
+    font-size: 10px;
+  }
+.redes-sociales {
+    display: flex;
+    flex-direction: column;
+  }
+.red-social {
+    gap: 8px;
+  }
+.red-social, img {
+    height: 30px;
+  }
+span{
+    display: none; /* Se oculta en pantallas menores a 600px */
+  }
+}
 </style>

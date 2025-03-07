@@ -54,7 +54,6 @@ onMounted(() => {
 nav {
   display: flex;
   gap: 40px;
-
 }
 nav a {
   font-size:20px;
@@ -67,5 +66,10 @@ nav a.router-link-exact-active{
   color: #737375;
   border-bottom: 2px solid #325b9c; /* Línea debajo del enlace activo */
   padding-bottom: 5px; /* Espaciado para la línea */
+}
+@media (max-width: 600px){
+  .logo{
+    margin-left: 20px;
+  }
 }
 </style>

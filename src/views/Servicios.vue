@@ -1,21 +1,3 @@
-<!-- <template>
-  <div>
-    <div class="container">
-        <div class="img">
-            <q-img src="/src/assets/estructurasMetalicas.png"></q-img>
-        </div>
-     <div class="title">NUESTROS SERVIVICIOS</div>
-     <div class="title1"> ESTRUCTURAS METÁLICAS</div>
-     <div class="text1">
-        Ingenieria de detalle, simulación, calculo estructural, análisis de <br>
-        cargas y personal altamente calificado, son los componentes que <br>
-        acompañan nuestros procesos de calibración, fabricación y montaje<br>
-        de sus proyectos industriales.
-     </div>
-    </div>
-  </div>
-</template>
--->
 <template>
   <div>
     <div class="container">
@@ -110,7 +92,6 @@ const services = ref([
   width: 100%;
   display: flex;
   align-items: center;
-  /* justify-content: center;  */
   min-height: 70vh;
   overflow: hidden;
 }
@@ -145,7 +126,6 @@ const services = ref([
   text-align: justify;
   justify-content: center;
   max-width: 90%;
-  /* white-space: pre-line;  respeta los saltos de línea  */
 }
 .service:hover .background {
   transform: scale(1.1);
@@ -192,7 +172,7 @@ const services = ref([
   font-size: 1.8rem;
 }
 }
-@media (min-width: 1200px) {
+@media (max-width: 1200px) {
 .service {
   min-height: 55vh;
   }
@@ -262,6 +242,36 @@ const services = ref([
   }
 .social-link {
     font-size: 13px;
+  }
+}
+@media (max-width:600px){
+/* .service {
+    min-height: 30vh;
+  } */
+.title{
+  font-size: 24px;
+  margin-bottom: 2px;
+  margin-top:5%;
+}
+.text{
+  font-size: 14px;
+}
+.izquierda {
+    padding-left: 30px;
+    font-size: 10px;
+  }
+.redes-sociales {
+    display: flex;
+    flex-direction: column;
+  }
+.red-social {
+    gap: 8px;
+  }
+.red-social, img {
+    height: 30px;
+  }
+span{
+    display: none; /* Se oculta en pantallas menores a 600px */
   }
 }
 </style>

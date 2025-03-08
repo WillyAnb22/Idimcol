@@ -35,7 +35,7 @@
           inversión con utilidades a su sociedad
         </div>
         <div class="imgVision">
-          <q-img src="/1.png"></q-img>
+          <q-img src="https://wautechnologies.com/wp-content/uploads/2023/07/fabricas-inteligentes.jpg"> </q-img>
         </div>
       </div>
       <div class="mision">

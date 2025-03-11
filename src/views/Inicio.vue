@@ -135,19 +135,19 @@ video {
   position: absolute;
   z-index: 2;
   color: white;
-  font-size: 9rem;
+  font-size: 8rem;
   font-weight: bold;
-  top: 8rem;
+  top: 5rem;
   left: 3rem;
 }
 .textoIzquierda {
   position: absolute;
   z-index: 1;
   color: white;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   font-style: italic;
-  top: 20rem;
+  top: 15rem;
   left: 3%;
 }
 .textoDerecha {
@@ -155,10 +155,10 @@ video {
   position: absolute;
   z-index: 1;
   color: white;
-  font-size: 35px;
+  font-size: 25px;
   font-weight: bold;
-  top: 41rem;
-  left: 64%;
+  top: 33rem;
+  left: 62%;
 }
 .container2 {
   position: relative;
@@ -177,9 +177,9 @@ video {
 }
 .logo {
   position: absolute;
-  width: 15%;
+  width: 20%;
   height: auto;
-  top: 40%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
@@ -188,9 +188,9 @@ video {
   position: relative;
   z-index: 2;
   color: white;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
-  top: 10rem;
+  top: 7rem;
 }
 .btn {
   position: absolute;
@@ -283,18 +283,23 @@ img {
     top: 74%;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1035px) {
   .title {
     font-size: 5.5rem;
   }
   .textoIzquierda {
-    font-size: 1rem;
+    font-size: 1.3rem;
+    left: 5%;
   }
   .textoDerecha {
     font-size: 1rem;
+    left: 65%;
   }
   .imgFondo {
     width: 160%;
+  }
+  .text{
+    top:10%;
   }
   .footer {
     padding: 20px;

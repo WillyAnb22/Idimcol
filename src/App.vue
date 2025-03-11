@@ -5,7 +5,7 @@
         <q-toolbar class="toolbar">
           <div class="logo">
             <router-link to="/">
-              <img src="/logo.png" to="/" style="height: 50px;" width="auto;" />
+              <img src="/logo.png" to="/" style="height: 70px;" width="auto;" />
             </router-link>
           </div>
 

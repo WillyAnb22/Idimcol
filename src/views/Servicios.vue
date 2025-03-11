@@ -112,17 +112,16 @@ const services = ref([
   color: white;
 }
 .title, .text {
-  padding-left: 90px;
+  padding-left: 40px;
 }
 .title {
   font-size: 3rem;
   font-weight: bold;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   color: rgb(195, 195, 195) ;
 }
 .text {
   font-size: 1.8rem;
-  line-height: 1.6;
   text-align: justify;
   justify-content: center;
   max-width: 90%;

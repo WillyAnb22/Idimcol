@@ -181,7 +181,7 @@ onMounted(async () => {
   position: absolute;
   z-index: 2;
   color: white;
-  font-size: 5rem;
+  font-size: 70px;
   font-weight: bold;
   top: 6rem;
   left: 4rem;
@@ -200,7 +200,7 @@ onMounted(async () => {
   z-index: 2;
   color: white;
   text-align: justify;
-  font-size: 1.8rem;
+  font-size: 27px;
   font-weight: bold;
   max-width: 90%;
   top: 19rem;
@@ -261,6 +261,12 @@ onMounted(async () => {
   font-size: 2rem;
   padding: 8rem;
 }
+#map {
+    width: 100%;
+    height: 70%;
+    top: 150px;
+    right: 50px;
+  }
 /* footer o pie de pagina */
 .footer {
   display: grid;
@@ -309,12 +315,12 @@ img {
     font-size: 1.7rem;
     padding: 8rem;
   }
-  #map {
+  /* #map {
     width: 100%;
     height: 70%;
     top: 150px;
     right: 50px;
-  }
+  } */
 }
 
 /* Responsividad a 1200px */
@@ -358,9 +364,15 @@ img {
     right: 50px;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1035px) {
   .imgFondo {
-    width: 160%;
+    width: 120%;
+  }
+  .title{
+    font-size: 50px;
+  }
+  .text{
+    font-size: 20px;
   }
   .ubicacion {
     font-size: 21px;

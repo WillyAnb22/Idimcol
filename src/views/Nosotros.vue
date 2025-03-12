@@ -8,7 +8,7 @@
       <div
         class="frase"
       >"En IDIMCOL, transformamos el metal en soluciones innovadoras para la industria."</div>
-      <div class="text">
+     <div class="text">
         IDIMCOL SAS fue fundada en la ciudad de Bucaramanga, Santander, Colombia, en el año 2016 para satisfacer las necesidades de
         reparaciones y fabricaciones mecánicas, metalmecánicas y metalúrgicas en diversas industrias del país.
         Su objetivo es ofrecer soluciones rápidas, innovadoras y confiables para mantenimiento y optimización de maquinaria,
@@ -175,24 +175,23 @@ onMounted(async () => {
   position: absolute;
   width: 120%;
   height: 100vh;
+  filter: brightness(30%); /* Reduce el brillo al 50% */
   z-index: 1;
 }
 .title {
   position: absolute;
   z-index: 2;
-  color: white;
-  font-size: 70px;
+  font-size: 65px;
   font-weight: bold;
-  top: 6rem;
+  top: 5%;
   left: 4rem;
 }
 .frase {
   position: absolute;
   z-index: 2;
-  color: white;
   font-weight: bold;
   font-size: 1.5rem;
-  top: 14rem;
+  top: 20%;
   left: 4rem;
 }
 .text {
@@ -203,12 +202,11 @@ onMounted(async () => {
   font-size: 27px;
   font-weight: bold;
   max-width: 90%;
-  top: 19rem;
+  top: 30%;
   left: 4rem;
 }
 .container2 {
   background-color: #325e9b;
-  color: white;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 10px;
@@ -237,10 +235,10 @@ onMounted(async () => {
   justify-content: center;
   align-items: center;
   width: 60%;
-  margin: 4rem auto;
+  margin: 4% auto;
 }
 .imgMision {
-  margin: 6rem auto;
+  margin: 15% auto;
 }
 .container3 {
   background-color: #325e9b;
@@ -370,6 +368,21 @@ img {
     top: 120px;
     right: 50px;
   }
+}
+@media (max-width: 1100px){
+  .title{
+    font-size:55px;
+    top:2%;
+  }
+  .frase{
+    top: 16%;
+  }
+  .text{
+    top:25%;
+  }
+.imgMision {
+  margin: 17% auto;
+}
 }
 @media (max-width: 1035px) {
   .imgFondo {

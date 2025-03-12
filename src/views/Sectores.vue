@@ -69,7 +69,7 @@ const sectores = reactive([
     descripcion:
     "Nos especializamos en el suministro de materiales y soluciones para el sector industrial, donde la precisión, resistencia y calidad son fundamentales. Este sector abarca una amplia gama de industrias que requieren componentes y estructuras de alto rendimiento para garantizar procesos eficientes y seguros. Nuestro compromiso es proporcionar productos que cumplan con los más altos estándares, respaldando la producción y el desarrollo de piezas esenciales para la manufactura, la construcción y otras aplicaciones industriales.",
     imagenes: [
-      "/2 - Industrial.png",
+      "/2 - Industrial1.png",
       "/3 - Industrial.png",
       "/4 - Industrial.png",
       "/5 - Industrial.png",

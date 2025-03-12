@@ -134,30 +134,27 @@ video {
 .title {
   position: absolute;
   z-index: 2;
-  color: white;
   font-size: 8rem;
   font-weight: bold;
-  top: 5rem;
-  left: 3rem;
+  top: 8%;
+  left: 3%;
 }
 .textoIzquierda {
   position: absolute;
   z-index: 1;
-  color: white;
   font-size: 1.5rem;
   font-weight: bold;
   font-style: italic;
-  top: 15rem;
-  left: 3%;
+  top: 30%;
+  left: 4%;
 }
 .textoDerecha {
   text-align: center;
   position: absolute;
   z-index: 1;
-  color: white;
   font-size: 25px;
   font-weight: bold;
-  top: 33rem;
+  top: 73%;
   left: 62%;
 }
 .container2 {
@@ -187,10 +184,9 @@ video {
 .text {
   position: relative;
   z-index: 2;
-  color: white;
-  font-size: 2.5rem;
+  font-size: 2px;
   font-weight: bold;
-  top: 7rem;
+  top: 7px;
 }
 .btn {
   position: absolute;
@@ -288,6 +284,14 @@ img {
   .btn {
     top: 70%;
   }
+}
+@media (max-width: 1100px){
+  .textoDerecha{
+    left: 58%;
+  }
+  .text{
+    top: 10%;
+ }
 }
 @media (max-width: 1035px) {
   .title {

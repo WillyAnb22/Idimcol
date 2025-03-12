@@ -102,6 +102,7 @@ const services = ref([
   width: 100%;
   height: 100%;
   background-size: 120%;
+  filter: brightness(50%); /* Reduce el brillo al 50% */
   background-position: center;
   background-repeat: no-repeat;
   transition: transform 0.3s ease-in-out;

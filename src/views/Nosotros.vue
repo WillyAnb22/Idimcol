@@ -322,9 +322,13 @@ img {
     right: 50px;
   } */
 }
-
-/* Responsividad a 1200px */
-@media (max-width: 1200px) {
+@media (max-width:1300px){
+  .text{
+    font-size: 25px;
+  }
+}
+/* Responsividad a 1250px */
+@media (max-width: 1250px) {
   .imgFondo {
     width: 140%;
     height: 100vh;
@@ -337,7 +341,7 @@ img {
     top: 12rem;
   }
   .text {
-    font-size: 1.4rem;
+    font-size: 23px;
     max-width: 80%;
     top: 17rem;
   }
@@ -349,6 +353,9 @@ img {
   .textMision {
     font-size: 1.2rem;
   }
+  .imgMision {
+  margin: 25% auto;
+}
   .title3 {
     font-size: 3.6rem;
     left: 4rem;
@@ -374,6 +381,9 @@ img {
   .text{
     font-size: 20px;
   }
+  .imgMision {
+  margin: 20% auto;
+}
   .ubicacion {
     font-size: 21px;
   }

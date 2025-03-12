@@ -236,12 +236,12 @@ img {
     font-size: 7rem;
   }
   .textoIzquierda {
-    font-size: 1.8rem;
-    right: 24.5rem;
+    font-size: 30px;
+    left: 4%;
   }
   .textoDerecha {
-    font-size: 1.5rem;
-    left: 8rem;
+    font-size: 25px;
+    left: 60%;
   }
   .imgFondo {
     object-fit: cover;
@@ -250,24 +250,30 @@ img {
   }
   .text {
     font-size: 2.5rem;
-    top: 9rem;
+    top: 14%;
   }
   .btn {
     top: 74%;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width:1300px){
+  .textoDerecha{
+    font-size: 20px;
+    left: 65%;
+  }
+}
+@media (max-width: 1250px) {
   .title {
-    font-size: 5.5rem;
+    font-size: 100px;
   }
   .textoIzquierda {
-    font-size: 1.5rem;
-    right: 19rem;
-    top: 30%;
+    font-size: 30px;
+    left: 50px;
+    top: 33%;
   }
   .textoDerecha {
-    font-size: 1.3rem;
-    left: 4rem;
+    font-size: 25px;
+    left: 52%;
   }
   .imgFondo {
     position: absolute;
@@ -277,10 +283,10 @@ img {
   }
   .text {
     font-size: 2.5rem;
-    top: 9rem;
+    top: 9%;
   }
   .btn {
-    top: 74%;
+    top: 70%;
   }
 }
 @media (max-width: 1035px) {

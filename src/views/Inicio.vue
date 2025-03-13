@@ -41,44 +41,7 @@
         </div>
       </div>
     </div>
-    <div class="footer">
-      <div class="izquierda">
-        Información de Contacto
-        <br />Cra 13# 23-33 Girardot, Colombia
-        <br />+57 302 7903706
-        <br />gerencia@idimcol.com.co
-        <hr style="margin-top: 10px;" />
-        <p style="margin-top: 5px;">© 2025 IDIMCOL S.A.S. Todos los derechos reservados.</p>
-      </div>
-      <div class="redes-sociales">
-        <a href="https://www.facebook.com/share/14ucNZh2Zi/" target="_blank" class="social-link">
-          <div class="red-social">
-            <img src="/facebook.png" />
-            <span>idimcolSAS Colombia</span>
-          </div>
-        </a>
-        <a
-          href="https://www.instagram.com/idimcol7?igsh=MWt6OWZmZTh2Mm56Yw=="
-          target="_blank"
-          class="social-link"
-        >
-          <div class="red-social">
-            <img src="/instagram.png" />
-            <span>idimcol7</span>
-          </div>
-        </a>
-        <a
-          href="https://www.tiktok.com/@idimcol?_t=ZS-8uIpWWEOBPj&_r=1"
-          target="_blank"
-          class="social-link"
-        >
-          <div class="red-social">
-            <img src="/tik-tok.png" />
-            <span>idimcol</span>
-          </div>
-        </a>
-      </div>
-    </div>
+
   </div>
 </template>
 

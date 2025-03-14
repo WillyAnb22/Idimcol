@@ -22,17 +22,16 @@
       <div class="vision">
         <div class="titleVision">Visión</div>
         <div class="textVision">
-          Para el año 2023, IDIMCOL S.A.S será reconocida a nivel
-          nacional como una empresa de soluciones y desarrollos
-          efectivos y confiables en la industria metalmecánica y
-          metalúrgica, respaldados por un equipo humano dinámico
-          e integral, enfocado en la innovación, compromiso ambiental
-          y avances tecnológicos en nuestros procesos de diseño,
-          fabricación y reparación de equipos y maquinaria industrial,
-          que permita cumplir las necesidades y expectativas de
-          nuestros clientes, así como generar los recursos apropiados
-          para el funcionamiento de la empresa y un retorno de la
-          inversión con utilidades a su sociedad
+          Para el año 2028, IDIMCOL S.A.S será reconocida a nivel
+          nacional como un fuerte grupo empresarial en la industria 
+          metalmecánica y metalúrgica, respaldados por un equipo 
+          humano dinámico e integral, enfocado en la innovación, 
+          compromiso ambiental y avances tecnológicos en nuestros 
+          procesos de diseño, fabricación y reparación de equipos 
+          y maquinaria industrial, que permita cumplir las necesidades 
+          y expectativas de nuestros clientes, así como generar 
+          los recursos apropiados para el funcionamiento de la empresa 
+          y un retorno de la inversión con utilidades a su sociedad.
         </div>
         <div class="imgVision">
           <q-img src="https://wautechnologies.com/wp-content/uploads/2023/07/fabricas-inteligentes.jpg"> </q-img>
@@ -84,7 +83,10 @@
           <b>Correo electrónico:</b>
         </p>
         <p>gerencia@idimcol.com.co</p>
+
         <p>comercial@idimcol.com.co</p>
+
+        <p>gesproyectos@idimcol.com.co</p>
       </div>
       <div id="map"></div>
     </div>

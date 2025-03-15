@@ -16,6 +16,8 @@
               <router-link to="/Nosotros">Nuestra Empresa</router-link>
               <router-link to="/Servicios">Servicios</router-link>
               <router-link to="/Sectores">Sectores</router-link>
+              <router-link to="/galeria">Conocenos</router-link>
+              <router-link to="/Eventos">Eventos</router-link>
             </nav>
           </div> 
         </q-toolbar>

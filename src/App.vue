@@ -13,7 +13,7 @@
           <div class="rutas">
             <nav>
               <router-link to="/">Inicio</router-link>
-              <router-link to="/Nosotros">Nuestra Empresa</router-link>
+              <router-link to="/NuestraEmpresa">Nuestra Empresa</router-link>
               <router-link to="/Servicios">Servicios</router-link>
               <router-link to="/Sectores">Sectores</router-link>
               <router-link to="/galeria">Conocenos</router-link>

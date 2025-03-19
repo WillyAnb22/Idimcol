@@ -24,7 +24,7 @@
       </q-header>
       <q-page-container>
         <router-view></router-view>
-        <!-- <MyBtn></MyBtn> -->
+        <MyBtn></MyBtn>
       <div class="footer">
       <div class="izquierda">
         Información de Contacto

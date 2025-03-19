@@ -38,7 +38,7 @@ const services = ref([
     image: "/diseñoMecanico.png",
     title: "DISEÑO MECÁNICO",
     description:
-      "Apoyados en el software de diseño asistido por computador (CAD) Solidwoks, nuestro departamento de ingeniería y diseño evalúa las condiciones técnicas y conceptuales de sus equipos y máquinas industriales y accesorios para garantizar el óptimo desarrollo de sus operaciones."
+      "Apoyados en el software de diseño asistido por computador (CAD) Solidwoks, nuestro departamento de ingeniería y diseño evalúa las condiciones técnicas y conceptuales de sus equipos y máquinas industriales y elementos para garantizar el óptimo desarrollo de sus operaciones."
   }
 ]);
 </script>

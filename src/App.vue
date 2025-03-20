@@ -37,7 +37,7 @@
       <div class="redes-sociales">
         <a href="https://www.facebook.com/share/14ucNZh2Zi/" target="_blank" class="social-link">
           <div class="red-social">
-            <img src="/facebook.png" />
+            <img src="icons/facebook.png" />
             <span>idimcolSAS Colombia</span>
           </div>
         </a>
@@ -47,7 +47,7 @@
           class="social-link"
         >
           <div class="red-social">
-            <img src="/instagram.png" />
+            <img src="icons/instagram.png" />
             <span>idimcol7</span>
           </div>
         </a>
@@ -57,7 +57,7 @@
           class="social-link"
         >
           <div class="red-social">
-            <img src="/tik-tok.png" />
+            <img src="icons/tik-tok.png" />
             <span>idimcol</span>
           </div>
         </a>

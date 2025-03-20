@@ -1,16 +1,57 @@
+
 <template>
   <div class="q-px-sm q-py-lg">
     <div class="column items-center" style="margin-top: 100px; margin-bottom: 100px;">
-      <q-fab color="purple" icon="keyboard_arrow_up" direction="up">
-        <q-fab-action color="primary" @click="onClick" icon="mail" />
-        <a href="https://wa.me/573101234567" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="50px">
-</a>
-        <q-fab-action color="secondary" @click="onClick" icon="alarm" />
-      </q-fab>
+      
+      <!-- Botón con imagen -->
+      <q-btn flat round dense>
+        <img 
+          src="/icons/contactanos.png" 
+          alt="Contáctanos"
+          width="200"
+          height="180"
+        />
+        <!-- Menú con solo WhatsApp -->
+        <q-menu anchor="top middle" self="bottom middle">
+          <q-list style="min-width: 150px">
+            <q-item clickable v-ripple @click="openWhatsApp">
+              <q-item-section avatar>
+                <q-icon name="img:/icons/whatsapp.png" />
+              </q-item-section>
+              <q-item-section>
+                WhatsApp
+              </q-item-section>
+            </q-item>
+          </q-list>
+        </q-menu>
+      </q-btn>
+
     </div>
   </div>
 </template>
+
+<script setup>
+const openWhatsApp = () => {
+  window.open("https://wa.me/573101234567", "_blank");
+};
+</script>
+
+  <!-- <div class="q-px-sm q-py-lg">
+    <div class="column items-center" style="margin-top: 100px; margin-bottom: 100px;">
+      <q-fab  direction="up" icon="img:icons/contactanos.png">
+      <q-fab-action color="green" @click="openWhatsApp">
+        <q-icon name="img:https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"></q-icon>
+      </q-fab-action>
+      </q-fab>
+    </div>
+  </div> -->
+
+
+
+// const openWhatsApp = () => {
+//   window.open("https://wa.me/573101234567","_blank");
+// }
+
   <!-- <div>
     <q-fab
         v-model="fabRight"
@@ -27,14 +68,3 @@
       </q-fab>
   </div> -->
 
-// <script setup>
-// import { ref } from 'vue'
-
-// const fabLeft = ref(true)
-// const fabCenter = ref(true)
-// const fabRight = ref(true);
-
-// const onClick = () => {
-//   console.log('Clicked on a fab action')
-// }
-// </script>

@@ -254,7 +254,7 @@ img {
   }
   .text{
     top: 10%;
- }
+}
 }
 @media (max-width: 1035px) {
   .title {

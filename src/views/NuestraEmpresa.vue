@@ -72,23 +72,21 @@
         <br />
         <br />
         <p>
-          <b>Teléfonos:</b>
-        </p>📲+57 316 4468484
-        <br />📲+57 317 5768082
-        <br />📲+57 315 2434517
-        <br />📲+57 302 7903706
-        <br />
-        <br />
-        <p>
-          <b>Correo electrónico:</b>
+          <b>Contactos:</b>
         </p>
+        📲+57 302 7903706<br>
+        (607)-6346608
+        <br /><br><hr><br>
         <p>gerencia@idimcol.com.co</p>
-
+        📲+57 316 4468484
         <p>comercial@idimcol.com.co</p>
-
+        📲+57 317 5768082
         <p>gesproyectos@idimcol.com.co</p>
+        📲+57 315 2434517
+
       </div>
       <div id="map"></div>
+
     </div>
   </div>
 </template>
@@ -107,17 +105,25 @@ onMounted(async () => {
     return;
   }
 
-  const map = L.map("map").setView([7.124607928853439, -73.13054456123169], 17); // Bucaramanga
+  const latitude = 7.124607928853439;
+  const longitude = -73.13054456123169;
+
+  const map = L.map("map").setView([latitude, longitude], 17); // Bucaramanga
 
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
     attribution:
       '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
   }).addTo(map);
 
-  L.marker([7.124607928853439, -73.13054456123169])
+  L.marker([latitude, longitude])
     .addTo(map)
     .bindPopup("IDIMCOL SAS - Bucaramanga")
     .openPopup();
+
+    //Evento para ir al gps
+    map.on("click", () => {
+      window.open(`https://www.google.com/maps/dir/?api=1&destination=${latitude},${longitude}`,"_blanck");
+    });
 });
 </script>
 

@@ -1,38 +1,42 @@
-
 <template>
-  <div class="q-px-sm q-py-lg">
-    <div class="column items-center" style="margin-top: 100px; margin-bottom: 100px;">
-      
-      <!-- Botón con imagen -->
-      <q-btn flat round dense>
-        <img 
-          src="/icons/contactanos.png" 
-          alt="Contáctanos"
-          width="200"
-          height="180"
-        />
-        <!-- Menú con solo WhatsApp -->
-        <q-menu anchor="top middle" self="bottom middle">
-          <q-list style="min-width: 150px">
-            <q-item clickable v-ripple @click="openWhatsApp">
-              <q-item-section avatar>
-                <q-icon name="img:/icons/whatsapp.png" />
-              </q-item-section>
-              <q-item-section>
-                WhatsApp
-              </q-item-section>
-            </q-item>
-          </q-list>
-        </q-menu>
-      </q-btn>
+  <div class="fixed-button"  >
+    <!-- Botón con imagen fijo en el lado izquierdo -->
 
-    </div>
+      <img 
+        src="/icons/contactanos.png" 
+        width="200"
+        height="180"
+      />
+      <!-- Menú con solo WhatsApp -->
+      <q-menu anchor="top middle" self="bottom middle">
+        <q-list style="min-width: 150px">
+          <q-item clickable v-ripple @click="openWhatsApp">
+            <q-item-section avatar>
+              <q-icon name="img:/icons/whatsapp.png" />
+            </q-item-section>
+            <q-item-section>
+              WhatsApp
+            </q-item-section>
+          </q-item>
+        </q-list>
+      </q-menu>
+
   </div>
 </template>
 
+<style scoped>
+.fixed-button {
+  position: fixed;
+  right: 20px;  /* Ajusta la distancia desde el borde izquierdo */
+  bottom: 20px; /* Ajusta la distancia desde la parte inferior */
+  z-index: 100; /* Asegura que esté encima de otros elementos */
+}
+</style>
+
+
 <script setup>
 const openWhatsApp = () => {
-  window.open("https://wa.me/573101234567", "_blank");
+  window.open("https://wa.me/573027903706", "_blank");
 };
 </script>
 

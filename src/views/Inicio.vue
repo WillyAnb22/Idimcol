@@ -1,15 +1,13 @@
 <template>
   <div>
     <div class="container">
-      <!-- <audio ref="audioRef">
-        <source src="/_Bienvenidos a IDIMC.mp3" type="audio/mpeg">
-      </audio>-->
-      <!-- <audio autoplay>
-        <source src="/_Bienvenidos a IDIMC.mp3" type="audio/mpeg" />
-      </audio>-->
-      <video ref="videoPlayer" autoplay loop playsinline>
+      <video ref="videoPlayer" autoplay playsinline controls>
         <source src="/video-para web.mp4" type="video/mp4" />
       </video>
+      <!-- Botón de play/Pausa -->
+      <button @click="togglePlayPause" class="video-btn">
+        {{ isPlaying ? "Pausar" : "Reproducir" }}
+      </button>
       <div>
         <p class="title">IDIMCOL</p>
       </div>
@@ -49,29 +47,31 @@
 import { ref, onMounted } from "vue";
 
 const videoPlayer = ref(null);
+const isPlaying = ref(true);
+
 onMounted(() => {
   const video = videoPlayer.value;
-  video.muted = false; // desmutear video
+  video.muted = false; //Desmutear video
 
-  //intentar reproducir despues de interaccion
   const playVideo = () => {
     video.play().catch(error => {
-      console.error(
-        "El navegador bloqueó la reproducción automática con audio:",
-        error
-      );
+      console.error("El navegador bloqueó la reproducción automática con audio:", error )
     });
     document.removeEventListener("click", playVideo);
   };
   document.addEventListener("click", playVideo);
 });
-// import { ref, onMounted } from "vue";
 
-// const audioRef = ref(null);
+const togglePlayPause = () => {
+  if (videoPlayer.value.paused){
+    videoPlayer.value.play();
+    isPlaying.value = true;
+  } else {
+    videoPlayer.value.pause();
+    isPlaying.value = false;
+  }
+};
 
-// onMounted(() => {
-//   audioRef.value.play(); //Reproduce automaticamente cuando se carga la página
-// });
 </script>
 <style scoped>
 * {
@@ -93,6 +93,18 @@ video {
   height: 100%;
   object-fit: cover;
   z-index: 1;
+}
+.video-btn{
+  position: absolute;
+  top: 20px;
+  left:20px;
+  background-color: rgba(0, 0, 0, 07);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size:16px;
+  cursor:pointer;
+  z-index:2
 }
 .title {
   position: absolute;
@@ -147,9 +159,9 @@ video {
 .text {
   position: relative;
   z-index: 2;
-  font-size: 2px;
+  font-size: 40px;
   font-weight: bold;
-  top: 7px;
+  top: 90px;
 }
 .btn {
   position: absolute;

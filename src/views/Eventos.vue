@@ -1,5 +1,5 @@
-<template>
-    <div class="q-pa-md row items-start q-gutter-md">
+
+    <!-- <div class="q-pa-md row items-start q-gutter-md">
       <q-card class="my-card">
         <img src="https://cdn.quasar.dev/img/mountains.jpg">
   
@@ -12,10 +12,10 @@
           {{ lorem }}
         </q-card-section>
       </q-card>  
-    </div>
-  </template>
+    </div> -->
+  <!-- </template> -->
   
-  <script setup>
+  <!-- <script setup>
     import {ref} from "vue"
 
   const texto = ref([
@@ -25,13 +25,68 @@
   ])
       
 
-  </script>
+  </script> -->
   
-  <style scoped>
+  <!-- <style scoped>
 .my-card{
     width: 100%;
     max-width: 250px;
     color: black;
     }
-  </style>
+  </style> -->
+  <template>
+  <div>
+    <q-splitter v-model="splitterModel" style="height: 450px">
+      <template v-slot:before>
+        <div class="q-pa-md">
+          <q-date v-model="date" :events="events" event-color="orange" />
+        </div>
+      </template>
+
+      <template v-slot:after>
+        <q-tab-panels class="text" v-model="date" animated transition-prev="jump-up" transition-next="jump-up">
+          <q-tab-panel name="2025/03/01">
+            <div class="text-h4 q-mb-md">2025/03/01</div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero.</p>
+          </q-tab-panel>
+
+          <q-tab-panel name="2025/03/05">
+            <div class="text-h4 q-mb-md">2025/03/05</div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero.</p>
+          </q-tab-panel>
+
+          <q-tab-panel name="2025/03/06">
+            <div class="text-h4 q-mb-md">2025/03/06</div>
+            <img src="fondo.png">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero.</p>
+          </q-tab-panel>
+        </q-tab-panels>
+      </template>
+    </q-splitter>
+  </div>
+</template>
   
+  <script setup> 
+  import { ref } from 'vue'
+
+        const splitterModel = ref(50)
+        const date = ref('2025/03/01')
+        const events = [ '2025/03/01', '2025/03/05', '2025/03/06' ]
+
+  </script>
+  <style scoped>
+.q-pa-md{
+color: #325e9b;
+}
+.text{
+  color:black;
+}
+img{
+  width: 100%;
+  height: auto;
+}
+</style>

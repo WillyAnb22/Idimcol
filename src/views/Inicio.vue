@@ -2,12 +2,12 @@
   <div>
     <div class="container">
       <video ref="videoPlayer" autoplay playsinline controls>
-        <source src="/video-para web.mp4" type="video/mp4" />
+        <source src="/Video-web.mp4" type="video/mp4" />
       </video>
       <!-- Botón de play/Pausa -->
-      <button @click="togglePlayPause" class="video-btn">
+      <!-- <button @click="togglePlayPause" class="video-btn">
         {{ isPlaying ? "Pausar" : "Reproducir" }}
-      </button>
+      </button> -->
       <div>
         <p class="title">IDIMCOL</p>
       </div>
@@ -62,15 +62,15 @@ onMounted(() => {
   document.addEventListener("click", playVideo);
 });
 
-const togglePlayPause = () => {
-  if (videoPlayer.value.paused){
-    videoPlayer.value.play();
-    isPlaying.value = true;
-  } else {
-    videoPlayer.value.pause();
-    isPlaying.value = false;
-  }
-};
+// const togglePlayPause = () => {
+//   if (videoPlayer.value.paused){
+//     videoPlayer.value.play();
+//     isPlaying.value = true;
+//   } else {
+//     videoPlayer.value.pause();
+//     isPlaying.value = false;
+//   }
+// };
 
 </script>
 <style scoped>

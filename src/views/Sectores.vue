@@ -25,11 +25,14 @@
         </q-carousel>
       </div>
     </div>
+    <Footer />
   </div>
 </template>
 
 <script setup>
 import { ref, reactive } from "vue";
+import footer from '@/components/Footer.vue';  // Asegúrate de que el path es correcto
+
 // import TheFooter from '../components/footer.vue';
 
 const autoplay = ref(true);

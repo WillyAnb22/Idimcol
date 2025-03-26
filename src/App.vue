@@ -25,7 +25,7 @@
       <q-page-container>
         <router-view></router-view>
         <MyBtn></MyBtn>
-      <div class="footer">
+      <!-- <div class="footer">
       <div class="izquierda">
         Información de Contacto
         <br />Cra 13# 23-33 Girardot, Colombia
@@ -62,7 +62,7 @@
           </div>
         </a>
       </div>
-    </div>
+    </div> -->
       </q-page-container>
     </q-layout>
   </div>
@@ -117,6 +117,7 @@ nav a.router-link-exact-active{
   padding-bottom: 5px; /* Espaciado para la línea */
 }
 .footer {
+  margin-top: 40px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;

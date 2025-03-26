@@ -35,7 +35,7 @@
         </div>
         <div class="text">CONOCE QUIENES SOMOS</div>
         <div class="btn">
-          <q-btn color="primary" to="/Nosotros" label="Ir" style="width: 100px;" />
+          <q-btn color="primary" to="/NuestraEmpresa" label="Ir" style="width: 100px;" />
         </div>
       </div>
     </div>

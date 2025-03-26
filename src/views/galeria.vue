@@ -2,45 +2,52 @@
   <div class="q-pa-md">
     <div class="q-col-gutter-md row">
       <div class="col-4">
-        <q-img src="fondo.png"></q-img>
+        <q-img src="fondo.png" fit="cover" style="border-radius: 20px;"></q-img>
       </div>
       <div class="col-4">
-        <q-img src="fondo.png"></q-img>
+        <q-img src="fondo.png" fit="cover" style="border-radius: 20px;"></q-img>
       </div>
       <div class="col-4">
-        <q-img src="fondo.png"></q-img>
+        <q-img src="fondo.png" fit="cover" style="border-radius: 20px;"></q-img>
       </div>
       <div class="col-4">
-        <q-img src="fondo.png"></q-img>
+        <q-img src="fondo.png" fit="cover" style="border-radius: 20px;"></q-img>
       </div>
       <div class="col-4">
-        <q-img src="fondo.png"></q-img>
+        <q-img src="fondo.png" fit="cover" style="border-radius: 20px;"></q-img>
       </div>
       <div class="col-4">
-        <q-img src="fondo.png"></q-img>
-      </div>
-      <div class="col-4">
-        <q-img src="fondo.png"></q-img>
-      </div>
-      <div class="col-4">
-        <q-img src="fondo.png"></q-img>
-      </div>
-      <div class="col-4">
-        <q-img src="fondo.png"></q-img>
-      </div>
-    </div>
-    <div class="q-col-gutter-md row">
-      <p>Sección Videos</p>
-      <div class="col-4">
-        <q-video src="video.mp4"></q-video>
-      </div>
-      <div class="col-4">
-        <video src="video.mp4"></video>
+        <q-img src="fondo.png" fit="cover" style="border-radius: 20px;"></q-img>
       </div>
     </div>
 
+    <div class="videos row">
+      <div class="col-4">
+        <video ref="video1" src="video.mp4" controls></video>
+      </div>
+      <div class="col-4">
+        <video ref="video2" src="video.mp4" controls></video>
+      </div>
+      <div class="col-4">
+        <video ref="video3" src="video.mp4" controls></video>
+      </div>
+    </div>
   </div>
 </template>
+
+<script setup>
+import { ref, onMounted } from "vue";
+
+const video1 = ref(null);
+const video2 = ref(null);
+const video3 = ref(null);
+
+const videos = ref([]);
+
+onMounted(() => {
+  videos.value = [video1.value, video2.value, video3.value];
+});
+</script>
 
 <style scoped>
 .row {
@@ -50,28 +57,24 @@
   gap: 20px;
 }
 
-.col-4,
-.video {
+.col-4 {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 30%;
-  /* Ajusta el tamaño de la imagen */
   transition: transform 0.3s ease-in-out;
 }
 
-.col-4:hover,
-.video:hover {
+.col-4:hover {
   transform: scale(1.1);
 }
+.videos{
+  display: flex;
+  position: relative;
+  top: 30px;
+}
 video {
-  width: 70%;
+  width: 80%;
   height: auto;
-  max-width: 700px; /* Ajusta el tamaño máximo del video */
 }
-
-.full-width {
-  width: 100%;
-}
-
 </style>

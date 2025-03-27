@@ -39,12 +39,13 @@
         </div>
       </div>
     </div>
-
+    <Footer class="footer" /> 
   </div>
 </template>
 
 <script setup>
 import { ref, onMounted } from "vue";
+import Footer from '@/components/Footer.vue';  // Asegúrate de que el path es correcto
 
 const videoPlayer = ref(null);
 const isPlaying = ref(true);

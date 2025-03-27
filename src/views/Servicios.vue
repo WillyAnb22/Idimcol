@@ -9,11 +9,14 @@
         </div>
       </div>
     </div>
+        <!-- Importación del footer -->
+        <Footer class="footer" /> 
   </div>
 </template>
 
 <script setup>
 import { ref } from "vue";
+import Footer from '@/components/Footer.vue';  // Importación del footer
 
 const services = ref([
   {

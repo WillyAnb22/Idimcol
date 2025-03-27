@@ -31,7 +31,7 @@
 
 <script setup>
 import { ref, reactive } from "vue";
-import footer from '@/components/Footer.vue';  // Asegúrate de que el path es correcto
+import Footer from '@/components/Footer.vue';  
 
 // import TheFooter from '../components/footer.vue';
 

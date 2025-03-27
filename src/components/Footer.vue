@@ -75,7 +75,6 @@ nav a.router-link-exact-active {
   padding-bottom: 5px; /* Espaciado para la línea */
 }
 .footer {
-  margin-top: 40px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -96,8 +95,7 @@ nav a.router-link-exact-active {
   align-items: center;
   gap: 10px;
 }
-.red-social,
-img {
+.red-social img {
   height: 25px;
 }
 .social-link {

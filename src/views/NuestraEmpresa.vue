@@ -86,8 +86,9 @@
 
       </div>
       <div id="map"></div>
-
     </div>
+    <!-- Importación del footer -->
+    <Footer class="footer" /> 
   </div>
 </template>
 
@@ -95,6 +96,7 @@
 import { onMounted, nextTick } from "vue";
 import * as L from "leaflet";
 import "leaflet/dist/leaflet.css";
+import Footer from '@/components/Footer.vue';  // Importación del footer
 
 onMounted(async () => {
   await nextTick(); // Espera a que el DOM se renderice

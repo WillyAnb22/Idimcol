@@ -32,11 +32,13 @@
         <video ref="video3" src="video.mp4" controls></video>
       </div>
     </div>
+    <Footer class="footer" /> 
   </div>
 </template>
 
 <script setup>
 import { ref, onMounted } from "vue";
+import Footer from '@/components/Footer.vue';  // Asegúrate de que el path es correcto
 
 const video1 = ref(null);
 const video2 = ref(null);
@@ -76,5 +78,8 @@ onMounted(() => {
 video {
   width: 80%;
   height: auto;
+}
+.footer{
+  margin-top: 50px;
 }
 </style>

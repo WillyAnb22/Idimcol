@@ -20,25 +20,25 @@ import Footer from '@/components/Footer.vue';  // Importación del footer
 
 const services = ref([
   {
-    image: "/estructurasMetalicas.png",
+    image: "/Sector-Servicio/estructurasMetalicas.png",
     title: "ESTRUCTURAS MÉTALICAS",
     description:
       "Ingeniería de detalle, simulación, cálculo estructural, análisis de cargas y personal altamente calificado, son los componentes que acompañan nuestros procesos de calibración, fabricación y montaje de sus proyectos industriales."
   },
   {
-    image: "/proyectosIndustriales.png",
+    image: "/Sector-Servicio/proyectosIndustriales.png",
     title: "PROYECTOS INDUSTRIALES",
     description:
       "La planificación estratégica, el análisis financiero, la gestión de proyectos y el control de costos son los pilares que respaldan nuestra ingeniería y desarrollo, garantizando la ejecución exitosa de cada proyecto. Nuestro enfoque integral permite entregar soluciones eficientes, optimizando recursos y maximizando los resultados."
   },
   {
-    image: "/mecanizado.png",
+    image: "/Sector-Servicio/mecanizado.png",
     title: "MECANIZADO",
     description:
       "Procesos computarizados y convencionales se unen en la fabricación, reparación y repotenciación de todo tipo de piezas, partes y repuestos, que respaldan sus necesidades de producción y mantenimiento."
   },
   {
-    image: "/diseñoMecanico.png",
+    image: "/Sector-Servicio/diseñoMecanico.png",
     title: "DISEÑO MECÁNICO",
     description:
       "Apoyados en el software de diseño asistido por computador (CAD) Solidwoks, nuestro departamento de ingeniería y diseño evalúa las condiciones técnicas y conceptuales de sus equipos y máquinas industriales y elementos para garantizar el óptimo desarrollo de sus operaciones."

@@ -87,8 +87,7 @@ img {
   margin:0 auto;
 }
 
-/* .footer{
-  margin-top: 250px;
-} */
-
+.footer{
+  margin-top: 25px;
+} 
 </style>

@@ -64,25 +64,24 @@
       <div class="title3">Encuentranos Aquí</div>
       <div class="ubicacion">
         <p>
-          <b>Ubicación:</b>
-        </p>📌Carrera 13 #23-33
-        <br />🏙 Barrio - Girardot
-        <br />Ciudad: Bucaramanga
-        <br />País: Colombia
-        <br />
+          <b>DIRECCIÓN:</b>
+        </p>📌Carrera 13 #23-33 Barrio - Girardot
+        <br />Ciudad: Bucaramanga/Santander
+        <p>
+          <b>LÍNEAS TELEFÓNICAS:</b>
+        </p>
+        📱 +57 302 7903706<br>
+        📞 (607)-6346608
         <br />
         <p>
-          <b>Contactos:</b>
+          <b>CORREOS:</b>
         </p>
-        📲+57 302 7903706<br>
-        (607)-6346608
-        <br /><br><hr><br>
-        <p>gerencia@idimcol.com.co</p>
-        📲+57 316 4468484
-        <p>comercial@idimcol.com.co</p>
-        📲+57 317 5768082
-        <p>gesproyectos@idimcol.com.co</p>
-        📲+57 315 2434517
+        <p>✉ gerencia@idimcol.com.co</p>
+        📱 +57 316 4468484
+        <p>✉ comercial@idimcol.com.co</p>
+        📱 +57 317 5768082
+        <p>✉ gesproyectos@idimcol.com.co</p>
+        📱 +57 315 2434517
 
       </div>
       <div id="map"></div>
@@ -106,12 +105,11 @@ onMounted(async () => {
     console.error("Error: No se encontró el contenedor del mapa.");
     return;
   }
-
+  //Coordenadas de Idimcol
   const latitude = 7.124607928853439;
   const longitude = -73.13054456123169;
 
   const map = L.map("map").setView([latitude, longitude], 17); // Bucaramanga
-
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
     attribution:
       '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -121,8 +119,7 @@ onMounted(async () => {
     .addTo(map)
     .bindPopup("IDIMCOL SAS - Bucaramanga")
     .openPopup();
-
-    //Evento para ir al gps
+//Evento para ir al gps
     map.on("click", () => {
       window.open(`https://www.google.com/maps/dir/?api=1&destination=${latitude},${longitude}`,"_blanck");
     });
@@ -147,7 +144,7 @@ onMounted(async () => {
   position: absolute;
   width: 120%;
   height: 100vh;
-  filter: brightness(30%); /* Reduce el brillo al 50% */
+  filter: brightness(30%);
   z-index: 1;
 }
 .title {
@@ -210,7 +207,7 @@ onMounted(async () => {
   margin: 4% auto;
 }
 .imgMision {
-  margin: 15% auto;
+  margin: 9% auto;
 }
 .container3 {
   background-color: #325e9b;
@@ -230,6 +227,9 @@ onMounted(async () => {
   position: relative;
   font-size: 2rem;
   padding: 8rem;
+}
+b{
+  color:#032a3d;
 }
 #map {
     width: 100%;

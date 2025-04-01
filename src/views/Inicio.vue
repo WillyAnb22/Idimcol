@@ -4,10 +4,6 @@
       <video ref="videoPlayer" autoplay playsinline controls>
         <source src="/Video-web.mp4" type="video/mp4" />
       </video>
-      <!-- Botón de play/Pausa -->
-      <!-- <button @click="togglePlayPause" class="video-btn">
-        {{ isPlaying ? "Pausar" : "Reproducir" }}
-      </button> -->
       <div>
         <p class="title">IDIMCOL</p>
       </div>

@@ -15,21 +15,17 @@
           transition-prev="jump-up"
           transition-next="jump-up"
         >
-          <q-tab-panel name="2025/03/01">
-            <div class="text-h4 q-mb-md">2025/03/01</div>
-            <p>Lorem ipsum dolor sit amet...</p>
-          </q-tab-panel>
-
           <q-tab-panel name="2025/03/05">
             <div class="text-h4 q-mb-md">2025/03/05</div>
-            <video class="video" src="video.mp4" controls />
+            <!-- <video class="video" src="video.mp4" controls /> -->
+            <img class="img" src="/Miércoles-Ceniza.png" />
             <p>Lorem ipsum dolor sit amet...</p>
           </q-tab-panel>
 
-          <q-tab-panel name="2025/03/06">
-            <div class="text-h4 q-mb-md">2025/03/06</div>
-            <img class="img" src="https://baysanquality.com/wp-content/uploads/2022/07/image_picture_icon_143003.png" />
-            <p>Lorem ipsum dolor sit amet...</p>
+          <q-tab-panel name="2025/03/08">
+            <div class="text-h4 q-mb-md">2025/03/08</div>
+            <img class="img" src="/Día-Mujer.png" />
+            <p>Hoy 8 de marzo, queremos celebrar este día </p>
           </q-tab-panel>
         </q-tab-panels>
       </template>
@@ -46,7 +42,7 @@ import Footer from '@/components/Footer.vue';  // Asegúrate de que el path es c
 
 const splitterModel = ref(50);
 const date = ref("2025/03/01");
-const events = ["2025/03/01", "2025/03/05", "2025/03/06"];
+const events = ["2025/03/05", "2025/03/08"];
 </script>
 
 <style scoped>
@@ -73,8 +69,8 @@ margin-top: 150px;
   color: black;
 }
 img {
-  width: 100%;
-  height: auto;
+  width: 150%;
+  height: 100px;
 }
 .q-splitter {
   flex-grow: 1; /* Hace que ocupe todo el espacio disponible */

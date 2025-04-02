@@ -89,7 +89,7 @@ video {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: 1;
+  z-index: 2;
 }
 .video-btn{
   position: absolute;
@@ -101,11 +101,11 @@ video {
   padding: 10px 20px;
   font-size:16px;
   cursor:pointer;
-  z-index:2
+  z-index:3;
 }
 .title {
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   font-size: 8rem;
   font-weight: bold;
   top: 8%;
@@ -113,7 +113,7 @@ video {
 }
 .textoIzquierda {
   position: absolute;
-  z-index: 1;
+  z-index: 3;
   font-size: 1.5rem;
   font-weight: bold;
   font-style: italic;
@@ -123,7 +123,7 @@ video {
 .textoDerecha {
   text-align: center;
   position: absolute;
-  z-index: 1;
+  z-index: 3;
   font-size: 25px;
   font-weight: bold;
   top: 73%;

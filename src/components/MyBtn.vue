@@ -23,11 +23,9 @@
 .fixed-button {
   position: fixed;
   right: 20px;  /* Ajusta la distancia desde el borde izquierdo */
-  bottom: 150px; /* Ajusta la distancia desde la parte inferior */
 }
 .btn{
   height: 150px;
-
 }
 </style>
 

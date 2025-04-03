@@ -32,13 +32,13 @@
         <video ref="video3" src="video.mp4" controls></video>
       </div>
     </div>
-    <Footer class="footer" /> 
+    <Footer class="footer" />
   </div>
 </template>
 
 <script setup>
 import { ref, onMounted } from "vue";
-import Footer from '@/components/Footer.vue';  // Asegúrate de que el path es correcto
+import Footer from "@/components/Footer.vue"; // Asegúrate de que el path es correcto
 
 const video1 = ref(null);
 const video2 = ref(null);
@@ -70,7 +70,7 @@ onMounted(() => {
 .col-4:hover {
   transform: scale(1.1);
 }
-.videos{
+.videos {
   display: flex;
   position: relative;
   top: 30px;
@@ -79,7 +79,15 @@ video {
   width: 80%;
   height: auto;
 }
-.footer{
+.footer {
   margin-top: 50px;
+}
+@media (max-width: 1035px) {
+  .col-4 {
+    width: 48%; /* Ajuste para que solo entren dos elementos por fila */
+  }
+  .videos {
+    gap:20px;
+  }
 }
 </style>

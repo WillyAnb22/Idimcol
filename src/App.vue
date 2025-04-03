@@ -16,7 +16,7 @@
               <router-link to="/NuestraEmpresa">Nuestra Empresa</router-link>
               <router-link to="/Servicios">Servicios</router-link>
               <router-link to="/Sectores">Sectores</router-link>
-              <router-link to="/galeria">Conócenos</router-link>
+              <router-link to="/Conocenos">Conócenos</router-link>
               <router-link to="/Eventos">Eventos</router-link>
             </nav>
           </div>
@@ -37,7 +37,7 @@
 <script setup>
 import { ref, watch } from "vue";
 import { useRoute } from "vue-router";
-import MyBtn from '@/components/MyBtn.vue';
+import MyBtn from "@/components/MyBtn.vue";
 
 const route = useRoute();
 const btnClass = ref("btn-left");
@@ -96,6 +96,7 @@ nav a.router-link-exact-active {
   bottom: 150px;
   left: 20px;
   z-index: 100;
+  width: 20px;
 }
 
 /* Posición del botón en otras paginas */
@@ -144,6 +145,12 @@ nav a.router-link-exact-active {
 
 /* Responsivo */
 @media (max-width: 1035px) {
+  .btn-left {
+    position: fixed;
+    bottom: 115px;
+    left: 20px;
+    z-index: 100;
+  }
   .footer {
     padding: 20px;
   }

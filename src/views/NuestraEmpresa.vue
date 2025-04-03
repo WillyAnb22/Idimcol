@@ -327,7 +327,7 @@ b{
 }
 @media (max-width: 1035px) {
   .imgFondo {
-    width: 120%;
+    width: 160%;
   }
   .title{
     font-size: 50px;
@@ -336,7 +336,7 @@ b{
     font-size: 20px;
   }
   .imgMision {
-  margin: 20% auto;
+  margin: 25px auto;
 }
   .ubicacion {
     font-size: 21px;

@@ -20,10 +20,6 @@
 </template>
 
 <style scoped>
-.fixed-button {
-  position: fixed;
-  right: 20px;  /* Ajusta la distancia desde el borde izquierdo */
-}
 .btn{
   height: 150px;
 }

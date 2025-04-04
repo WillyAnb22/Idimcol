@@ -35,13 +35,13 @@
         </div>
       </div>
     </div>
-    <Footer class="footer" /> 
+    <Footer class="footer" />
   </div>
 </template>
 
 <script setup>
 import { ref, onMounted } from "vue";
-import Footer from '@/components/Footer.vue';  // Asegúrate de que el path es correcto
+import Footer from "@/components/Footer.vue"; // Asegúrate de que el path es correcto
 
 const videoPlayer = ref(null);
 const isPlaying = ref(true);
@@ -52,7 +52,10 @@ onMounted(() => {
 
   const playVideo = () => {
     video.play().catch(error => {
-      console.error("El navegador bloqueó la reproducción automática con audio:", error )
+      console.error(
+        "El navegador bloqueó la reproducción automática con audio:",
+        error
+      );
     });
     document.removeEventListener("click", playVideo);
   };
@@ -68,7 +71,6 @@ onMounted(() => {
 //     isPlaying.value = false;
 //   }
 // };
-
 </script>
 <style scoped>
 * {
@@ -91,17 +93,17 @@ video {
   object-fit: cover;
   z-index: 2;
 }
-.video-btn{
+.video-btn {
   position: absolute;
   top: 20px;
-  left:20px;
+  left: 20px;
   background-color: rgba(0, 0, 0, 07);
   color: white;
   border: none;
   padding: 10px 20px;
-  font-size:16px;
-  cursor:pointer;
-  z-index:3;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 3;
 }
 .title {
   position: absolute;
@@ -224,8 +226,8 @@ img {
     top: 74%;
   }
 }
-@media (max-width:1300px){
-  .textoDerecha{
+@media (max-width: 1300px) {
+  .textoDerecha {
     font-size: 20px;
     left: 65%;
   }
@@ -257,13 +259,13 @@ img {
     top: 70%;
   }
 }
-@media (max-width: 1100px){
-  .textoDerecha{
+@media (max-width: 1100px) {
+  .textoDerecha {
     left: 58%;
   }
-  .text{
+  .text {
     top: 10%;
-}
+  }
 }
 @media (max-width: 1035px) {
   .title {
@@ -280,8 +282,8 @@ img {
   .imgFondo {
     width: 160%;
   }
-  .text{
-    top:10%;
+  .text {
+    top: 10%;
   }
   .footer {
     padding: 20px;
@@ -298,7 +300,8 @@ img {
   .red-social {
     gap: 10px;
   }
-  .red-social, img {
+  .red-social,
+  img {
     height: 20px;
   }
   .social-link {
@@ -306,54 +309,69 @@ img {
   }
 }
 @media (max-width: 850px) {
-.title {
-  font-size: 85px;
-}
-.textoIzquierda{
-  width: 15rem;
-  right: 18rem;
-}
-.textoDerecha {
-  font-size:1rem;
-  width: 11rem;
-  left: 20px;
-}
-.imgFondo {
-  width: 200%;
-}
-.logo {
-  width: 30%;
-  top: 35%;
-}
-.text {
-  font-size: 2.5rem;
-  top: 4rem;
-}
-.btn {
-  top: 70%;
-}
-.redes-sociales {
+  .title {
+    font-size: 85px;
+  }
+  .textoIzquierda {
+    width: 15rem;
+    right: 18rem;
+  }
+  .textoDerecha {
+    font-size: 1rem;
+    width: 11rem;
+    left: 20px;
+  }
+  .imgFondo {
+    width: 200%;
+  }
+  .logo {
+    width: 30%;
+    top: 35%;
+  }
+  .text {
+    font-size: 2.5rem;
+    top: 4rem;
+  }
+  .btn {
+    top: 70%;
+  }
+  .redes-sociales {
     gap: 10px;
   }
-.red-social {
+  .red-social {
     gap: 10px;
   }
-.red-social, img {
+  .red-social,
+  img {
     height: 20px;
   }
-.social-link {
+  .social-link {
     font-size: 13px;
   }
 }
-@media (max-width:600px){
-  .title{
+@media (max-width: 780px) {
+  .textoIzquierda {
+    width: 24rem;
+    right: 18rem;
+  }
+  .textoDerecha {
+    font-size: 1rem;
+    width: 20rem;
+    left: 55%;
+  }
+  .imgFondo {
+    width: 210%;
+  }
+}
+@media (max-width: 600px) {
+  .title {
     font-size: 70px;
   }
-  .textoDerecha{
-  font-size:1rem;
-  width: 11rem;
+  .textoDerecha {
+    font-size: 1rem;
+    width: 11rem;
   }
-  .imgFondo{
+  .imgFondo {
     width: 260%;
   }
   .izquierda {
@@ -370,7 +388,7 @@ img {
   .red-social, img {
     height: 30px;
   }
-  span{
+  span {
     display: none; /* Se oculta en pantallas menores a 600px */
   }
 }

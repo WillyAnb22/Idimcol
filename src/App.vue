@@ -6,7 +6,7 @@
         <q-toolbar class="toolbar">
           <div class="logo">
             <router-link to="/">
-              <img src="/logo.png" style="height: 70px; width: auto;" />
+              <img src="/logo.png" />
             </router-link>
           </div>
 
@@ -40,11 +40,11 @@ import { useRoute } from "vue-router";
 import MyBtn from "@/components/MyBtn.vue";
 
 const route = useRoute();
-const btnClass = ref("btn-left");
+const btnClass = ref("btn-Eventos");
 
 // Detectar la página actual y cambiar la posición del botón
 watch(route, () => {
-  btnClass.value = route.path === "/Eventos" ? "btn-left" : "btn-right";
+  btnClass.value = route.path === "/Eventos" ? "btn-Eventos" : "btn-Pagina";
 });
 </script>
 
@@ -56,7 +56,10 @@ watch(route, () => {
   box-sizing: border-box;
   color: white;
 }
-
+img {
+  width: 70px;
+  height: auto;
+}
 /* Estilo del logo */
 .logo {
   margin-left: 50px;
@@ -74,12 +77,11 @@ watch(route, () => {
 nav {
   display: flex;
   gap: 40px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 nav a {
-  font-size: 20px;
-  font-weight: bold;
-  color: white;
   text-decoration: none;
   transition: color 0.3s ease-in-out;
 }
@@ -91,7 +93,7 @@ nav a.router-link-exact-active {
 }
 
 /* Posición del botón en la vista Eventos*/
-.btn-left {
+.btn-Eventos {
   position: fixed;
   bottom: 150px;
   left: 20px;
@@ -100,7 +102,7 @@ nav a.router-link-exact-active {
 }
 
 /* Posición del botón en otras paginas */
-.btn-right {
+.btn-Pagina {
   position: fixed;
   bottom: 140px;
   right: 20px;
@@ -145,7 +147,7 @@ nav a.router-link-exact-active {
 
 /* Responsivo */
 @media (max-width: 1035px) {
-  .btn-left {
+  .btn-Eventos {
     position: fixed;
     bottom: 115px;
     left: 20px;
@@ -163,15 +165,36 @@ nav a.router-link-exact-active {
   }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 800px) {
+  .logo {
+    margin-left: 20px;
+  }
+  img {
+    width: 50px;
+    height: auto;
+  }
+  nav {
+    font-size: 18px;
+  }
   .social-link {
     font-size: 13px;
   }
 }
-
 @media (max-width: 600px) {
   .logo {
-    margin-left: 20px;
+    margin-left: 10px;
+  }
+  img {
+    width: 45px;
+    height: auto;
+  }
+  nav {
+    font-size: 15px;
+    gap: 23px;
+  }
+  .btn-Pagina {
+    position: fixed;
+    bottom: 140px;
   }
   .izquierda {
     padding-left: 30px;
@@ -182,6 +205,15 @@ nav a.router-link-exact-active {
   }
   span {
     display: none; /* Oculto en pantallas pequeñas */
+  }
+}
+@media (max-width: 500px){
+  .logo {
+    margin-left: 5px;
+  }
+  nav {
+    font-size: 13px;
+    gap: 12px;
   }
 }
 </style>

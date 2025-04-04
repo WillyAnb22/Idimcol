@@ -23,6 +23,11 @@
 .btn{
   height: 150px;
 }
+@media (max-width:600px ){
+  .btn{
+    height: 140px;
+  }
+  };
 </style>
 
 

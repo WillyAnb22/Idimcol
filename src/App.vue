@@ -10,7 +10,8 @@
             </router-link>
           </div>
 
-          <div class="rutas">
+          <!-- Rutas visibles solo en pantallas grandes -->
+          <div class="rutas q-hidden-xs">
             <nav>
               <router-link to="/">Inicio</router-link>
               <router-link to="/NuestraEmpresa">Nuestra Empresa</router-link>
@@ -20,8 +21,35 @@
               <router-link to="/Eventos">Eventos</router-link>
             </nav>
           </div>
+
+          <!-- Botón de menú visible solo en pantallas pequeñas -->
+          <q-btn dense flat round icon="menu" @click="toggleRightDrawer" class="menu-btn" />
         </q-toolbar>
       </q-header>
+
+      <!-- Drawer lateral con navegación -->
+      <q-drawer v-model="rightDrawerOpen" side="right" bordered>
+        <q-list>
+          <q-item clickable v-ripple to="/" @click="rightDrawerOpen = false">
+            <q-item-section>Inicio</q-item-section>
+          </q-item>
+          <q-item clickable v-ripple to="/NuestraEmpresa" @click="rightDrawerOpen = false">
+            <q-item-section>Nuestra Empresa</q-item-section>
+          </q-item>
+          <q-item clickable v-ripple to="/Servicios" @click="rightDrawerOpen = false">
+            <q-item-section>Servicios</q-item-section>
+          </q-item>
+          <q-item clickable v-ripple to="/Sectores" @click="rightDrawerOpen = false">
+            <q-item-section>Sectores</q-item-section>
+          </q-item>
+          <q-item clickable v-ripple to="/Conocenos" @click="rightDrawerOpen = false">
+            <q-item-section>Conócenos</q-item-section>
+          </q-item>
+          <q-item clickable v-ripple to="/Eventos" @click="rightDrawerOpen = false">
+            <q-item-section>Eventos</q-item-section>
+          </q-item>
+        </q-list>
+      </q-drawer>
 
       <!-- Contenedor de páginas -->
       <q-page-container>
@@ -42,6 +70,10 @@ import MyBtn from "@/components/MyBtn.vue";
 const route = useRoute();
 const btnClass = ref("btn-Eventos");
 
+const rightDrawerOpen = ref(false);
+function toggleRightDrawer() {
+  rightDrawerOpen.value = !rightDrawerOpen.value;
+}
 // Detectar la página actual y cambiar la posición del botón
 watch(route, () => {
   btnClass.value = route.path === "/Eventos" ? "btn-Eventos" : "btn-Pagina";
@@ -73,7 +105,9 @@ img {
   justify-content: center;
   align-items: center;
 }
-
+.menu-btn{
+  display: none;
+}
 nav {
   display: flex;
   gap: 40px;
@@ -207,13 +241,21 @@ nav a.router-link-exact-active {
     display: none; /* Oculto en pantallas pequeñas */
   }
 }
-@media (max-width: 500px){
+@media (max-width: 500px) {
   .logo {
     margin-left: 5px;
   }
   nav {
     font-size: 13px;
     gap: 12px;
+  }
+}
+@media (max-width: 400px) {
+  .rutas {
+    display: none;
+  }
+  .menu-btn {
+    display: block;
   }
 }
 </style>

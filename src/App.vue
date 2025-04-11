@@ -11,7 +11,7 @@
           </div>
 
           <!-- Rutas visibles solo en pantallas grandes -->
-          <div class="rutas q-hidden-xs">
+          <div class="rutas q-hidden-xs" style="color: white;">
             <nav>
               <router-link to="/">Inicio</router-link>
               <router-link to="/NuestraEmpresa">Nuestra Empresa</router-link>
@@ -27,25 +27,25 @@
         </q-toolbar>
       </q-header>
 
-      <!-- Drawer lateral con navegación -->
+      <!-- Menu lateral con navegación -->
       <q-drawer v-model="rightDrawerOpen" side="right" bordered>
         <q-list>
-          <q-item clickable v-ripple to="/" @click="rightDrawerOpen = false">
+          <q-item clickable v-ripple to="/" @click="rightDrawerOpen = false" class="menu-lateral">
             <q-item-section>Inicio</q-item-section>
           </q-item>
-          <q-item clickable v-ripple to="/NuestraEmpresa" @click="rightDrawerOpen = false">
+          <q-item clickable v-ripple to="/NuestraEmpresa" @click="rightDrawerOpen = false" class="menu-lateral">
             <q-item-section>Nuestra Empresa</q-item-section>
           </q-item>
-          <q-item clickable v-ripple to="/Servicios" @click="rightDrawerOpen = false">
+          <q-item clickable v-ripple to="/Servicios" @click="rightDrawerOpen = false" class="menu-lateral">
             <q-item-section>Servicios</q-item-section>
           </q-item>
-          <q-item clickable v-ripple to="/Sectores" @click="rightDrawerOpen = false">
+          <q-item clickable v-ripple to="/Sectores" @click="rightDrawerOpen = false" class="menu-lateral">
             <q-item-section>Sectores</q-item-section>
           </q-item>
-          <q-item clickable v-ripple to="/Conocenos" @click="rightDrawerOpen = false">
+          <q-item clickable v-ripple to="/Conocenos" @click="rightDrawerOpen = false" class="menu-lateral">
             <q-item-section>Conócenos</q-item-section>
           </q-item>
-          <q-item clickable v-ripple to="/Eventos" @click="rightDrawerOpen = false">
+          <q-item clickable v-ripple to="/Eventos" @click="rightDrawerOpen = false" class="menu-lateral">
             <q-item-section>Eventos</q-item-section>
           </q-item>
         </q-list>
@@ -86,7 +86,6 @@ watch(route, () => {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: white;
 }
 img {
   width: 70px;
@@ -105,9 +104,20 @@ img {
   justify-content: center;
   align-items: center;
 }
+/* Menu lateral*/
 .menu-btn{
+  margin-left: auto;
   display: none;
 }
+.menu-lateral{
+  color: #879dc0;
+  font-size: 18px;
+  font-weight: bold;
+}
+.menu-lateral:hover {
+    background-color: #292727;
+    color: #000;
+  }
 nav {
   display: flex;
   gap: 40px;
@@ -116,6 +126,7 @@ nav {
 }
 
 nav a {
+  color: white;
   text-decoration: none;
   transition: color 0.3s ease-in-out;
 }
@@ -239,6 +250,12 @@ nav a.router-link-exact-active {
   }
   span {
     display: none; /* Oculto en pantallas pequeñas */
+  }
+}
+@media (max-width:550px){
+  nav {
+    font-size: 15px;
+    gap: 12px;
   }
 }
 @media (max-width: 500px) {

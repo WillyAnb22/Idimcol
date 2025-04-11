@@ -385,11 +385,53 @@ img {
   .red-social {
     gap: 8px;
   }
-  .red-social, img {
+  .red-social,
+  img {
     height: 30px;
   }
   span {
     display: none; /* Se oculta en pantallas menores a 600px */
+  }
+}
+@media (max-width: 550px) {
+  .textoIzquierda {
+    font-size: 1rem;
+    width: 11rem;
+    left: 20px;
+  }
+  .imgFondo {
+    width: 320%;
+  }
+}
+@media (max-width: 400px) {
+  .title {
+    top: 15%;
+    font-size: 60px;
+  }
+  .textoIzquierda {
+    top: 25%;
+    font-size: 15px;
+  }
+  .textoDerecha {
+    font-size: 12px;
+    top: 72%;
+    left: 50%;
+  }
+  .imgFondo {
+    width: 400%;
+  }
+  .logo {
+    width: 60%;
+    height: auto;
+    top: 35%;
+    left: 50%;
+  }
+  .text {
+    font-size: 28px;
+    top: 70px;
+  }
+  .btn {
+    top: 70%;
   }
 }
 </style>

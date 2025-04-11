@@ -106,18 +106,15 @@ const sectores = reactive([
   margin-top: 50px;
 }
 .q-carousel {
-  height: 1000px; /* Ajusta la altura según lo que necesites */
+  height: 600px; /* Ajusta la altura según lo que necesites */
 }
 .q-carousel-slide {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   height: 100%;
 }
 .q-carousel-slide img {
-  max-height: 100%;
-  width: auto;
-  object-fit: cover; /* Puedes usar 'contain' si no quieres recorte */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;; /* Puedes usar 'contain' si no quieres recorte */
 }
 /* Responsividad */
 @media (max-width: 1000px) {

@@ -164,4 +164,10 @@ nav a.router-link-exact-active {
     display: none; /* Se oculta en pantallas menores a 600px */
   }
 }
+@media (max-width: 400px) {
+  
+  .izquierda {
+    padding-left: 10px;
+  }
+}
 </style>

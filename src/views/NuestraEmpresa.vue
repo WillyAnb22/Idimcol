@@ -8,7 +8,7 @@
       <div
         class="frase"
       >"En IDIMCOL, transformamos el metal en soluciones innovadoras para la industria."</div>
-     <div class="text">
+      <div class="text">
         IDIMCOL SAS fue fundada en la ciudad de Bucaramanga, Santander, Colombia, en el año 2016 para satisfacer las necesidades de
         reparaciones y fabricaciones mecánicas, metalmecánicas y metalúrgicas en diversas industrias del país.
         Su objetivo es ofrecer soluciones rápidas, innovadoras y confiables para mantenimiento y optimización de maquinaria,
@@ -23,18 +23,20 @@
         <div class="titleVision">Visión</div>
         <div class="textVision">
           Para el año 2028, IDIMCOL S.A.S será reconocida a nivel
-          nacional como un fuerte grupo empresarial en la industria 
-          metalmecánica y metalúrgica, respaldados por un equipo 
-          humano dinámico e integral, enfocado en la innovación, 
-          compromiso ambiental y avances tecnológicos en nuestros 
-          procesos de diseño, fabricación y reparación de equipos 
-          y maquinaria industrial, que permita cumplir las necesidades 
-          y expectativas de nuestros clientes, así como generar 
-          los recursos apropiados para el funcionamiento de la empresa 
+          nacional como un fuerte grupo empresarial en la industria
+          metalmecánica y metalúrgica, respaldados por un equipo
+          humano dinámico e integral, enfocado en la innovación,
+          compromiso ambiental y avances tecnológicos en nuestros
+          procesos de diseño, fabricación y reparación de equipos
+          y maquinaria industrial, que permita cumplir las necesidades
+          y expectativas de nuestros clientes, así como generar
+          los recursos apropiados para el funcionamiento de la empresa
           y un retorno de la inversión con utilidades a su sociedad.
         </div>
         <div class="imgVision">
-          <q-img src="https://wautechnologies.com/wp-content/uploads/2023/07/fabricas-inteligentes.jpg"> </q-img>
+          <q-img
+            src="https://wautechnologies.com/wp-content/uploads/2023/07/fabricas-inteligentes.jpg"
+          ></q-img>
         </div>
       </div>
       <div class="mision">
@@ -69,25 +71,20 @@
         <br />Ciudad: Bucaramanga/Santander
         <p>
           <b>LÍNEAS TELEFÓNICAS:</b>
-        </p>
-        📱 +57 302 7903706<br>
-        📞 (607)-6346608
+        </p>📱 +57 302 7903706
+        <br />📞 (607)-6346608
         <br />
         <p>
           <b>CORREOS:</b>
         </p>
-        <p>✉ gerencia@idimcol.com.co</p>
-        📱 +57 316 4468484
-        <p>✉ comercial@idimcol.com.co</p>
-        📱 +57 317 5768082
-        <p>✉ gesproyectos@idimcol.com.co</p>
-        📱 +57 315 2434517
-
+        <p>✉ gerencia@idimcol.com.co</p>📱 +57 316 4468484
+        <p>✉ comercial@idimcol.com.co</p>📱 +57 317 5768082
+        <p>✉ gesproyectos@idimcol.com.co</p>📱 +57 315 2434517
       </div>
       <div id="map"></div>
     </div>
     <!-- Importación del footer -->
-    <Footer class="footer" /> 
+    <Footer class="footer" />
   </div>
 </template>
 
@@ -95,7 +92,7 @@
 import { onMounted, nextTick } from "vue";
 import * as L from "leaflet";
 import "leaflet/dist/leaflet.css";
-import Footer from '@/components/Footer.vue';  // Importación del footer
+import Footer from "@/components/Footer.vue"; // Importación del footer
 
 onMounted(async () => {
   await nextTick(); // Espera a que el DOM se renderice
@@ -119,10 +116,13 @@ onMounted(async () => {
     .addTo(map)
     .bindPopup("IDIMCOL SAS - Bucaramanga")
     .openPopup();
-//Evento para ir al gps
-    map.on("click", () => {
-      window.open(`https://www.google.com/maps/dir/?api=1&destination=${latitude},${longitude}`,"_blanck");
-    });
+  //Evento para ir al gps
+  map.on("click", () => {
+    window.open(
+      `https://www.google.com/maps/dir/?api=1&destination=${latitude},${longitude}`,
+      "_blanck"
+    );
+  });
 });
 </script>
 
@@ -214,8 +214,7 @@ onMounted(async () => {
   color: white;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 10px;
-  gap: 40px;
+  height: 100vh;
 }
 .title3 {
   position: absolute;
@@ -225,18 +224,19 @@ onMounted(async () => {
 }
 .ubicacion {
   position: relative;
-  font-size: 2rem;
-  padding: 8rem;
+  font-size: 30px;
+  top:130px;
+  left: 130px;
 }
-b{
-  color:#032a3d;
+b {
+  color: #032a3d;
 }
 #map {
-    width: 100%;
-    height: 70%;
-    top: 150px;
-    right: 50px;
-  }
+  width: 100%;
+  height: 70%;
+  top: 150px;
+  right: 50px;
+}
 /* Responsividad a 1500px */
 @media (max-width: 1500px) {
   .container3 {
@@ -252,17 +252,10 @@ b{
   .ubicacion {
     position: relative;
     font-size: 1.7rem;
-    padding: 8rem;
   }
-  /* #map {
-    width: 100%;
-    height: 70%;
-    top: 150px;
-    right: 50px;
-  } */
 }
-@media (max-width:1300px){
-  .text{
+@media (max-width: 1300px) {
+  .text {
     font-size: 25px;
   }
 }
@@ -293,8 +286,8 @@ b{
     font-size: 1.2rem;
   }
   .imgMision {
-  margin: 25% auto;
-}
+    margin: 25% auto;
+  }
   .title3 {
     font-size: 3.6rem;
     left: 4rem;
@@ -310,39 +303,51 @@ b{
     right: 50px;
   }
 }
-@media (max-width: 1100px){
-  .title{
-    font-size:55px;
-    top:2%;
+@media (max-width: 1100px) {
+  .title {
+    font-size: 55px;
+    top: 2%;
   }
-  .frase{
+  .frase {
     top: 16%;
   }
-  .text{
-    top:25%;
+  .text {
+    top: 25%;
   }
-.imgMision {
-  margin: 17% auto;
-}
+  .imgMision {
+    margin: 17% auto;
+  }
 }
 @media (max-width: 1035px) {
   .imgFondo {
     width: 160%;
   }
-  .title{
+  .title {
     font-size: 50px;
   }
-  .text{
+  .text {
     font-size: 20px;
   }
   .imgMision {
-  margin: 25px auto;
-}
+    margin: 25px auto;
+  }
   .ubicacion {
     font-size: 21px;
   }
   #correo {
     font-size: 15.8px;
+  }
+}
+@media (max-width: 950px) {
+  .imgFondo {
+    width: 250%;
+  }
+  .imgVision {
+    width: 350px;
+  }
+  .imgMision {
+    width: 350px;
+    margin: 11.7% auto;
   }
 }
 @media (max-width: 850px) {
@@ -355,7 +360,8 @@ b{
   .frase {
     font-size: 15px;
   }
-  .imgVision, .imgMision {
+  .imgVision,
+  .imgMision {
     width: 90%;
     margin: 4rem auto;
   }
@@ -387,7 +393,8 @@ b{
     width: 100%; /* Para que ocupen toda la pantalla */
     padding: 20px;
   }
-  .imgVision, .imgMision {
+  .imgVision,
+  .imgMision {
     width: 100%; /* Ajustar imágenes */
     margin: 2rem auto;
   }
@@ -400,14 +407,14 @@ b{
     width: 100%;
     padding-top: 20px; /* Espacio extra en la parte superior */
   }
-  .title3{
+  .title3 {
     font-size: 50px;
   }
-  .ubicacion{
+  .ubicacion {
     text-align: center;
     width: 100%;
     right: 20px;
-    font-size:25px;    
+    font-size: 25px;
   }
   #map {
     width: 90%; /* Ajusta el ancho del mapa */

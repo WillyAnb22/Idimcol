@@ -204,11 +204,11 @@ onMounted(async () => {
   justify-content: center;
   align-items: center;
   width: 60%;
-  margin: 4% auto;
+  margin: 11% auto;
 }
-.imgMision {
-  margin: 9% auto;
-}
+/* .imgMision {
+  margin: 5% auto;
+} */
 .container3 {
   background-color: #325e9b;
   color: white;
@@ -225,8 +225,8 @@ onMounted(async () => {
 .ubicacion {
   position: relative;
   font-size: 30px;
-  top:130px;
-  left: 130px;
+  top:15%;
+  left: 12%;
 }
 b {
   color: #032a3d;

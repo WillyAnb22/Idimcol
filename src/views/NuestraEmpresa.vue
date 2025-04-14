@@ -57,7 +57,7 @@
         </div>
         <div class="imgMision">
           <q-img
-            src="https://wautechnologies.com/wp-content/uploads/2023/07/fabricas-inteligentes.jpg"
+            src="/FotoMision.jpg"
           ></q-img>
         </div>
       </div>

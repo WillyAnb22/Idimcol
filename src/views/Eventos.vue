@@ -1,7 +1,19 @@
 <template>
   <div class="container">
+  <div class="q-pa-md row items-start q-gutter-md">
+    <q-card class="my-card">
+      <img src="https://cdn.quasar.dev/img/mountains.jpg">
+
+      <q-card-section>
+        <div class="text-h6">Día de la mujer</div>
+        lorem: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+      </q-card-section>
+      <q-card-section class="q-pt-none">
+      </q-card-section>
+    </q-card>
+  </div>
     <!-- Agregamos un div como contenedor raíz -->
-    <q-splitter v-model="splitterModel" style="height: 450px">
+    <!-- <q-splitter v-model="splitterModel" style="height: 450px">
       <template v-slot:before>
         <div class="q-pa-md">
           <q-date v-model="date" :events="events" event-color="orange" />
@@ -18,7 +30,7 @@
         >
           <q-tab-panel name="2025/03/05">
             <div class="text-h4 q-mb-md">2025/03/05</div>
-            <!-- <video class="video" src="video.mp4" controls /> -->
+            <video class="video" src="video.mp4" controls />
             <img class="img" src="/Miércoles-Ceniza.png" />
             <br />
             <p>
@@ -39,8 +51,47 @@
           </q-tab-panel>
         </q-tab-panels>
       </template>
-    </q-splitter>
-
+    </q-splitter>-->
+    <!-- <div class="tarjeta">
+      <div class="contenido">
+        <q-img src="fondo.png" fit="cover" style="border-radius: 20px;"></q-img>
+        <p>14/04/2025</p>
+        <P>
+          bla la lechuza hace shh todos calladitos, todos calladitos hace shhhh
+          <br />la lucehza, tres tristes trigues comen trigo en un trigal
+        </P>
+      </div>
+    </div>
+    <div class="tarjeta">
+      <div class="contenido">
+        <q-img src="fondo.png" fit="cover" style="border-radius: 20px;"></q-img>
+        <p>14/04/2025</p>
+        <P>
+          bla la lechuza hace shh todos calladitos, todos calladitos hace shhhh
+          <br />la lucehza, tres tristes trigues comen trigo en un trigal
+        </P>
+      </div>
+    </div>
+    <div class="tarjeta">
+      <div class="contenido">
+        <q-img src="fondo.png" fit="cover" style="border-radius: 20px;"></q-img>
+        <p>14/04/2025</p>
+        <P>
+          bla la lechuza hace shh todos calladitos, todos calladitos hace shhhh
+          <br />la lucehza, tres tristes trigues comen trigo en un trigal
+        </P>
+      </div>
+    </div>
+        <div class="tarjeta">
+      <div class="contenido">
+        <q-img src="fondo.png" fit="cover" style="border-radius: 20px;"></q-img>
+        <p>14/04/2025</p>
+        <P>
+          bla la lechuza hace shh todos calladitos, todos calladitos hace shhhh
+          <br />la lucehza, tres tristes trigues comen trigo en un trigal
+        </P>
+      </div>
+    </div> -->
     <!-- Inportacion del footer -->
     <Footer class="footer" />
   </div>
@@ -48,17 +99,20 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted } from "vue";
-import Footer from '@/components/Footer.vue';  // Asegúrate de que el path es correcto
+import Footer from "@/components/Footer.vue"; // Asegúrate de que el path es correcto
 
 const splitterModel = ref(50);
-const date = ref(getCurrentDate());  // Se inicia con la fecha actual
+const date = ref(getCurrentDate()); // Se inicia con la fecha actual
 const events = ["2025/03/05", "2025/03/08"];
 let intervalId = null;
 
 // Función para obtener la fecha actual en formato "YYYY/MM/DD"
 function getCurrentDate() {
   const today = new Date();
-  return today.toISOString().split("T")[0].replace(/-/g, "/"); // Convierte a "YYYY/MM/DD"
+  return today
+    .toISOString()
+    .split("T")[0]
+    .replace(/-/g, "/"); // Convierte a "YYYY/MM/DD"
 }
 
 // Se ejecuta cuando el componente se monta
@@ -79,7 +133,7 @@ onUnmounted(() => {
 </script>
 
 <style scoped>
-.container {
+/* .container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -110,7 +164,7 @@ p {
   text-align: justify;
 }
 .q-splitter {
-  flex-grow: 1; /* Hace que ocupe todo el espacio disponible */
+  flex-grow: 1; 
   height: 100%;
 }
 .video,
@@ -119,8 +173,36 @@ p {
   height: 50%;
   display: block;
   margin: 0 auto;
+} */
+/* .tarjeta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
-
+.contenido{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+.img-tarjeta{
+  width: 100%;
+  max-height: 250px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+p{
+  font-size:18px;
+  margin: 5px 0;
+  text-align:justify;
+} */
+.my-card{
+  width: 100%;
+  max-width: 250px;
+}
 .footer {
   margin-top: 25px;
 }

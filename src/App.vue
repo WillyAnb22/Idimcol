@@ -68,16 +68,7 @@ import { useRoute } from "vue-router";
 import MyBtn from "@/components/MyBtn.vue";
 
 const route = useRoute();
-const btnClass = ref("btn-Eventos");
 
-const rightDrawerOpen = ref(false);
-function toggleRightDrawer() {
-  rightDrawerOpen.value = !rightDrawerOpen.value;
-}
-// Detectar la página actual y cambiar la posición del botón
-watch(route, () => {
-  btnClass.value = route.path === "/Eventos" ? "btn-Eventos" : "btn-Pagina";
-});
 </script>
 
 <style scoped>
@@ -135,23 +126,6 @@ nav a.router-link-exact-active {
   color: #737375;
   border-bottom: 2px solid #325b9c;
   padding-bottom: 5px;
-}
-
-/* Posición del botón en la vista Eventos*/
-.btn-Eventos {
-  position: fixed;
-  bottom: 150px;
-  left: 20px;
-  z-index: 100;
-  width: 20px;
-}
-
-/* Posición del botón en otras paginas */
-.btn-Pagina {
-  position: fixed;
-  bottom: 140px;
-  right: 20px;
-  z-index: 1;
 }
 
 /* Estilo del footer */

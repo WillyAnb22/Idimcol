@@ -1,17 +1,66 @@
 <template>
   <div class="container">
-  <div class="q-pa-md row items-start q-gutter-md">
-    <q-card class="my-card">
-      <img src="https://cdn.quasar.dev/img/mountains.jpg">
+    <div class="row">
+      <q-card class="my-card">
+        <img src="/Día-Mujer.png" />
+        <q-card-section>
+          <div class="text-h4">Día de la mujer</div>
+        </q-card-section>
+        <q-card-section class="q-pt-none">
+          <p>
+            "En IDIMCOL, queremos agradecer a las mujeres que hacen y han sido parte de nuestra familia. Su dedicación,
+            esfuerzo y talento han sido fundamentales para el crecimiento de nuestra empresa. Hoy y siempre, reconocemos
+            su valiosa labor y el impacto positivo que generan en cada área donde están presentes. Gracias por ser inspiración,
+            fortaleza y motor de cambio."
+          </p>
+        </q-card-section>
+      </q-card>
 
-      <q-card-section>
-        <div class="text-h6">Día de la mujer</div>
-        lorem: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-      </q-card-section>
-      <q-card-section class="q-pt-none">
-      </q-card-section>
-    </q-card>
-  </div>
+      <q-card class="my-card">
+        <img src="https://cdn.quasar.dev/img/mountains.jpg" />
+        <q-card-section>
+          <div class="text-h4">Día de la mujer</div>
+        </q-card-section>
+        <q-card-section class="q-pt-none">
+          <p>
+            "En IDIMCOL, queremos agradecer a las mujeres que hacen y han sido parte de nuestra familia. Su dedicación,
+            esfuerzo y talento han sido fundamentales para el crecimiento de nuestra empresa. Hoy y siempre, reconocemos
+            su valiosa labor y el impacto positivo que generan en cada área donde están presentes. Gracias por ser inspiración,
+            fortaleza y motor de cambio."
+          </p>
+        </q-card-section>
+      </q-card>
+
+      <q-card class="my-card">
+        <img src="https://cdn.quasar.dev/img/mountains.jpg" />
+        <q-card-section>
+          <div class="text-h4">Día de la mujer</div>
+        </q-card-section>
+        <q-card-section class="q-pt-none">
+          <p>
+            "En IDIMCOL, queremos agradecer a las mujeres que hacen y han sido parte de nuestra familia. Su dedicación,
+            esfuerzo y talento han sido fundamentales para el crecimiento de nuestra empresa. Hoy y siempre, reconocemos
+            su valiosa labor y el impacto positivo que generan en cada área donde están presentes. Gracias por ser inspiración,
+            fortaleza y motor de cambio."
+          </p>
+        </q-card-section>
+      </q-card>
+
+      <q-card class="my-card">
+        <img src="https://cdn.quasar.dev/img/mountains.jpg" />
+        <q-card-section>
+          <div class="text-h6">Día de la mujer</div>
+        </q-card-section>
+        <q-card-section class="q-pt-none">
+          <p>
+            "En IDIMCOL, queremos agradecer a las mujeres que hacen y han sido parte de nuestra familia. Su dedicación,
+            esfuerzo y talento han sido fundamentales para el crecimiento de nuestra empresa. Hoy y siempre, reconocemos
+            su valiosa labor y el impacto positivo que generan en cada área donde están presentes. Gracias por ser inspiración,
+            fortaleza y motor de cambio."
+          </p>
+        </q-card-section>
+      </q-card>
+    </div>
     <!-- Agregamos un div como contenedor raíz -->
     <!-- <q-splitter v-model="splitterModel" style="height: 450px">
       <template v-slot:before>
@@ -91,7 +140,7 @@
           <br />la lucehza, tres tristes trigues comen trigo en un trigal
         </P>
       </div>
-    </div> -->
+    </div>-->
     <!-- Inportacion del footer -->
     <Footer class="footer" />
   </div>
@@ -199,11 +248,19 @@ p{
   margin: 5px 0;
   text-align:justify;
 } */
-.my-card{
+.row {
+  gap: 50px;
+}
+.my-card {
+  left: 10%;
+  top: 40px;
   width: 100%;
-  max-width: 250px;
+  max-width: 550px;
+}
+p{
+  font-size: 20px;
 }
 .footer {
-  margin-top: 25px;
+  margin-top: 10%;
 }
 </style>

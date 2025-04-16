@@ -19,6 +19,10 @@
 <style scoped>
 .btn {
   height: 150px;
+  position: fixed;
+  bottom: 140px;
+  right: 20px;
+  z-index: 1;
 }
 @media (max-width: 600px) {
   .btn {

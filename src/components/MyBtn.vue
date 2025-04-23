@@ -30,20 +30,19 @@
   height: auto;
   width: 30%;
 }
-
+@media (max-width: 600px) {
+  .icon {
+    width: 24%;
+  }
+}
+@media (max-width: 380px) {
+  .icon  {
+    width: 20%;
+  }
+}
 </style>
 <script setup>
 const openWhatsApp = () => {
   window.open("https://wa.me/573027903706", "_blank");
 };
 </script>
-@media (max-width: 600px) {
-  .btn {
-    height: 140px;
-  }
-}
-@media (max-width: 400px) {
-  .btn {
-    right: 20px;
-  }
-}

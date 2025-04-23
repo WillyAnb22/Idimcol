@@ -27,7 +27,7 @@
           <q-img src="/frontal.png"></q-img>
         </div>
         <div class="logo">
-          <q-img src="/logo.png"></q-img>
+          <q-img src="/logoBlanco.png"></q-img>
         </div>
         <div class="text">CONOCE QUIENES SOMOS</div>
         <div class="btn">
@@ -313,13 +313,14 @@ img {
     font-size: 85px;
   }
   .textoIzquierda {
-    width: 15rem;
-    right: 18rem;
+    width: 45%;
+    left: 4%;
+    top: 25%;
   }
   .textoDerecha {
     font-size: 1rem;
-    width: 11rem;
-    left: 20px;
+    width: 20rem;
+    left: 59%;
   }
   .imgFondo {
     width: 200%;
@@ -349,6 +350,7 @@ img {
     font-size: 13px;
   }
 }
+
 @media (max-width: 780px) {
   .textoIzquierda {
     width: 24rem;
@@ -363,16 +365,32 @@ img {
     width: 210%;
   }
 }
+@media (max-width: 630px){
+  .title {
+    font-size: 80px;
+  }
+  .textoIzquierda {
+    font-size: 17px;
+    top: 23%;
+  }
+  .textoDerecha{
+    font-size: 15px;
+    left: 47%;
+  }
+  .imgFondo {
+    width: 250%;
+  }
+}
 @media (max-width: 600px) {
   .title {
     font-size: 70px;
   }
   .textoDerecha {
-    font-size: 1rem;
-    width: 11rem;
+    font-size: 14px;
+    left: 45%;
   }
   .imgFondo {
-    width: 260%;
+    width: 270%;
   }
   .izquierda {
     padding-left: 30px;
@@ -395,15 +413,19 @@ img {
 }
 @media (max-width: 550px) {
   .textoIzquierda {
-    font-size: 1rem;
-    width: 11rem;
-    left: 20px;
+    font-size: 16px;
+    top: 23%;
   }
   .imgFondo {
     width: 320%;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 500px){
+  .textoDerecha{
+    left: 40%;
+  }
+}
+@media (max-width: 450px) {
   .title {
     top: 15%;
     font-size: 60px;
@@ -414,8 +436,7 @@ img {
   }
   .textoDerecha {
     font-size: 12px;
-    top: 72%;
-    left: 50%;
+    left: 34%;
   }
   .imgFondo {
     width: 400%;
@@ -432,6 +453,31 @@ img {
   }
   .btn {
     top: 70%;
+  }
+}
+@media (max-width: 380px){
+  .textoDerecha{
+    font-size: 11px;
+    top: 85%;
+    left: 25%;
+  }
+  .imgFondo{
+    width: 410%;
+  }
+}
+@media (max-width: 330px){
+  .textoDerecha{
+    font-size: 10px;
+    top: 84%;
+    left: 20%;
+  }
+  .text {
+    font-size: 23px;
+    top: 7%;
+  }
+
+  .imgFondo{
+    width: 470%;
   }
 }
 </style>

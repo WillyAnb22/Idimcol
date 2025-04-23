@@ -6,7 +6,7 @@
         <q-toolbar class="toolbar">
           <div class="logo">
             <router-link to="/">
-              <img src="/logo.png" />
+              <img src="/logoBlanco.png" />
             </router-link>
           </div>
 
@@ -33,21 +33,54 @@
           <q-item clickable v-ripple to="/" @click="rightDrawerOpen = false" class="menu-lateral">
             <q-item-section>Inicio</q-item-section>
           </q-item>
-          <q-item clickable v-ripple to="/NuestraEmpresa" @click="rightDrawerOpen = false" class="menu-lateral">
+          <q-item
+            clickable
+            v-ripple
+            to="/NuestraEmpresa"
+            @click="rightDrawerOpen = false"
+            class="menu-lateral"
+          >
             <q-item-section>Nuestra Empresa</q-item-section>
           </q-item>
-          <q-item clickable v-ripple to="/Servicios" @click="rightDrawerOpen = false" class="menu-lateral">
+          <q-item
+            clickable
+            v-ripple
+            to="/Servicios"
+            @click="rightDrawerOpen = false"
+            class="menu-lateral"
+          >
             <q-item-section>Servicios</q-item-section>
           </q-item>
-          <q-item clickable v-ripple to="/Sectores" @click="rightDrawerOpen = false" class="menu-lateral">
+          <q-item
+            clickable
+            v-ripple
+            to="/Sectores"
+            @click="rightDrawerOpen = false"
+            class="menu-lateral"
+          >
             <q-item-section>Sectores</q-item-section>
           </q-item>
-          <q-item clickable v-ripple to="/Conocenos" @click="rightDrawerOpen = false" class="menu-lateral">
+          <q-item
+            clickable
+            v-ripple
+            to="/Conocenos"
+            @click="rightDrawerOpen = false"
+            class="menu-lateral"
+          >
             <q-item-section>Conócenos</q-item-section>
           </q-item>
-          <q-item clickable v-ripple to="/Eventos" @click="rightDrawerOpen = false" class="menu-lateral">
+          <q-item
+            clickable
+            v-ripple
+            to="/Eventos"
+            @click="rightDrawerOpen = false"
+            class="menu-lateral"
+          >
             <q-item-section>Bienestar</q-item-section>
           </q-item>
+          <div class="logoNegro-container">
+            <img class="logoNegro" src="/LOGO SDP.png" />
+          </div>
         </q-list>
       </q-drawer>
 
@@ -56,14 +89,14 @@
         <router-view />
       </q-page-container>
 
-      <!-- Botón MyBtn con posición dinámica -->
-      <MyBtn/>
+      <!--Botón Contactanos-->
+      <MyBtn />
     </q-layout>
   </div>
 </template>
 
 <script setup>
-import { ref} from "vue";
+import { ref } from "vue";
 import { useRoute } from "vue-router";
 import MyBtn from "@/components/MyBtn.vue";
 
@@ -73,7 +106,6 @@ const rightDrawerOpen = ref(false);
 function toggleRightDrawer() {
   rightDrawerOpen.value = !rightDrawerOpen.value;
 }
-
 </script>
 
 <style scoped>
@@ -101,19 +133,28 @@ img {
   align-items: center;
 }
 /* Menu lateral*/
-.menu-btn{
+.menu-btn {
   margin-left: auto;
   display: none;
 }
-.menu-lateral{
-  color: #879dc0;
+.menu-lateral {
+  color: #02386b;
   font-size: 18px;
   font-weight: bold;
 }
 .menu-lateral:hover {
-    background-color: #292727;
-    color: #000;
-  }
+  background-color: #868686;
+  color: #ffffff;
+}
+.logoNegro-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.logoNegro {
+  width: 100%;
+}
 nav {
   display: flex;
   gap: 40px;
@@ -132,7 +173,6 @@ nav a.router-link-exact-active {
   border-bottom: 2px solid #325b9c;
   padding-bottom: 5px;
 }
-
 
 /* Estilo del footer */
 .footer {
@@ -232,7 +272,7 @@ nav a.router-link-exact-active {
     display: none; /* Oculto en pantallas pequeñas */
   }
 }
-@media (max-width:550px){
+@media (max-width: 550px) {
   nav {
     font-size: 15px;
     gap: 12px;

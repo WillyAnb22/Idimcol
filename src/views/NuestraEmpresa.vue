@@ -285,9 +285,7 @@ b {
   .textMision {
     font-size: 1.2rem;
   }
-  .imgMision {
-    margin: 25% auto;
-  }
+
   .title3 {
     font-size: 3.6rem;
     left: 4rem;

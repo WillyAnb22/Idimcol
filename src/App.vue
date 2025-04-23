@@ -57,17 +57,22 @@
       </q-page-container>
 
       <!-- Botón MyBtn con posición dinámica -->
-      <MyBtn :class="btnClass" />
+      <MyBtn/>
     </q-layout>
   </div>
 </template>
 
 <script setup>
-import { ref, watch } from "vue";
+import { ref} from "vue";
 import { useRoute } from "vue-router";
 import MyBtn from "@/components/MyBtn.vue";
 
 const route = useRoute();
+
+const rightDrawerOpen = ref(false);
+function toggleRightDrawer() {
+  rightDrawerOpen.value = !rightDrawerOpen.value;
+}
 
 </script>
 
@@ -127,6 +132,7 @@ nav a.router-link-exact-active {
   border-bottom: 2px solid #325b9c;
   padding-bottom: 5px;
 }
+
 
 /* Estilo del footer */
 .footer {

@@ -42,12 +42,10 @@ const sectores = reactive([
     descripcion:
     "Nos especializamos en el suministro de materiales y soluciones para el sector industrial, donde la precisión, resistencia y calidad son fundamentales. Este sector abarca una amplia gama de industrias que requieren componentes y estructuras de alto rendimiento para garantizar procesos eficientes y seguros. Nuestro compromiso es proporcionar productos que cumplan con los más altos estándares, respaldando la producción y el desarrollo de piezas esenciales para la manufactura, la construcción y otras aplicaciones industriales.",
     imagenes: [
-      "/Industrial/industrial1.png",
-      "/Industrial/industrial2.png",
-      "/Industrial/industrial3.png",
-      "/Industrial/industrial4.png",
-      "/Industrial/industrial6.png",
-      "/Industrial/industrial7.png"
+      "/SecIndustrial/Escaleras.png",
+      "/SecIndustrial/estructuraMetalica.png",
+      "/SecIndustrial/puente.jpg",
+      "/SecIndustrial/engranajes.jpeg",
     ],
     slide: ref(1)
   },
@@ -56,10 +54,10 @@ const sectores = reactive([
     descripcion:
     "En el sector automotriz, la calidad y el rendimiento de los materiales son fundamentales para garantizar procesos eficientes y resultados óptimos. Ofrecemos metales de alta resistencia y precisión, diseñados para cumplir con los estándares de esta industria. Nuestro enfoque se centra en la innovación y la durabilidad, proporcionando soluciones confiables para cada aplicación.",
     imagenes: [
-      "https://cdn.quasar.dev/img/mountains.jpg",
-      "https://cdn.quasar.dev/img/parallax1.jpg",
-      "https://cdn.quasar.dev/img/parallax2.jpg",
-      "https://cdn.quasar.dev/img/quasar.jpg"
+      "/Automotriz/Automotriz1.jpg",
+      "/Automotriz/Automotriz2.png",
+      "/Automotriz/Automotriz3.png",
+      "/Automotriz/Automotriz4.png"
     ],
     slide: ref(1)
   },
@@ -68,10 +66,10 @@ const sectores = reactive([
     descripcion:
     "Cumplimos con los más altos estándares de seguridad y calidad, ofreciendo materiales especializados para la industria alimentaria. Nuestros productos cumplen con las normativas sanitarias vigentes, garantizando procesos seguros, eficientes y confiables. Brindamos soluciones adaptadas a las exigencias del sector, asegurando la calidad y productividad en cada etapa de la producción.",
     imagenes: [
-      "https://cdn.quasar.dev/img/mountains.jpg",
-      "https://cdn.quasar.dev/img/parallax1.jpg",
-      "https://cdn.quasar.dev/img/parallax2.jpg",
-      "https://cdn.quasar.dev/img/quasar.jpg"
+      "/SecAlimentario/MAQUINA_CHOCOLATE.jpg",
+      "/SecAlimentario/Alimenticio.jpg",
+      "/SecAlimentario/maquina.jpg",
+      "/SecAlimentario/botellas.jpg"
     ],
     slide: ref(1)
   }
@@ -102,19 +100,20 @@ const sectores = reactive([
   margin-bottom: 20px;
   text-align: justify;
 }
-.carrusel {
-  margin-top: 50px;
-}
-.q-carousel {
-  height: 600px; /* Ajusta la altura según lo que necesites */
+.q-carrusel {
+  width: 100%;;
 }
 .q-carousel-slide {
-  height: 100%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
 }
 .q-carousel-slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;; /* Puedes usar 'contain' si no quieres recorte */
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain; 
 }
 /* Responsividad */
 @media (max-width: 1000px) {
@@ -123,6 +122,19 @@ const sectores = reactive([
   }
 .text{
   font-size: 26px;
+}
+}
+@media (max-width: 500px){
+  .q-carousel {
+  width: 100%;
+  height: 700px;
+}
+.q-carousel-slide {
+  height: 100%;
+}
+.q-carousel-slide img {
+  height: 100%;
+  object-fit: contain; 
 }
 }
 </style>

@@ -34,9 +34,7 @@
           y un retorno de la inversión con utilidades a su sociedad.
         </div>
         <div class="imgVision">
-          <q-img
-            src="https://wautechnologies.com/wp-content/uploads/2023/07/fabricas-inteligentes.jpg"
-          ></q-img>
+          <q-img src="IMG_1774.JPG"></q-img>
         </div>
       </div>
       <div class="mision">
@@ -56,30 +54,33 @@
           demás partes interesadas.
         </div>
         <div class="imgMision">
-          <q-img
-            src="/FotoMision.jpg"
-          ></q-img>
+          <q-img src="/FotoMision.jpg"></q-img>
         </div>
       </div>
     </div>
     <div class="container3">
       <div class="title3">Encuentranos Aquí</div>
       <div class="ubicacion">
-        <p>
-          <b>DIRECCIÓN:</b>
-        </p>📌Carrera 13 #23-33 Barrio - Girardot
-        <br />Ciudad: Bucaramanga/Santander
-        <p>
-          <b>LÍNEAS TELEFÓNICAS:</b>
-        </p>📱 +57 302 7903706
-        <br />📞 (607)-6346608
-        <br />
-        <p>
-          <b>CORREOS:</b>
-        </p>
-        <p>✉ gerencia@idimcol.com.co</p>📱 +57 316 4468484
-        <p>✉ comercial@idimcol.com.co</p>📱 +57 317 5768082
-        <p>✉ gesproyectos@idimcol.com.co</p>📱 +57 315 2434517
+        <div class="direccion">
+          <p>
+            <b>DIRECCIÓN:</b>
+          </p>📌Carrera 13 #23-33 Barrio - Girardot
+          <br />Ciudad: Bucaramanga/Santander
+        </div>
+        <div class="telefonos">
+          <p>
+            <b>LÍNEAS TELEFÓNICAS:</b>
+          </p>📱 +57 302 7903706
+          <br />📞 (607)-6346608
+        </div>
+        <div class="correos">
+          <p>
+            <b>CORREOS:</b>
+          </p>✉ gerencia@idimcol.com.co - 📱 +57 316 4468484
+          <br />✉ comercial@idimcol.com.co - 📱 +57 317 5768082
+          <br />✉ gesproyectos@idimcol.com.co - 📱 +57 315 2434517
+          <br />
+        </div>
       </div>
       <div id="map"></div>
     </div>
@@ -206,9 +207,9 @@ onMounted(async () => {
   width: 60%;
   margin: 11% auto;
 }
-/* .imgMision {
-  margin: 5% auto;
-} */
+.imgVision {
+  margin: 6% auto;
+}
 .container3 {
   background-color: #325e9b;
   color: white;
@@ -225,7 +226,7 @@ onMounted(async () => {
 .ubicacion {
   position: relative;
   font-size: 30px;
-  top:15%;
+  top: 15%;
   left: 12%;
 }
 b {
@@ -285,7 +286,6 @@ b {
   .textMision {
     font-size: 1.2rem;
   }
-
   .title3 {
     font-size: 3.6rem;
     left: 4rem;
@@ -326,14 +326,31 @@ b {
   .text {
     font-size: 20px;
   }
-  .imgMision {
-    margin: 25px auto;
+  .imgMision,
+  .imgVision {
+    width: 100%;
   }
   .ubicacion {
     font-size: 21px;
   }
-  #correo {
-    font-size: 15.8px;
+  .container3 {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .ubicacion {
+    position: relative;
+    font-size: 25px;
+    margin-top: 10%;
+    margin-left: -8%;
+    max-width: 700px;
+    width: 100%;
+  }
+  #map {
+    width: 90%;
+    height: 300px;
+    left: 5%;
+    margin-bottom: 20%;
   }
 }
 @media (max-width: 950px) {
@@ -345,7 +362,7 @@ b {
   }
   .imgMision {
     width: 350px;
-    margin: 11.7% auto;
+    margin: 20% auto;
   }
 }
 @media (max-width: 850px) {
@@ -361,13 +378,34 @@ b {
   .imgVision,
   .imgMision {
     width: 90%;
-    margin: 4rem auto;
   }
   .imgMision {
-    margin: 8rem auto;
+    margin: 23% auto;
+  }
+  .container3 {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
   }
   .ubicacion {
+    position: relative;
+    font-size: 23px;
+    margin-left: -6%;
+  }
+}
+@media (max-width: 760px) {
+  .ubicacion {
+    position: relative;
     font-size: 20px;
+    margin-top: 12%;
+    margin-left: -6%;
+    max-width: 500px;
+    width: 90%;
+  }
+}
+@media (max-width: 700px) {
+  .imgFondo {
+    width: 230%;
   }
 }
 @media (max-width: 600px) {
@@ -396,29 +434,94 @@ b {
     width: 100%; /* Ajustar imágenes */
     margin: 2rem auto;
   }
-  .container3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centra los elementos */
-    justify-content: flex-start; /* Asegura que el contenido empiece arriba */
-    text-align: center;
-    width: 100%;
-    padding-top: 20px; /* Espacio extra en la parte superior */
-  }
   .title3 {
     font-size: 50px;
   }
   .ubicacion {
-    text-align: center;
-    width: 100%;
-    right: 20px;
-    font-size: 25px;
+    position: relative;
+    font-size: 18px;
+    margin-top: 12%;
+    margin-left: -4%;
+    max-width: 500px;
+    width: 50%;
   }
   #map {
-    width: 90%; /* Ajusta el ancho del mapa */
-    height: 300px;
-    margin-top: -250px;
-    margin-left: 100px;
+    width: 100%; /* Ajusta el ancho del mapa */
+    height: 200px;
+    margin-top: -140px;
+    margin-left: -20px;
+  }
+}
+@media (max-width: 520px) {
+  .imgFondo {
+    width: 320%;
+  }
+  .ubicacion {
+    margin-top: -40px;
+  }
+  .title3 {
+    left: 55px;
+    font-size: 45px;
+  }
+  #map {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 420px) {
+  .title {
+    font-size: 30px;
+    top: 50px;
+  }
+  .imgFondo {
+    width: 390%;
+  }
+  .frase {
+    font-size: 14px;
+  }
+  .text {
+    font-size: 17px;
+  }
+  .title3{
+    font-size: 40px;
+    left: 40px;
+  }
+}
+@media (max-width: 370px){
+  .imgFondo{
+    width: 200vh;
+  }
+  .title{
+    left: 40px;
+  }
+  .frase{
+    font-size: 15px;
+    left: 40px;
+  }
+  .text{
+    left: 40px;
+  }
+  .title3{
+    font-size: 30px;
+  }
+  .ubicacion{
+    font-size: 18px;
+    margin-left: -4%;
+    width: 60%;
+  }
+}
+@media (max-width:340px){
+  .text{
+    font-size:15px
+  }
+  #map{
+    margin-top: -10px;
+  }
+}
+@media (max-width: 300px){
+  .ubicacion{
+    font-size: 18px;
+    margin-top: -25%;
+    width: 90%;
   }
 }
 </style> 

@@ -464,7 +464,10 @@ b {
     font-size: 45px;
   }
   #map {
-    margin-top: 10px;
+    margin-top: -30px;
+    height: 250px;
+    width: 90%;
+    left: 10%;
   }
 }
 @media (max-width: 420px) {
@@ -515,12 +518,13 @@ b {
   }
   #map{
     margin-top: -20px;
+    height: 200px;
   }
 }
 @media (max-width: 300px){
   .ubicacion{
     font-size: 18px;
-    margin-top: -25%;
+    margin-top: -10%;
     width: 90%;
   }
 }

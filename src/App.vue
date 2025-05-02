@@ -18,7 +18,7 @@
               <router-link to="/Servicios">Servicios</router-link>
               <router-link to="/Sectores">Sectores</router-link>
               <router-link to="/Conocenos">Conócenos</router-link>
-              <router-link to="/Eventos">Bienestar</router-link>
+              <router-link to="/Bienestar">Bienestar</router-link>
             </nav>
           </div>
 
@@ -72,7 +72,7 @@
           <q-item
             clickable
             v-ripple
-            to="/Eventos"
+            to="/Bienestar"
             @click="rightDrawerOpen = false"
             class="menu-lateral"
           >

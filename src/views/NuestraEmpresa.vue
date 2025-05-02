@@ -76,9 +76,9 @@
         <div class="correos">
           <p>
             <b>CORREOS:</b>
-          </p>✉ gerencia@idimcol.com.co - 📱 +57 316 4468484
-          <br />✉ comercial@idimcol.com.co - 📱 +57 317 5768082
-          <br />✉ gesproyectos@idimcol.com.co - 📱 +57 315 2434517
+          </p>✉ gerencia@idimcol.com.co -📱+57 316 4468484
+          <br />✉ comercial@idimcol.com.co -📱+57 317 5768082
+          <br />✉ gesproyectos@idimcol.com.co -📱+57 315 2434517
           <br />
         </div>
       </div>
@@ -440,15 +440,15 @@ b {
   .ubicacion {
     position: relative;
     font-size: 18px;
-    margin-top: 12%;
-    margin-left: -4%;
+    margin-top: -5%;
+    margin-left: -3%;
     max-width: 500px;
     width: 50%;
   }
   #map {
     width: 100%; /* Ajusta el ancho del mapa */
-    height: 200px;
-    margin-top: -140px;
+    height: 300px;
+    margin-top: -2px;
     margin-left: -20px;
   }
 }
@@ -514,7 +514,7 @@ b {
     font-size:15px
   }
   #map{
-    margin-top: -10px;
+    margin-top: -20px;
   }
 }
 @media (max-width: 300px){

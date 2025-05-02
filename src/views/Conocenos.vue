@@ -2,34 +2,43 @@
   <div class="q-pa-md">
     <div class="q-col-gutter-md row">
       <div class="col-4">
-        <q-img src="fondo.png" fit="cover" style="border-radius: 20px;"></q-img>
+        <q-img src="/fotosConocenos/frente.png" fit="cover" style="border-radius: 20px;"></q-img>
       </div>
       <div class="col-4">
-        <q-img src="fondo.png" fit="cover" style="border-radius: 20px;"></q-img>
+        <q-img src="/fotosConocenos/planta.jpeg" fit="cover" style="border-radius: 20px;"></q-img>
       </div>
       <div class="col-4">
-        <q-img src="fondo.png" fit="cover" style="border-radius: 20px;"></q-img>
+        <q-img src="/fotosConocenos/cnc.png" fit="cover" style="border-radius: 20px;"></q-img>
       </div>
       <div class="col-4">
-        <q-img src="fondo.png" fit="cover" style="border-radius: 20px;"></q-img>
+        <q-img src="/fotosConocenos/soldador.jpg" fit="cover" style="border-radius: 20px;"></q-img>
       </div>
       <div class="col-4">
-        <q-img src="fondo.png" fit="cover" style="border-radius: 20px;"></q-img>
+        <q-img src="/fotosConocenos/administrativos.jpg" fit="cover" style="border-radius: 20px;"></q-img>
       </div>
       <div class="col-4">
-        <q-img src="fondo.png" fit="cover" style="border-radius: 20px;"></q-img>
+        <q-img src="/fotosConocenos/diseño.jpg" fit="cover" style="border-radius: 20px;"></q-img>
+      </div>
+      <div class="col-4">
+        <q-img src="/fotosConocenos/maquina1.jpg" fit="cover" style="border-radius: 20px;"></q-img>
+      </div>
+      <div class="col-4">
+        <q-img src="/fotosConocenos/maquina2.jpg" fit="cover" style="border-radius: 20px;"></q-img>
+      </div>
+      <div class="col-4">
+        <q-img src="/fotosConocenos/maquina3.jpg" fit="cover" style="border-radius: 20px;"></q-img>
       </div>
     </div>
 
     <div class="videos row">
       <div class="col-4">
-        <video ref="video1" src="video.mp4" controls></video>
+        <video ref="video1" src="/fotosConocenos/Ajedrez.mp4" controls></video>
       </div>
       <div class="col-4">
-        <video ref="video2" src="video.mp4" controls></video>
+        <video ref="video2" src="/fotosConocenos/Bodega.mp4" controls></video>
       </div>
       <div class="col-4">
-        <video ref="video3" src="video.mp4" controls></video>
+        <video ref="video3" src="/fotosConocenos/Elevador.mp4" controls></video>
       </div>
     </div>
     <Footer class="footer" />
@@ -88,6 +97,14 @@ video {
   }
   .videos {
     gap:20px;
+  }
+}
+@media (max-width: 600px){
+  .row{
+    gap: 5px;
+  }
+  .col-4{
+    width: 90%;
   }
 }
 </style>

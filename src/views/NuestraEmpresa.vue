@@ -255,9 +255,19 @@ b {
     font-size: 1.7rem;
   }
 }
-@media (max-width: 1300px) {
+@media (max-width: 1330px) {
   .text {
     font-size: 25px;
+  }
+  .title3{
+    left:7%;
+  }
+  .ubicacion{
+    font-size: 25px;
+  }
+  #map{
+    left: 20px;
+    width: 95%;
   }
 }
 /* Responsividad a 1250px */
@@ -292,13 +302,13 @@ b {
   }
   .ubicacion {
     font-size: 1.4rem;
-    right: 4rem;
+    left: 9%;
   }
   #map {
-    width: 100%;
+    width: 95%;
     height: 70%;
     top: 120px;
-    right: 50px;
+    right: 10px;
   }
 }
 @media (max-width: 1100px) {
@@ -315,6 +325,13 @@ b {
   .imgMision {
     margin: 17% auto;
   }
+  .ubicacion{
+    max-width: 350px;
+  }
+  #map{
+    width: 100%;
+    margin-left: -40px;
+  }
 }
 @media (max-width: 1035px) {
   .imgFondo {
@@ -324,11 +341,14 @@ b {
     font-size: 50px;
   }
   .text {
-    font-size: 20px;
+    font-size: 25px;
   }
   .imgMision,
   .imgVision {
     width: 100%;
+  }
+  .imgMision{
+    margin: 9% auto;
   }
   .ubicacion {
     font-size: 21px;
@@ -341,16 +361,15 @@ b {
   .ubicacion {
     position: relative;
     font-size: 25px;
-    margin-top: 10%;
-    margin-left: -8%;
+    margin-top: -4%;
+    margin-left: -4%;
     max-width: 700px;
     width: 100%;
   }
   #map {
     width: 90%;
-    height: 300px;
-    left: 5%;
-    margin-bottom: 20%;
+    height: 320px;
+    left: 9%;
   }
 }
 @media (max-width: 950px) {
@@ -367,7 +386,7 @@ b {
 }
 @media (max-width: 850px) {
   .imgFondo {
-    width: 200%;
+    width: 210%;
   }
   .title {
     font-size: 3rem;
@@ -380,7 +399,7 @@ b {
     width: 90%;
   }
   .imgMision {
-    margin: 23% auto;
+    margin: 9% auto;
   }
   .container3 {
     display: flex;
@@ -390,15 +409,14 @@ b {
   .ubicacion {
     position: relative;
     font-size: 23px;
-    margin-left: -6%;
   }
 }
 @media (max-width: 760px) {
   .ubicacion {
     position: relative;
     font-size: 20px;
-    margin-top: 12%;
-    margin-left: -6%;
+    margin-top: -5%;
+    margin-left: -3%;
     max-width: 500px;
     width: 90%;
   }
@@ -406,6 +424,9 @@ b {
 @media (max-width: 700px) {
   .imgFondo {
     width: 230%;
+  }
+  .text{
+    font-size: 23px;
   }
 }
 @media (max-width: 600px) {
@@ -436,11 +457,12 @@ b {
   }
   .title3 {
     font-size: 50px;
+    margin-top: -10%;
   }
   .ubicacion {
     position: relative;
     font-size: 18px;
-    margin-top: -5%;
+    margin-top: -15%;
     margin-left: -3%;
     max-width: 500px;
     width: 50%;
@@ -449,25 +471,30 @@ b {
     width: 100%; /* Ajusta el ancho del mapa */
     height: 300px;
     margin-top: -2px;
-    margin-left: -20px;
+    margin-left: -50px;
   }
 }
 @media (max-width: 520px) {
   .imgFondo {
     width: 320%;
   }
-  .ubicacion {
-    margin-top: -40px;
-  }
   .title3 {
     left: 55px;
     font-size: 45px;
+  }  
+  .frase{
+  font-size: 13px;
+  left: 34px;
+  text-align: center;
+  }
+  .ubicacion {
+    margin-top: -90px;
   }
   #map {
-    margin-top: -30px;
-    height: 250px;
+    margin-top: -20px;
+    height: 300px;
     width: 90%;
-    left: 10%;
+    left: 15%;
   }
 }
 @media (max-width: 420px) {
@@ -483,10 +510,37 @@ b {
   }
   .text {
     font-size: 17px;
+    left: 50px;
   }
   .title3{
     font-size: 40px;
     left: 40px;
+  }
+  #map{
+    left: 20%;
+    height: 250px;
+  }
+}
+@media (max-width:400px){
+  .frase{
+    left: 10px;
+  }
+  .text{
+    left: 50px;
+  }
+  #map{
+    height: 250px;
+  }
+}
+@media (max-width:376px){
+  .text{
+    font-size: 15px;
+  }
+  .imgFondo{
+    width:450%;
+  }
+  .title3{
+    font-size: 35px;
   }
 }
 @media (max-width: 370px){
@@ -512,7 +566,7 @@ b {
     width: 60%;
   }
 }
-@media (max-width:340px){
+@media (max-width:320px){
   .text{
     font-size:15px
   }

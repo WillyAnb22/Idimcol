@@ -31,7 +31,7 @@
 
 <script setup>
 import { ref, reactive } from "vue";
-import Footer from '@/components/Footer.vue';  
+import Footer from "@/components/Footer.vue";
 
 // import TheFooter from '../components/footer.vue';
 
@@ -40,19 +40,19 @@ const sectores = reactive([
   {
     nombre: "SECTOR INDUSTRIAL",
     descripcion:
-    "Nos especializamos en el suministro de materiales y soluciones para el sector industrial, donde la precisión, resistencia y calidad son fundamentales. Este sector abarca una amplia gama de industrias que requieren componentes y estructuras de alto rendimiento para garantizar procesos eficientes y seguros. Nuestro compromiso es proporcionar productos que cumplan con los más altos estándares, respaldando la producción y el desarrollo de piezas esenciales para la manufactura, la construcción y otras aplicaciones industriales.",
+      "Nos especializamos en el suministro de materiales y soluciones para el sector industrial, donde la precisión, resistencia y calidad son fundamentales. Este sector abarca una amplia gama de industrias que requieren componentes y estructuras de alto rendimiento para garantizar procesos eficientes y seguros. Nuestro compromiso es proporcionar productos que cumplan con los más altos estándares, respaldando la producción y el desarrollo de piezas esenciales para la manufactura, la construcción y otras aplicaciones industriales.",
     imagenes: [
       "/SecIndustrial/Escaleras.png",
       "/SecIndustrial/estructuraMetalica.png",
       "/SecIndustrial/puente.jpg",
-      "/SecIndustrial/engranajes.jpeg",
+      "/SecIndustrial/engranajes.jpeg"
     ],
     slide: ref(1)
   },
   {
     nombre: "SECTOR AUTOMOTRIZ",
     descripcion:
-    "En el sector automotriz, la calidad y el rendimiento de los materiales son fundamentales para garantizar procesos eficientes y resultados óptimos. Ofrecemos metales de alta resistencia y precisión, diseñados para cumplir con los estándares de esta industria. Nuestro enfoque se centra en la innovación y la durabilidad, proporcionando soluciones confiables para cada aplicación.",
+      "En el sector automotriz, la calidad y el rendimiento de los materiales son fundamentales para garantizar procesos eficientes y resultados óptimos. Ofrecemos metales de alta resistencia y precisión, diseñados para cumplir con los estándares de esta industria. Nuestro enfoque se centra en la innovación y la durabilidad, proporcionando soluciones confiables para cada aplicación.",
     imagenes: [
       "/Automotriz/Automotriz1.jpg",
       "/Automotriz/Automotriz2.png",
@@ -64,7 +64,7 @@ const sectores = reactive([
   {
     nombre: "SECTOR ALIMENTARIO",
     descripcion:
-    "Cumplimos con los más altos estándares de seguridad y calidad, ofreciendo materiales especializados para la industria alimentaria. Nuestros productos cumplen con las normativas sanitarias vigentes, garantizando procesos seguros, eficientes y confiables. Brindamos soluciones adaptadas a las exigencias del sector, asegurando la calidad y productividad en cada etapa de la producción.",
+      "Cumplimos con los más altos estándares de seguridad y calidad, ofreciendo materiales especializados para la industria alimentaria. Nuestros productos cumplen con las normativas sanitarias vigentes, garantizando procesos seguros, eficientes y confiables. Brindamos soluciones adaptadas a las exigencias del sector, asegurando la calidad y productividad en cada etapa de la producción.",
     imagenes: [
       "/SecAlimentario/MAQUINA_CHOCOLATE.jpg",
       "/SecAlimentario/Alimenticio.jpg",
@@ -101,10 +101,10 @@ const sectores = reactive([
   text-align: justify;
 }
 .q-carrusel {
-  width: 100%;;
+  width: 100%;
 }
 .q-carousel-slide {
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -113,28 +113,67 @@ const sectores = reactive([
   max-height: 100%;
   width: auto;
   height: auto;
-  object-fit: contain; 
+  object-fit: contain;
 }
 /* Responsividad */
 @media (max-width: 1000px) {
-.title{
+  .title {
     font-size: 40px;
   }
-.text{
-  font-size: 26px;
+  .text {
+    font-size: 26px;
+  }
 }
-}
-@media (max-width: 500px){
+@media (max-width: 500px) {
+  .title{
+    font-size: 30px;
+  }
+  .text {
+    font-size: 20px;
+  }
   .q-carousel {
-  width: 100%;
-  height: 700px;
+    width: 100%;
+    height: 400px;
+  }
+  .q-carousel-slide {
+    height: 100%;
+  }
+  .q-carousel-slide img {
+    height: 100%;
+    object-fit: contain;
+  }
 }
-.q-carousel-slide {
-  height: 100%;
+@media (max-width:400px){
+  .title{
+    font-size:25px;
+  }
+  .text{
+    font-size: 18px;
+  }
+  .q-carousel{
+    height: 300px;
+  }
 }
-.q-carousel-slide img {
-  height: 100%;
-  object-fit: contain; 
+@media (max-width:350px){
+  .title{
+    font-size:22px;
+  }
+  .text{
+    font-size: 15px;
+  }
+  .q-carousel{
+    height: 250px;
+  }
 }
+@media (max-width: 300px){
+  .title{
+    font-size:17px;
+  }
+  .text{
+    font-size: 10px;
+  }
+  .q-carousel{
+    height: 200px;
+  }
 }
 </style>

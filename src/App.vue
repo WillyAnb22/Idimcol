@@ -79,7 +79,7 @@
             <q-item-section>Bienestar</q-item-section>
           </q-item>
           <div class="logoNegro-container">
-            <img class="logoNegro" src="/LOGO SDP.png" />
+            <img class="logoNegro" src="/logo.png" />
           </div>
         </q-list>
       </q-drawer>

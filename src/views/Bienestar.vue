@@ -15,51 +15,6 @@
           </p>
         </q-card-section>
       </q-card>
-
-      <q-card class="my-card">
-        <img src="https://cdn.quasar.dev/img/mountains.jpg" />
-        <q-card-section>
-          <div class="text-h4">Día de la mujer</div>
-        </q-card-section>
-        <q-card-section class="q-pt-none">
-          <p>
-            "En IDIMCOL, queremos agradecer a las mujeres que hacen y han sido parte de nuestra familia. Su dedicación,
-            esfuerzo y talento han sido fundamentales para el crecimiento de nuestra empresa. Hoy y siempre, reconocemos
-            su valiosa labor y el impacto positivo que generan en cada área donde están presentes. Gracias por ser inspiración,
-            fortaleza y motor de cambio."
-          </p>
-        </q-card-section>
-      </q-card>
-
-      <q-card class="my-card">
-        <img src="https://cdn.quasar.dev/img/mountains.jpg" />
-        <q-card-section>
-          <div class="text-h4">Día de la mujer</div>
-        </q-card-section>
-        <q-card-section class="q-pt-none">
-          <p>
-            "En IDIMCOL, queremos agradecer a las mujeres que hacen y han sido parte de nuestra familia. Su dedicación,
-            esfuerzo y talento han sido fundamentales para el crecimiento de nuestra empresa. Hoy y siempre, reconocemos
-            su valiosa labor y el impacto positivo que generan en cada área donde están presentes. Gracias por ser inspiración,
-            fortaleza y motor de cambio."
-          </p>
-        </q-card-section>
-      </q-card>
-
-      <q-card class="my-card">
-        <img src="/Día-Mujer.png"  />
-        <q-card-section>
-          <div class="text-h4">Día de la mujer</div>
-        </q-card-section>
-        <q-card-section class="q-pt-none">
-          <p>
-            "En IDIMCOL, queremos agradecer a las mujeres que hacen y han sido parte de nuestra familia. Su dedicación,
-            esfuerzo y talento han sido fundamentales para el crecimiento de nuestra empresa. Hoy y siempre, reconocemos
-            su valiosa labor y el impacto positivo que generan en cada área donde están presentes. Gracias por ser inspiración,
-            fortaleza y motor de cambio."
-          </p>
-        </q-card-section>
-      </q-card>
     </div>
     <!-- Agregamos un div como contenedor raíz -->
     <!-- <q-splitter v-model="splitterModel" style="height: 450px">

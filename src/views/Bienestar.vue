@@ -246,6 +246,7 @@ p{
 @media (max-width:450px){
   .my-card{
     max-width: 350px;
+    top: 20px;
   }
 }
 @media (max-width:360px){

@@ -231,6 +231,9 @@ img {
     font-size: 20px;
     left: 65%;
   }
+  .imgFondo{
+    width: 130%;
+  }
 }
 @media (max-width: 1250px) {
   .title {

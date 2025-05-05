@@ -419,6 +419,12 @@ b {
   }
 }
 @media (max-width: 760px) {
+  .imgFondo {
+    width: 230%;
+  }
+  .text{
+    font-size: 23px;
+  }
   .ubicacion {
     position: relative;
     font-size: 20px;
@@ -430,10 +436,10 @@ b {
 }
 @media (max-width: 700px) {
   .imgFondo {
-    width: 230%;
+    width: 250%;
   }
   .text{
-    font-size: 23px;
+    font-size: 21px;
   }
 }
 @media (max-width: 600px) {
@@ -504,6 +510,14 @@ b {
     left: 15%;
   }
 }
+@media (max-width: 480px){
+  .imgFondo{
+    width: 380%;
+  }
+  .text{
+    font-size: 18px;
+  }
+}
 @media (max-width: 420px) {
   .title {
     font-size: 30px;
@@ -558,8 +572,8 @@ b {
     left: 40px;
   }
   .frase{
-    font-size: 15px;
-    left: 40px;
+    font-size: 14px;
+    left: 10px;
   }
   .text{
     left: 40px;

@@ -245,10 +245,10 @@ p{
 }
 @media (max-width:450px){
   .my-card{
-    max-width: 380px;
+    max-width: 350px;
   }
 }
-@media (max-width:340px){
+@media (max-width:360px){
   .my-card{
     max-width: 300px;
   }

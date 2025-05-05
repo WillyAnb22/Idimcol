@@ -148,10 +148,10 @@ const sectores = reactive([
     font-size:25px;
   }
   .text{
-    font-size: 18px;
+    font-size: 17px;
   }
   .q-carousel{
-    height: 300px;
+    height: 250px;
   }
 }
 @media (max-width:350px){
@@ -162,7 +162,7 @@ const sectores = reactive([
     font-size: 15px;
   }
   .q-carousel{
-    height: 250px;
+    height: 200px;
   }
 }
 @media (max-width: 300px){

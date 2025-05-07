@@ -2,7 +2,7 @@
   <div>
     <div class="container">
       <video ref="videoPlayer" autoplay playsinline controls>
-        <source src="/Video-web.mp4" type="video/mp4" />
+        <source src="fotosInicio/Video-web.mp4" type="video/mp4" />
       </video>
       <div>
         <p class="title">IDIMCOL</p>
@@ -24,10 +24,10 @@
     <div>
       <div class="container2">
         <div class="imgFondo">
-          <q-img src="/frontal.png"></q-img>
+          <q-img src="/fotosInicio/frontal.png"></q-img>
         </div>
         <div class="logo">
-          <q-img src="/logoBlanco.png"></q-img>
+          <q-img src="/logos/logoBlanco.png"></q-img>
         </div>
         <div class="text">CONOCE QUIENES SOMOS</div>
         <div class="btn">

@@ -2,9 +2,9 @@
   <div class="container">
     <div class="row">
       <q-card class="my-card">
-        <img src="/Día-Mujer.png" />
+        <img src="/fotosBienestar/Día-Mujer.png" />
         <q-card-section>
-          <div class="text-h4">Día de la mujer</div>
+          <div class="text-h4"><i>Día de la mujer</i></div>
         </q-card-section>
         <q-card-section class="q-pt-none">
           <p>
@@ -183,12 +183,16 @@ p{
   gap: 50px;
 }
 .my-card {
-  top: 40px;
   width: 100%;
+  top: 40px;
   max-width: 550px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
+
 p{
   font-size: 20px;
+  text-align: justify;
+
 }
 .footer {
   margin-top: 10%;

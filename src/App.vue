@@ -6,7 +6,7 @@
         <q-toolbar class="toolbar">
           <div class="logo">
             <router-link to="/">
-              <img src="/logoBlanco.png" />
+              <img src="/logos/logoBlanco.png" />
             </router-link>
           </div>
 
@@ -79,7 +79,7 @@
             <q-item-section>Bienestar</q-item-section>
           </q-item>
           <div class="logoNegro-container">
-            <img class="logoNegro" src="/logo.png" />
+            <img class="logoNegro" src="/logos/logoNegro.png" />
           </div>
         </q-list>
       </q-drawer>

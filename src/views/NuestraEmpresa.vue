@@ -518,7 +518,7 @@ b {
     font-size: 18px;
   }
 }
-@media (max-width: 420px) {
+@media (max-width: 430px) {
   .title {
     font-size: 30px;
     top: 50px;
@@ -582,11 +582,15 @@ b {
     font-size: 30px;
   }
   .ubicacion{
-    font-size: 18px;
+    font-size: 17px;
     margin-left: -4%;
     width: 60%;
   }
+  #map{
+    height: 150px;
+  }
 }
+
 @media (max-width:320px){
   .text{
     font-size:15px

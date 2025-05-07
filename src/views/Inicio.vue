@@ -311,7 +311,7 @@ img {
     font-size: 15px;
   }
 }
-@media (max-width: 850px) {
+@media (max-width: 853px) {
   .title {
     font-size: 85px;
   }
@@ -326,7 +326,7 @@ img {
     left: 59%;
   }
   .imgFondo {
-    width: 200%;
+    width: 300%;
   }
   .logo {
     width: 30%;
@@ -425,7 +425,10 @@ img {
 }
 @media (max-width: 500px){
   .textoDerecha{
-    left: 40%;
+    left: 35%;
+  }
+  .text{
+    font-size:35px;
   }
 }
 @media (max-width: 450px) {
@@ -439,7 +442,7 @@ img {
   }
   .textoDerecha {
     font-size: 12px;
-    left: 34%;
+    left:29%;
   }
   .imgFondo {
     width: 400%;
@@ -462,17 +465,17 @@ img {
   .textoDerecha{
     font-size: 11px;
     top: 85%;
-    left: 25%;
+    left: 20%;
   }
   .imgFondo{
-    width: 410%;
+    width: 450%;
   }
 }
 @media (max-width: 330px){
   .textoDerecha{
     font-size: 10px;
     top: 84%;
-    left: 20%;
+    left: 15%;
   }
   .text {
     font-size: 23px;

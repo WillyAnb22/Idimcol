@@ -287,6 +287,11 @@ nav a.router-link-exact-active {
     gap: 12px;
   }
 }
+@media (max-width:470px){
+  nav{
+    font-size: 12px;
+  }
+}
 @media (max-width: 400px) {
   .rutas {
     display: none;

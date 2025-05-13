@@ -1,183 +1,78 @@
 <template>
   <div class="container">
-    <div class="row">
-      <q-card class="my-card">
-        <img src="/fotosBienestar/Día-Mujer.png" />
-        <q-card-section>
-          <div class="text-h4"><i>Día de la mujer</i></div>
-        </q-card-section>
-        <q-card-section class="q-pt-none">
-          <p>
-            "En IDIMCOL, queremos agradecer a las mujeres que hacen y han sido parte de nuestra familia. Su dedicación,
-            esfuerzo y talento han sido fundamentales para el crecimiento de nuestra empresa. Hoy y siempre, reconocemos
-            su valiosa labor y el impacto positivo que generan en cada área donde están presentes. Gracias por ser inspiración,
-            fortaleza y motor de cambio."
-          </p>
-        </q-card-section>
-      </q-card>
-    </div>
-    <!-- Agregamos un div como contenedor raíz -->
-    <!-- <q-splitter v-model="splitterModel" style="height: 450px">
-      <template v-slot:before>
-        <div class="q-pa-md">
-          <q-date v-model="date" :events="events" event-color="orange" />
-        </div>
-      </template>
+    <div class="q-pa-md q-gutter-sm">
+      <q-dialog v-model="fixed">
+        <q-card>
+          <q-card-section>
+            <div class="text-h3">{{ dialogTitle }}</div>
+          </q-card-section>
 
-      <template v-slot:after>
-        <q-tab-panels
-          class="text"
-          v-model="date"
-          animated
-          transition-prev="jump-up"
-          transition-next="jump-up"
-        >
-          <q-tab-panel name="2025/03/05">
-            <div class="text-h4 q-mb-md">2025/03/05</div>
-            <video class="video" src="video.mp4" controls />
-            <img class="img" src="/Miércoles-Ceniza.png" />
-            <br />
-            <p>
-              Que este día sea el inicio de un tiempo de esperanza y renovación. Que la ceniza en nuestra frente sea un
-              símbolo de nuestra disposición a cambiar y a seguir a Cristo. Que este tiempo nos prepare para celebrar la alegría de la Pascua."
-            </p>
-          </q-tab-panel>
+          <q-separator />
 
-          <q-tab-panel name="2025/03/08">
-            <div class="text-h4 q-mb-md">2025/03/08</div>
-            <img class="img" src="/Día-Mujer.png" />
-            <br />
-            <p>
-              "Hoy queremos expresar nuestro más sincero agradecimiento a todas las mujeres que, con su dedicación y esfuerzo,
-              construyen un mundo mejor. Su trabajo, su amor y su sabiduría son un ejemplo para todos nosotros. En este Día de
-              la Mujer, celebramos su grandeza y les deseamos un futuro lleno de éxitos y felicidad."
-            </p>
-          </q-tab-panel>
-        </q-tab-panels>
-      </template>
-    </q-splitter>-->
-    <!-- <div class="tarjeta">
-      <div class="contenido">
-        <q-img src="fondo.png" fit="cover" style="border-radius: 20px;"></q-img>
-        <p>14/04/2025</p>
-        <P>
-          bla la lechuza hace shh todos calladitos, todos calladitos hace shhhh
-          <br />la lucehza, tres tristes trigues comen trigo en un trigal
-        </P>
+          <q-card-section style="width: 500px; height: 700px; overflow-y: auto;">
+            <img :src="dialogImage" style="width: 100%; margin-bottom:20px;"/>
+            <p>{{ dialogText }}</p>
+          </q-card-section>
+        </q-card>
+      </q-dialog>
+
+      <div class="row justify-center q-gutter-sm">
+        <q-intersection v-for="(item, index) in items" :key="index" class="example-item">
+          <q-card flat bordered class="q-ma-sm">
+            <img :src="item.imageUrl" class="card-image" @click="showDialog(item)" style="cursor: pointer" />
+            <q-card-section>
+              <div class="text-h5">{{ item.title }}</div>
+            </q-card-section>
+          </q-card>
+        </q-intersection>
       </div>
     </div>
-    <div class="tarjeta">
-      <div class="contenido">
-        <q-img src="fondo.png" fit="cover" style="border-radius: 20px;"></q-img>
-        <p>14/04/2025</p>
-        <P>
-          bla la lechuza hace shh todos calladitos, todos calladitos hace shhhh
-          <br />la lucehza, tres tristes trigues comen trigo en un trigal
-        </P>
-      </div>
-    </div>
-    <div class="tarjeta">
-      <div class="contenido">
-        <q-img src="fondo.png" fit="cover" style="border-radius: 20px;"></q-img>
-        <p>14/04/2025</p>
-        <P>
-          bla la lechuza hace shh todos calladitos, todos calladitos hace shhhh
-          <br />la lucehza, tres tristes trigues comen trigo en un trigal
-        </P>
-      </div>
-    </div>
-        <div class="tarjeta">
-      <div class="contenido">
-        <q-img src="fondo.png" fit="cover" style="border-radius: 20px;"></q-img>
-        <p>14/04/2025</p>
-        <P>
-          bla la lechuza hace shh todos calladitos, todos calladitos hace shhhh
-          <br />la lucehza, tres tristes trigues comen trigo en un trigal
-        </P>
-      </div>
-    </div>-->
-    <!-- Inportacion del footer -->
+
     <Footer class="footer" />
   </div>
 </template>
 
 <script setup>
-import { ref} from "vue";
-import Footer from "@/components/Footer.vue"; 
+import { ref } from "vue";
+import Footer from "@/components/Footer.vue";
 
-const splitterModel = ref(50);
+const fixed = ref(false);
+const dialogTitle = ref("");
+const dialogText = ref("");
+const dialogImage = ref("");
 
+function showDialog(item) {
+  dialogTitle.value = item.title;
+  dialogText.value = item.dialogText;
+  dialogImage.value = item.dialogImage;
+  fixed.value = true;
+}
+//Aquí se definen los datos para cada tarjeta, incluyendo título e imagen
+const items = ref([
+  {
+    title: "Día de la Mujer",
+    imageUrl:"https://i.pinimg.com/originals/d0/28/49/d02849269d00094b1109921a20d4ed87.jpg", // Ruta relativa desde la carpeta public
+    dialogText: "En IDIMCOL, queremos agradecer a las mujeres que hacen y han sido parte de nuestra familia. Su dedicación, esfuerzo y talento han sido fundamentales para el crecimiento de nuestra empresa. Hoy y siempre, reconocemos su valiosa labor y el impacto positivo que generan en cada área donde están presentes. Gracias por ser inspiración, fortaleza y motor de cambio.",
+    dialogImage: "/fotosBienestar/Día-Mujer.png"
+  },
+  {
+    title: "Día de la madre",
+    imageUrl: "https://www.shutterstock.com/image-vector/feliz-dia-de-la-madre-600nw-2290617869.jpg",
+    dialogText: "Queremos celebrar y felicitar a todas las madres en su día. Gracias por su amor incondicional, por su entrega diaria y por motivarnos a ser mejores cada día. Su presencia es una fuente de inspiración y un pilar fundamental en nuestras vidas. ¡Feliz Día de la Madre!",
+    dialogImage: "/fotosBienestar/Día-Madre.png"
+  },
+  {
+    title:"Día de la Secretaria",
+    imageUrl:"https://www.elinformador.com.co/images/stories/sociales/2019/04-abril/26entrete.jpg",
+    dialogText:"Agradecemos tu dedicación y profesionalismo que hacen que todo funcione con armonía y eficacia. Gracias por ser parte fundamental de nuestra familia IDIMCOL. ¡Feliz Día de la Secretaria!",
+    dialogImage:"/fotosBienestar/secretaria.png"
+  }
+]);
 </script>
 
 <style scoped>
-/* .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: stretch;
-  height: 100vh;
-  overflow: hidden;
-}
-.q-pa-md {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 150px;
-  color: #325e9b;
-}
-.q-date {
-  transform: scale(1.5);
-}
-
-.text {
-  color: black;
-}
-img {
-  width: 150%;
-  height: 100px;
-}
-p {
-  font-size: 20px;
-  text-align: justify;
-}
-.q-splitter {
-  flex-grow: 1; 
-  height: 100%;
-}
-.video,
-.img {
-  width: 50%;
-  height: 50%;
-  display: block;
-  margin: 0 auto;
-} */
-/* .tarjeta {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-.contenido{
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  max-width: 400px;
-}
-.img-tarjeta{
-  width: 100%;
-  max-height: 250px;
-  border-radius: 20px;
-  margin-bottom: 10px;
-}
-p{
-  font-size:18px;
-  margin: 5px 0;
-  text-align:justify;
-} */
 .row {
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 50px;
@@ -188,36 +83,46 @@ p{
   max-width: 550px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
-
-p{
+p {
   font-size: 20px;
   text-align: justify;
-
 }
 .footer {
-  margin-top: 10%;
+  margin-top: 20%;
 }
-@media (max-width: 630px){
-  .my-card{
+.my-card {
+  width: 100%;
+  max-width: 250px;
+}
+.example-item {
+  height: 290px;
+  width: 290px;
+}
+.card-image{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+@media (max-width: 630px) {
+  .my-card {
     max-width: 450px;
   }
 }
-@media (max-width:450px){
-  .my-card{
+@media (max-width: 450px) {
+  .my-card {
     max-width: 350px;
     top: 20px;
   }
 }
-@media (max-width:360px){
-  .my-card{
+@media (max-width: 360px) {
+  .my-card {
     max-width: 300px;
   }
-  .footer{
+  .footer {
     margin-top: 50px;
   }
-  p{
+  p {
     font-size: 15px;
   }
 }
-
 </style>

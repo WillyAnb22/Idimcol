@@ -27,9 +27,9 @@
           metalmecánica y metalúrgica, respaldados por un equipo
           humano dinámico e integral, enfocado en la innovación,
           compromiso ambiental y avances tecnológicos en nuestros
-          procesos de diseño, fabricación y reparación de equipos
-          y maquinaria industrial, que permita cumplir las necesidades
-          y expectativas de nuestros clientes, así como generar
+          procesos de diseño, fabricación, reparación de equipos
+          y maquinaria industrial, que permita cumplir con las necesidades
+          o expectativas de nuestros clientes, así como generar
           los recursos apropiados para el funcionamiento de la empresa
           y un retorno de la inversión con utilidades a su sociedad.
         </div>
@@ -42,15 +42,15 @@
         <div class="textMision">
           Somos una empresa de ingeniería y desarrollo
           integral dedicada al diseño, mantenimiento,
-          reparación, fabricación, servicios de diagnóstico y
+          reparación, fabricación, servicios de diagnóstico,
           asesoramiento técnico en evaluación de proyectos
           para la reconstrucción y optimización de
           maquinaria industrial; contamos con un equipo
           humano competente y comprometido, buscamos la
-          innovación en nuestros procesos de fabricación y
-          tecnología de punta, con el fin de mejorar
+          innovación en nuestros procesos de fabricación con
+          tecnología de punta, mejorando
           continuamente nuestros procesos y así cumplir las
-          expectativas y necesidades de nuestros clientes y
+          expectativas o necesidades de nuestros clientes y
           demás partes interesadas.
         </div>
         <div class="imgMision">
@@ -71,7 +71,7 @@
           <p>
             <b>LÍNEAS TELEFÓNICAS:</b>
           </p>📱 +57 302 7903706
-          <br />📞 (607)-6346608
+          <br />📞 (607)-7013450
         </div>
         <div class="correos">
           <p>

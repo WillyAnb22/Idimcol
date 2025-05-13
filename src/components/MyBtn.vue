@@ -1,43 +1,61 @@
 <template>
-  <div class="q-px-sm q-py-lg">
-    <div class="column items-center" >
-      <!-- Botón con imagen -->
-      <q-btn flat round dense class="contact-btn">
-        <img  class="icon" src="/icons/contactanos.png" alt="Contáctanos" />
-        <!-- Menú con solo WhatsApp -->
-        <q-menu anchor="top middle" self="bottom middle">
-          <q-list style="min-width: 150px">
-            <q-item clickable v-ripple @click="openWhatsApp">
-              <q-item-section avatar>
-                <q-icon name="img:/icons/whatsapp.png" />
-              </q-item-section>
-              <q-item-section>WhatsApp</q-item-section>
-            </q-item>
-          </q-list>
-        </q-menu>
-      </q-btn>
-    </div>
+  <div class="container">
+    <q-btn id="contact-btn" flat unelevated padding="none" color="transparent" no-caps class="no-border no-shadow no-hover">
+      <img class="icon" src="/icons/btn-contactanos.png" alt="Contáctanos" />
+
+      <q-menu anchor="top middle" self="bottom middle">
+        <q-list style="min-width: 150px">
+          <q-item clickable v-ripple @click="openWhatsApp">
+            <q-item-section avatar>
+              <q-icon name="img:/icons/whatsapp.png" />
+            </q-item-section>
+            <q-item-section id="texto"> 
+              <b>WhatsApp</b>
+            </q-item-section>
+          </q-item>
+        </q-list>
+      </q-menu>
+    </q-btn>
   </div>
+  <!-- <q-btn-dropdown flet unelevated padding="none" color="transparent" class="no-border no-shadow">
+      <template v-slot:label>
+        <img class="wha" src="/icons/btn-contactanos.png" alt="Contáctanos" style="height:250px;"/>
+      </template>
+      <q-list>
+        <q-item clickable v-close-popup @click="openWhatsApp">
+          <q-item-section>
+            <q-icon name="img:/icons/whatsapp.png"/>
+          </q-item-section>
+          <q-item-section class="texto"><b>WhatsApp</b> </q-item-section>
+        </q-item>
+      </q-list>
+  </q-btn-dropdown>-->
 </template>
 <style scoped>
-.contact-btn {
-  position:fixed;
-  right: -200px;
-  bottom:150px;
-  z-index:100;
+#contact-btn {
+  position: fixed;
+  bottom: 150px;
+  right: -400px;
+  z-index:50;
 }
-.icon{
-  height: auto;
-  width: 30%;
+.icon {
+  width: 15%;
 }
+
 @media (max-width: 600px) {
   .icon {
-    width: 24%;
+    width: 14%;
   }
 }
+@media(max-width: 420px){
+  #contact-btn {
+  bottom: 160px;
+  right: -300px;
+}
+}
 @media (max-width: 380px) {
-  .icon  {
-    width: 20%;
+  .icon {
+    width: 10%;
   }
 }
 </style>

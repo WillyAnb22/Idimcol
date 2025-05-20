@@ -6,6 +6,7 @@ import Servicios from "../views/Servicios.vue"
 import Sectores from "../views/Sectores.vue"
 import Conocenos from "../views/Conocenos.vue"
 import Bienestar from "../views/Bienestar.vue"
+import PQRS from "../views/PQRS.vue"
 
 
 const routes = [
@@ -15,6 +16,7 @@ const routes = [
     { path: "/Sectores", component: Sectores },
     { path: "/Conocenos", component: Conocenos },
     { path: "/Bienestar", component: Bienestar},
+    { path: "/PQRS", component: PQRS},
 ];
 
 export const router = createRouter({

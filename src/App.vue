@@ -19,6 +19,7 @@
               <router-link to="/Sectores">Sectores</router-link>
               <router-link to="/Conocenos">Conócenos</router-link>
               <router-link to="/Bienestar">Bienestar</router-link>
+              <router-link to="/PQRS">PQRS</router-link>
             </nav>
           </div>
 
@@ -77,6 +78,15 @@
             class="menu-lateral"
           >
             <q-item-section>Bienestar</q-item-section>
+          </q-item>
+          <q-item
+            clickable
+            v-riple
+            to="/PQRS"
+            @click="rightDrawerOpen = false"
+            class="menu-lateral"
+            >
+            <q-item-section>PQRS</q-item-section>
           </q-item>
           <div class="logoNegro-container">
             <img class="logoNegro" src="/logos/logoNegro.png" />
@@ -229,7 +239,12 @@ nav a.router-link-exact-active {
     font-size: 15px;
   }
 }
-
+@media (max-width: 900px){
+  nav{
+    font-size: 19px;
+    gap: 20px;
+  }
+}
 @media (max-width: 800px) {
   .logo {
     margin-left: 20px;
@@ -245,7 +260,13 @@ nav a.router-link-exact-active {
     font-size: 13px;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 700px){
+  nav{
+    font-size: 16px;
+      gap: 20px;
+  }
+}
+@media (max-width: 610px) {
   .logo {
     margin-left: 10px;
   }
@@ -254,8 +275,8 @@ nav a.router-link-exact-active {
     height: auto;
   }
   nav {
-    font-size: 15px;
-    gap: 23px;
+    font-size: 14px;
+    gap: 12px;
   }
   .btn-Pagina {
     position: fixed;
@@ -274,7 +295,6 @@ nav a.router-link-exact-active {
 }
 @media (max-width: 550px) {
   nav {
-    font-size: 15px;
     gap: 12px;
   }
 }
@@ -289,7 +309,7 @@ nav a.router-link-exact-active {
 }
 @media (max-width:470px){
   nav{
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 @media (max-width: 400px) {

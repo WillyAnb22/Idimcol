@@ -45,7 +45,13 @@ const sectores = reactive([
       "/SecIndustrial/Escaleras.png",
       "/SecIndustrial/estructuraMetalica.png",
       "/SecIndustrial/puente.jpg",
-      "/SecIndustrial/engranajes.jpeg"
+      "/SecIndustrial/engranajes.jpeg",
+      "/SecIndustrial/barrelodos.jpg",
+      "/SecIndustrial/contenedores.jpg",
+      "/SecIndustrial/plantaAmbiental.jpg",
+      "/SecIndustrial/silo.jpg",
+      "/SecIndustrial/estructura.JPG",
+      "/SecIndustrial/grua.png",
     ],
     slide: ref(1)
   },
@@ -69,7 +75,13 @@ const sectores = reactive([
       "/SecAlimentario/MAQUINA_CHOCOLATE.jpg",
       "/SecAlimentario/Alimenticio.jpg",
       "/SecAlimentario/maquina.jpg",
-      "/SecAlimentario/botellas.jpg"
+      "/SecAlimentario/carritos.JPG",
+      "/SecAlimentario/maquina2.png",
+      "/SecAlimentario/chocolate2.jpg",
+      "/SecAlimentario/maquina(2).jpg",
+      "/SecAlimentario/rodillo.png",
+      "/SecAlimentario/maquina3.png",
+      "/SecAlimentario/tolva.jpg"
     ],
     slide: ref(1)
   }

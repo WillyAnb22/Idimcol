@@ -34,7 +34,7 @@
           y un retorno de la inversión con utilidades a su sociedad.
         </div>
         <div class="imgVision">
-          <q-img src="/fotosNuestraempresa/fotoVision.JPG"></q-img>
+          <q-img src="/fotosNuestraempresa/operarios.png"></q-img>
         </div>
       </div>
       <div class="mision">
@@ -54,7 +54,7 @@
           demás partes interesadas.
         </div>
         <div class="imgMision">
-          <q-img src="/fotosNuestraempresa/FotoMision.jpg"></q-img>
+          <q-img src="/fotosNuestraempresa/soldador.jpg"></q-img>
         </div>
       </div>
     </div>
@@ -214,6 +214,9 @@ L.Icon.Default.mergeOptions({
   width: 60%;
   margin: 11% auto;
 }
+.imgMision{
+  width: 70%;
+}
 .imgVision {
   margin: 6% auto;
 }
@@ -330,7 +333,7 @@ b {
     top: 25%;
   }
   .imgMision {
-    margin: 17% auto;
+    margin: 14% auto;
   }
   .ubicacion{
     max-width: 350px;
@@ -355,7 +358,7 @@ b {
     width: 100%;
   }
   .imgMision{
-    margin: 9% auto;
+    margin: 19% auto;
   }
   .ubicacion {
     font-size: 21px;
@@ -387,8 +390,8 @@ b {
     width: 350px;
   }
   .imgMision {
-    width: 350px;
-    margin: 20% auto;
+    width: 370px;
+    margin: 12% auto;
   }
 }
 @media (max-width: 850px) {
@@ -406,7 +409,7 @@ b {
     width: 90%;
   }
   .imgMision {
-    margin: 9% auto;
+    margin: 19% auto;
   }
   .container3 {
     display: flex;

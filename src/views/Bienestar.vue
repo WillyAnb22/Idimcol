@@ -62,20 +62,20 @@ const items = ref([
     dialogImage: "/fotosBienestar/Día-Mujer.png"
   },
   {
-    title: "Día de la madre",
-    imageUrl:
-      "https://www.shutterstock.com/image-vector/feliz-dia-de-la-madre-600nw-2290617869.jpg",
-    dialogText:
-      "Queremos celebrar y felicitar a todas las madres en su día. Gracias por su amor incondicional, por su entrega diaria y por motivarnos a ser mejores cada día. Su presencia es una fuente de inspiración y un pilar fundamental en nuestras vidas. ¡Feliz Día de la Madre!",
-    dialogImage: "/fotosBienestar/Día-Madre.png"
-  },
-  {
     title: "Día de la Secretaria",
     imageUrl:
       "https://www.elinformador.com.co/images/stories/sociales/2019/04-abril/26entrete.jpg",
     dialogText:
       "Agradecemos tu dedicación y profesionalismo que hacen que todo funcione con armonía y eficacia. Gracias por ser parte fundamental de nuestra familia IDIMCOL. ¡Feliz Día de la Secretaria!",
     dialogImage: "/fotosBienestar/secretaria.png"
+  },
+    {
+    title: "Día de la madre",
+    imageUrl:
+      "https://www.shutterstock.com/image-vector/feliz-dia-de-la-madre-600nw-2290617869.jpg",
+    dialogText:
+      "Queremos celebrar y felicitar a todas las madres en su día. Gracias por su amor incondicional, por su entrega diaria y por motivarnos a ser mejores cada día. Su presencia es una fuente de inspiración y un pilar fundamental en nuestras vidas. ¡Feliz Día de la Madre!",
+    dialogImage: "/fotosBienestar/Día-Madre.png"
   }
 ]);
 </script>

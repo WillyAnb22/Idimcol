@@ -81,7 +81,7 @@
           </q-item>
           <q-item
             clickable
-            v-riple
+            v-ripple
             to="/PQRS"
             @click="rightDrawerOpen = false"
             class="menu-lateral"

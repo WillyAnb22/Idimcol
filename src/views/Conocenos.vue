@@ -8,22 +8,22 @@
         <q-img src="/fotosConocenos/FOTO29.jpg" fit="cover" style="border-radius: 20px;"></q-img>
       </div>
       <div class="col-4">
-        <q-img src="/fotosConocenos/cnc.jpg" fit="cover" style="border-radius: 20px; height:70%;"></q-img>
+        <q-img src="/fotosConocenos/planta.jpg" fit="cover" style="border-radius: 20px;height:100% "></q-img>
       </div>
       <div class="col-4">
-        <q-img src="/fotosConocenos/planta.jpg" fit="cover" style="border-radius: 20px;"></q-img>
+        <q-img src="/fotosConocenos/operario.png" fit="cover" style="border-radius: 20px;"></q-img>
       </div>
       <div class="col-4">
-        <q-img src="/fotosConocenos/soldadura.jfif" fit="cover" style="border-radius: 20px;"></q-img>
+        <q-img src="/fotosConocenos/operario2.png" fit="cover" style="border-radius: 20px;"></q-img>
       </div>
       <div class="col-4">
-        <q-img src="/fotosConocenos/.jpg" fit="cover" style="border-radius: 20px;"></q-img>
+        <q-img src="/fotosConocenos/operario3.png" fit="cover" style="border-radius: 20px; "></q-img>
       </div>
       <div class="col-4">
         <q-img src="/fotosConocenos/maquina1.jpg" fit="cover" style="border-radius: 20px;"></q-img>
       </div>
       <div class="col-4">
-        <q-img src="/fotosConocenos/maquina2.jpg" fit="cover" style="border-radius: 20px;"></q-img>
+        <q-img src="/fotosConocenos/cnc.jpg" fit="cover" style="border-radius: 20px;height:70%;"></q-img>
       </div>
       <div class="col-4">
         <q-img src="/fotosConocenos/maquina3.jpg" fit="cover" style="border-radius: 20px;"></q-img>

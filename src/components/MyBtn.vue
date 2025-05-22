@@ -57,10 +57,20 @@
 .icon {
   width: 15%;
 }
-
+@media (max-width: 1090px){
+  #contact-btn{
+    bottom: 220px;
+  }
+  .icon{
+    width: 10%;
+  }
+}
 @media (max-width: 600px) {
+  #contact-btn{
+    bottom: 170px;
+  }
   .icon {
-    width: 14%;
+    width: 10%;
   }
 }
 @media (max-width: 420px) {

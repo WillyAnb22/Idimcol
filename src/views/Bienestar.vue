@@ -59,7 +59,7 @@ const items = ref([
       "https://i.pinimg.com/originals/d0/28/49/d02849269d00094b1109921a20d4ed87.jpg", // Ruta relativa desde la carpeta public
     dialogText:
       "En IDIMCOL, queremos agradecer a las mujeres que hacen y han sido parte de nuestra familia. Su dedicación, esfuerzo y talento han sido fundamentales para el crecimiento de nuestra empresa. Hoy y siempre, reconocemos su valiosa labor y el impacto positivo que generan en cada área donde están presentes. Gracias por ser inspiración, fortaleza y motor de cambio.",
-    dialogImage: "/fotosBienestar/Día-Mujer.png"
+    dialogImage: "/fotosBienestar/mujer.png"
   },
   {
     title: "Día de la Secretaria",
@@ -75,7 +75,7 @@ const items = ref([
       "https://www.shutterstock.com/image-vector/feliz-dia-de-la-madre-600nw-2290617869.jpg",
     dialogText:
       "Queremos celebrar y felicitar a todas las madres en su día. Gracias por su amor incondicional, por su entrega diaria y por motivarnos a ser mejores cada día. Su presencia es una fuente de inspiración y un pilar fundamental en nuestras vidas. ¡Feliz Día de la Madre!",
-    dialogImage: "/fotosBienestar/Día-Madre.png"
+    dialogImage: "/fotosBienestar/madre.png"
   }
 ]);
 </script>

@@ -113,14 +113,15 @@ onMounted(async () => {
       '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
   }).addTo(map);
   delete L.Icon.Default.prototype._getIconUrl;
+const customIcon =L.icon({
+  iconUrl: "/fotosNuestraempresa/iconoUbicacion.png",
+  iconSize: [50,50],
+  iconAnchor:[20, 30],
+  popupAnchor:[0, -40],
+})
 
-L.Icon.Default.mergeOptions({
-  iconRetinaUrl: new URL('leaflet/dist/images/marker-icon-2x.png', import.meta.url).href,
-  iconUrl: new URL('leaflet/dist/images/marker-icon.png', import.meta.url).href,
-  shadowUrl: new URL('leaflet/dist/images/marker-shadow.png', import.meta.url).href,
-});
 
-  L.marker([latitude, longitude])
+  L.marker([latitude, longitude],{ icon: customIcon})
     .addTo(map)
     .bindPopup("IDIMCOL SAS - Bucaramanga")
     .openPopup();

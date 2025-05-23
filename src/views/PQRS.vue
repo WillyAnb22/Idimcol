@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="contenedor">
-      <p class="titulo">Información PQRS</p>
+      <p class="titulo">Información PQR</p>
       <div class="contenido">
         <q-img class="imagen" src="/pqrs.jpg"></q-img>
         <div class="texto">
@@ -9,7 +9,7 @@
           <hr />
           <br />
           <p>
-            Idimcol S.A.S informa que cualquier PQRS (Petición, Queja, Reclamo o Solicitud de Indemnización)
+            Idimcol S.A.S informa que cualquier PQR (Petición, Queja y Reclamo ),
             puede presentarse a través de los siguientes canales de atención:
           </p>
           <p id="lineasAtencion">Línea de Atención al Cliente:</p>302 7903706

@@ -274,11 +274,11 @@ b {
     left:7%;
   }
   .ubicacion{
-    font-size: 25px;
+    font-size: 22px;
   }
   #map{
-    left: 20px;
-    width: 95%;
+    left: 45px;
+    width: 90%;
   }
 }
 /* Responsividad a 1250px */
@@ -316,10 +316,10 @@ b {
     left: 9%;
   }
   #map {
-    width: 95%;
+    width: 90%;
     height: 70%;
-    top: 120px;
-    right: 10px;
+    top: 120px; 
+    left: 50px;
   }
 }
 @media (max-width: 1100px) {

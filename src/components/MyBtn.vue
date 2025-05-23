@@ -9,7 +9,7 @@
       no-caps
       class="no-border no-shadow no-hover"
     >
-      <img class="icon" src="/icons/btn1.png" alt="Contáctanos" />
+      <img class="icon" src="/icons/contactanos.png" alt="Contáctanos" />
 
       <q-menu anchor="top middle" self="bottom middle">
         <q-list style="min-width: 150px">
@@ -26,7 +26,7 @@
               <q-icon name="img:/icons/correo.png" />
             </q-item-section>
             <q-item-section id="texto">
-              <b>PQRS</b>
+              <b>PQR</b>
             </q-item-section>
           </q-item>
         </q-list>
@@ -51,37 +51,46 @@
 #contact-btn {
   position: fixed;
   bottom: 190px;
-  right: -170px;
+  right: -450px;
   z-index: 50;
 }
 .icon {
-  width: 25%;
+  width: 15%;
 }
 @media (max-width: 1090px){
   #contact-btn{
-    bottom: 220px;
+    bottom: 160px;
   }
   .icon{
-    width: 20%;
+    width: 14%;
   }
 }
 @media (max-width: 600px) {
   #contact-btn{
-    bottom: 170px;
+    bottom: 160px;
   }
   .icon {
-    width: 15%;
+    width: 10%;
+  }
+}
+@media (max-width: 500px){
+  #contact-btn{
+    right: -400px;
   }
 }
 @media (max-width: 420px) {
   #contact-btn {
-    bottom: 180px;
-
+    bottom: 160px;
+    right: -350px;
   }
 }
 @media (max-width: 380px) {
+  #contact-btn {
+    bottom: 170px;
+    right: -300px;
+  }
   .icon {
-    width: 14%;
+    width: 10%;
   }
 }
 </style>

@@ -19,7 +19,7 @@
               <router-link to="/Sectores">Sectores</router-link>
               <router-link to="/Conocenos">Conócenos</router-link>
               <router-link to="/Bienestar">Bienestar</router-link>
-              <router-link to="/PQRS">PQRS</router-link>
+              <router-link to="/PQRS">PQR</router-link>
             </nav>
           </div>
 
@@ -86,7 +86,7 @@
             @click="rightDrawerOpen = false"
             class="menu-lateral"
             >
-            <q-item-section>PQRS</q-item-section>
+            <q-item-section>PQR</q-item-section>
           </q-item>
           <div class="logoNegro-container">
             <img class="logoNegro" src="/logos/logoNegro.png" />

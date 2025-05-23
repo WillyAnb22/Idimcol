@@ -60,10 +60,16 @@ const sectores = reactive([
     descripcion:
       "En el sector automotriz, la calidad y el rendimiento de los materiales son fundamentales para garantizar procesos eficientes y resultados óptimos. Ofrecemos metales de alta resistencia y precisión, diseñados para cumplir con los estándares de esta industria. Nuestro enfoque se centra en la innovación y la durabilidad, proporcionando soluciones confiables para cada aplicación.",
     imagenes: [
-      "/Automotriz/Automotriz1.jpg",
-      "/Automotriz/Automotriz2.png",
-      "/Automotriz/Automotriz3.png",
-      "/Automotriz/Automotriz4.png"
+    "/Automotriz/automotriz.png",
+    "/Automotriz/automotriz1.jpg",
+      "/Automotriz/automotriz2.png",
+      "/Automotriz/automotriz3.png",
+      "/Automotriz/automotriz4.png",
+      "/Automotriz/automotriz5.png",
+      "/Automotriz/automotriz6.png",
+      "/Automotriz/automotriz7.png",
+      "/Automotriz/automotriz8.png",
+      "/Automotriz/automotriz9.png"
     ],
     slide: ref(1)
   },

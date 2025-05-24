@@ -9,7 +9,7 @@
       no-caps
       class="no-border no-shadow no-hover"
     >
-      <img class="icon" src="/icons/contactanos.png" alt="Contáctanos" />
+      <img class="icon" src="/icons/contactanos1.png" alt="Contáctanos" />
 
       <q-menu anchor="top middle" self="bottom middle">
         <q-list style="min-width: 150px">
@@ -51,46 +51,37 @@
 #contact-btn {
   position: fixed;
   bottom: 190px;
-  right: -450px;
+  right: -180px;
   z-index: 50;
 }
 .icon {
-  width: 15%;
+  width: 25%;
 }
 @media (max-width: 1090px){
   #contact-btn{
-    bottom: 160px;
+    bottom: 230px;
+  
   }
   .icon{
-    width: 14%;
+    width: 20%;
   }
 }
 @media (max-width: 600px) {
   #contact-btn{
-    bottom: 160px;
+    bottom: 180px;
+    right: -200px;
   }
   .icon {
-    width: 10%;
-  }
-}
-@media (max-width: 500px){
-  #contact-btn{
-    right: -400px;
-  }
-}
-@media (max-width: 420px) {
-  #contact-btn {
-    bottom: 160px;
-    right: -350px;
+    width: 15%;
   }
 }
 @media (max-width: 380px) {
   #contact-btn {
     bottom: 170px;
-    right: -300px;
+    right: -220px;
   }
   .icon {
-    width: 10%;
+    width: 12%;
   }
 }
 </style>

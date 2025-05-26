@@ -3,9 +3,9 @@
     <div class="contenedor">
       <p class="titulo">Información PQR</p>
       <div class="contenido">
-        <q-img class="imagen" src="/pqrs.jpg"></q-img>
+        <q-img class="imagen" src="/pqr.png"></q-img>
         <div class="texto">
-          <p id="subtitulo">Atención al cliente</p>
+          <p id="subtitulo">Envíanos tu solicitud</p>
           <hr />
           <br />
           <p>
@@ -41,7 +41,7 @@
   gap: 40px;
 }
 .imagen {
-  width: 100%;
+  width: 80%;
   height: auto;
   border-radius: 10px;
 }

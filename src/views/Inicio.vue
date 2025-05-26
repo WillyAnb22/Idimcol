@@ -2,7 +2,7 @@
   <div>
     <div class="container">
       <video ref="videoPlayer" autoplay playsinline controls>
-        <source src="fotosInicio/Video-web.mp4" type="video/mp4" />
+        <source src="fotosInicio/video.mp4" type="video/mp4" />
       </video>
       <div>
         <p class="title">IDIMCOL</p>

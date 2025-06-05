@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div>      
+    <!-- Hero principal -->
     <div class="hero-container">
-      <!-- Hero principal -->
       <div class="hero" style="background-image: url('/Sector-Servicio/1.png')">
         <div class="overlay">
           <div class="title">ESTRUCTURAS MÉTALICAS</div>
@@ -37,7 +37,7 @@
         <div class="overlay">
           <div class="title">DISEÑO MECÁNICO</div>
           <div class="text">
-            Apoyados en el software de diseño asistido por computador (CAD) Solidwoks, nuestro departamento de ingeniería y diseño 
+            Apoyados en el software de diseño asistido por computador (CAD) Solidworks, nuestro departamento de ingeniería y diseño 
             evalúa las condiciones técnicas y conceptuales de sus equipos y máquinas industriales y elementos para garantizar el 
             óptimo desarrollo de sus operaciones.
           </div>

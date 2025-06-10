@@ -87,9 +87,10 @@
 </style>
 <script setup>
 const openWhatsApp = () => {
-  window.open("https://wa.me/573027903706", "_blank");
+  window.open("https://wa.me/573027903706", "_blank");//link de wh
 };
+//correo para pqr
 const openEmail = () => {
-  window.location.href ="mailto:juridico@idimcol.com.co?subject=PQRS%20-%20Idimcol&body=Por%20favor%20describa%20su%20petición,%20queja,%20reclamo%20o%20sugerencia:";
+  window.location.href ="mailto:juridico@idimcol.com.co?subject=PQR%20-%20Idimcol&body=Por%20favor%20describa%20su%20petición,%20queja,%20reclamo%20o%20sugerencia:";
 }
 </script>

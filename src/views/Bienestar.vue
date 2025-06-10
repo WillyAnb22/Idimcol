@@ -10,7 +10,9 @@
           <q-separator />
 
           <q-card-section class="card-section">
-            <img :src="dialogImage" class="img" />
+            <div v-for="(img, index) in dialogImages" :key="index" class="img-container">
+              <img :src="img" class="img">
+            </div>
             <p>{{ dialogText }}</p>
           </q-card-section>
         </q-card>
@@ -43,12 +45,12 @@ import Footer from "@/components/Footer.vue";
 const fixed = ref(false);
 const dialogTitle = ref("");
 const dialogText = ref("");
-const dialogImage = ref("");
+const dialogImages = ref("");
 
 function showDialog(item) {
   dialogTitle.value = item.title;
   dialogText.value = item.dialogText;
-  dialogImage.value = item.dialogImage;
+  dialogImages.value = item.dialogImages;
   fixed.value = true;
 }
 //Aquí se definen los datos para cada tarjeta, incluyendo título e imagen
@@ -56,10 +58,12 @@ const items = ref([
   {
     title: "Día de la Mujer",
     imageUrl:
-      "https://i.pinimg.com/originals/d0/28/49/d02849269d00094b1109921a20d4ed87.jpg", // Ruta relativa desde la carpeta public
+      "https://i.pinimg.com/originals/d0/28/49/d02849269d00094b1109921a20d4ed87.jpg", // URL DE LA IMAGEN DE GOOGLE
     dialogText:
       "En IDIMCOL, queremos agradecer a las mujeres que hacen y han sido parte de nuestra familia. Su dedicación, esfuerzo y talento han sido fundamentales para el crecimiento de nuestra empresa. Hoy y siempre, reconocemos su valiosa labor y el impacto positivo que generan en cada área donde están presentes. Gracias por ser inspiración, fortaleza y motor de cambio.",
-    dialogImage: "/fotosBienestar/mujer.png"
+    dialogImages:[
+      "/fotosBienestar/mujer.png"
+    ]
   },
   {
     title: "Día de la Secretaria",
@@ -67,7 +71,9 @@ const items = ref([
       "https://www.elinformador.com.co/images/stories/sociales/2019/04-abril/26entrete.jpg",
     dialogText:
       "Agradecemos tu dedicación y profesionalismo que hacen que todo funcione con armonía y eficacia. Gracias por ser parte fundamental de nuestra familia IDIMCOL. ¡Feliz Día de la Secretaria!",
-    dialogImage: "/fotosBienestar/secretaria.png"
+    dialogImages: [
+      "/fotosBienestar/secretaria.png"
+    ]
   },
     {
     title: "Día de la madre",
@@ -75,7 +81,9 @@ const items = ref([
       "https://www.shutterstock.com/image-vector/feliz-dia-de-la-madre-600nw-2290617869.jpg",
     dialogText:
       "Queremos celebrar y felicitar a todas las madres en su día. Gracias por su amor incondicional, por su entrega diaria y por motivarnos a ser mejores cada día. Su presencia es una fuente de inspiración y un pilar fundamental en nuestras vidas. ¡Feliz Día de la Madre!",
-    dialogImage: "/fotosBienestar/madre.png"
+    dialogImages:[
+      "/fotosBienestar/madre.png"
+    ] 
   }
 ]);
 </script>
